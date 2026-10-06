@@ -226,24 +226,6 @@ class BootScene extends Phaser.Scene {
       this.children.bringToTop(robtopLogo);
       this.children.bringToTop(gjLogo);
       this.children.bringToTop(Logo);
-      if (window.gameCache) {
-        const originalXhr = this.load.xhrLoader;
-        this.load.xhrLoader = (file) => {
-          const url = file.url;
-          if (window.gameCache.isFileCached(url)) {
-            const cached = window.gameCache.getCachedFile(url);
-            if (cached) {
-              return new Promise((resolve) => {
-                setTimeout(() => { file.data = cached; resolve(file); }, 1);
-              });
-            }
-          }
-          return originalXhr.call(this.load, file).then((result) => {
-            if (result && result.data) window.gameCache.cacheFile(url, result.data);
-            return result;
-          });
-        };
-      }
 
       this.load.atlas("GJ_GameSheet", "assets/sheets/GJ_GameSheet.png", "assets/sheets/GJ_GameSheet.json");
       this.load.atlas("GJ_GameSheet02", "assets/sheets/GJ_GameSheet02.png", "assets/sheets/GJ_GameSheet02.json");
@@ -300,21 +282,20 @@ class BootScene extends Phaser.Scene {
       this.load.image("recordMacro", "assets/sprites/recordMacro.png");
       this.load.image("stopRecord", "assets/sprites/stopRecord.png");
 
-      for (let i = 1; i < 23; i++) {
+      for (let i = 1; i <= 22; i++) {
         let index = i - 1;
-        i = String(i);
-        if (i.length < 2) i = "0" + i;
-        let paddedIndex = String(index);
-        if (paddedIndex.length < 2) paddedIndex = "0" + paddedIndex;
-        this.load.image("groundSquare_" + paddedIndex + "_001.png", "assets/game-ground/groundSquare_" + i + "_001.png");
-        this.load.image("groundSquare_" + paddedIndex + "_2_001.png", "assets/game-ground/groundSquare_" + i + "_2_001.png");
+        let numStr = String(i).padStart(2, "0");
+        let paddedIndex = String(index).padStart(2, "0");
+        this.load.image("groundSquare_" + paddedIndex + "_001.png", "assets/game-ground/groundSquare_" + numStr + "_001.png");
+        if (i >= 8) {
+          this.load.image("groundSquare_" + paddedIndex + "_2_001.png", "assets/game-ground/groundSquare_" + numStr + "_2_001.png");
+        }
       }
 
-      for (let i = 1; i < 60; i++) {
+      for (let i = 1; i <= 25; i++) {
         let index = i - 1;
-        i = String(i);
-        if (i.length < 2) i = "0" + i;
-        this.load.image("game_bg_" + index, "assets/game-bg/game_bg_" + i + "_001-hd.png");
+        let numStr = String(i).padStart(2, "0");
+        this.load.image("game_bg_" + index, "assets/game-bg/game_bg_" + numStr + "_001-hd.png");
       }
 
       this.load.audio("menu_music", "assets/music/menuLoop.mp3");

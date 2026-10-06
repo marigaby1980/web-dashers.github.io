@@ -13,10 +13,10 @@ window.currentWave   = localStorage.getItem("iconCurrentWave")   || "dart_01";
 window.currentSpider = localStorage.getItem("iconCurrentSpider") || "spider_01";
 window.currentBird   = localStorage.getItem("iconCurrentBird")   || "bird_01";
 const storedUseDirectInternet = localStorage.getItem("gd_useDirectInternet");
-window.useDirectInternet = storedUseDirectInternet === null ? true : storedUseDirectInternet === "true";
+window.useDirectInternet = storedUseDirectInternet === "true";
 window.getGdApiBase = function () {
   if (window.useDirectInternet) return "https://www.boomlings.com/database";
-  return (window._gdProxyUrl || "").replace(/\/$/, "");
+  return (window._gdProxyUrl || "https://webdashers.webdashersdevelopement.workers.dev").replace(/\/$/, "");
 };
 window.getGdApiUrl = function (path) {
   const base = window.getGdApiBase();
@@ -143,16 +143,20 @@ const atlasList = [
   "FireSheet_01-hd",
   "Wavesheet",
 ];
+const _atlasFrameCache = new Map();
 function getAtlasFrame(scene, frameName) {
+  if (!frameName || !scene || !scene.textures) return null;
+  if (_atlasFrameCache.has(frameName)) {
+    return _atlasFrameCache.get(frameName);
+  }
   if (frameName.startsWith("player_")) {
     const playerAtlasPriority = ["GJ_GameSheet03", "GJ_GameSheet", "GJ_GameSheet02", "GJ_GameSheet04", "GJ_GameSheetEditor", "GJ_GameSheetGlow", "GJ_GameSheetIcons", "GJ_WebSheet", "GJ_LaunchSheet", "player_ball_00", "player_dart_00"];
     for (let atlasName of playerAtlasPriority) {
       if (scene.textures.exists(atlasName)) {
         if (scene.textures.get(atlasName).has(frameName)) {
-          return {
-            atlas: atlasName,
-            frame: frameName
-          };
+          const res = { atlas: atlasName, frame: frameName };
+          _atlasFrameCache.set(frameName, res);
+          return res;
         }
       }
     }
@@ -160,13 +164,13 @@ function getAtlasFrame(scene, frameName) {
   for (let atlasName of atlasList) {
     if (scene.textures.exists(atlasName)) {
       if (scene.textures.get(atlasName).has(frameName)) {
-        return {
-          atlas: atlasName,
-          frame: frameName
-        };
+        const res = { atlas: atlasName, frame: frameName };
+        _atlasFrameCache.set(frameName, res);
+        return res;
       }
     }
   }
+  _atlasFrameCache.set(frameName, null);
   return null;
 }
 function addImageToScene(scene, x, y, textureName) {

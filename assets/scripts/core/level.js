@@ -15,6 +15,16 @@ class Collider {
     this.hypoBx = 0; this.hypoBy = 0;
     this.rightAx = 0; this.rightAy = 0;
     this.slopeSolidBelow = true;
+    this._halfW = width / 2;
+    this._halfH = height / 2;
+    if (rotation === 0) {
+      this._rotHalfW = this._halfW;
+      this._rotHalfH = this._halfH;
+    } else {
+      const rad = (rotation * Math.PI) / 180;
+      this._rotHalfW = Math.abs(this._halfW * Math.cos(rad)) + Math.abs(this._halfH * Math.sin(rad));
+      this._rotHalfH = Math.abs(this._halfW * Math.sin(rad)) + Math.abs(this._halfH * Math.cos(rad));
+    }
   }
   getSlopeSurfaceY(worldX) {
     if (this.type !== slopeType) return null;
@@ -1625,7 +1635,8 @@ window.LevelObject = class LevelObject {
     }
     if (colorData) {
       const blackDefault = colorData.black === true || colorData.tint === 0;
-      if (colorData.tint !== undefined) {
+      const isPlaceholderTint = colorData.tint === 52224 || colorData.tint === 65280 || colorData.tint === 327424 || colorData.tint === 64511;
+      if (colorData.tint !== undefined && !isPlaceholderTint) {
         sprite.setTint(colorData.tint);
       }
       if (blackDefault) {
@@ -2631,13 +2642,30 @@ window.LevelObject = class LevelObject {
           const childObjectData = { ...levelObj, rot: childrotated };
           const childVisualDef = {
             ...childDef,
-            can_color: (childDef.black === true || childDef.tint === 0)
-              ? (childDef.can_color ?? objectDef.can_color)
-              : childDef.can_color
+            can_color: childDef.can_color !== undefined
+              ? childDef.can_color
+              : ((childDef.black === true || childDef.tint === 0) ? false : (objectDef.can_color !== false))
           };
           this._applyVisualProps(scene, childSprite, childDef.frame, childObjectData, childVisualDef);
           childSprite._cantColor = childDef.Cant_Color === true;
+          if (childDef.can_color || childVisualDef.can_color) {
+            childSprite._canColor = true;
+          }
           
+          let childChannel = col1;
+          if (childDef.colorChannel === 2 || childDef.tint === 65280 || (childDef.frame && (childDef.frame.includes("_detail_") || childDef.frame.includes("_2_") || childDef.frame.includes("_extra_") || childDef.frame.includes("persp_block")))) {
+            childChannel = col2 > 0 ? col2 : (objectDef.default_detail_color_channel > 0 ? objectDef.default_detail_color_channel : (col1 > 0 ? col1 : 1));
+          } else if (childDef.colorChannel === 1 || childDef.tint === 52224 || (childDef.frame && (childDef.frame.includes("_color_") || childDef.frame.includes("square_c_") || childDef.frame.includes("square_d_")))) {
+            childChannel = col1 > 0 ? col1 : (objectDef.default_base_color_channel > 0 ? objectDef.default_base_color_channel : 1);
+          } else if (childDef.default_detail_color_channel > 0) {
+            childChannel = col2 > 0 ? col2 : childDef.default_detail_color_channel;
+          } else if (childDef.default_base_color_channel > 0) {
+            childChannel = col1 > 0 ? col1 : childDef.default_base_color_channel;
+          }
+          if (childDef.Cant_Color) {
+            childChannel = 0;
+          }
+
           const showguide = childDef.portalGuide ? (!window.isEditor && window.enablePortalGuide !== false) : true;
           const showguide2 = childDef.orbGuide ? (!window.isEditor && window.enableOrbGuide !== false) : true;
           childSprite.setVisible(showguide && showguide2);
@@ -2678,7 +2706,7 @@ window.LevelObject = class LevelObject {
             childSprite._Sawoffset = childSprite.rotation - (sprite.rotation || 0);
             issawsprite(childSprite);
           }
-          registerColor(childSprite, col1, !!isSawObjectId);
+          registerColor(childSprite, childChannel, !!isSawObjectId);
           this._addToSection(childSprite);
           registerToGroups(childSprite, childWorldX, childBaseY);
           registerObjectSprite(childSprite);
@@ -2698,6 +2726,9 @@ window.LevelObject = class LevelObject {
               childGlowSprite._eeLayer = childSprite._eeLayer ?? 1;
               childGlowSprite._eeBehindParent = true;
               childGlowSprite._cantColor = childDef.Cant_Color === true;
+              if (childDef.can_color || childVisualDef.can_color) {
+                childGlowSprite._canColor = true;
+              }
               if (isSawObjectId) {
                 childGlowSprite._isSaw = true;
                 if (sprite._Sawrotationspeed !== undefined) {
@@ -2713,7 +2744,7 @@ window.LevelObject = class LevelObject {
                 childGlowSprite._Sawoffset = childGlowSprite.rotation - (sprite.rotation || 0);
                 issawsprite(childGlowSprite);
               }
-              registerColor(childGlowSprite, col1);
+              registerColor(childGlowSprite, childChannel || col1);
               registerToGroups(childGlowSprite, childWorldX, childBaseY);
               registerObjectSprite(childGlowSprite);
             }
@@ -3131,6 +3162,7 @@ window.LevelObject = class LevelObject {
     const unknownObjectIds = new Set();
     this._lastObjectX = 0;
     this._nextObjectId = 0;
+    this._channelCurrentHex = {};
 
     for (const levelObj of _0x35f1ae) {
       const objectDef = this._spawnObject(levelObj);
@@ -3424,6 +3456,7 @@ window.LevelObject = class LevelObject {
   }
   _refreshCollisionSection(_0x3dce4b) {
     if (!_0x3dce4b) return;
+    this._lastNearbySectionIndex = -1;
     const _0x5cad3c = Math.max(0, Math.floor(_0x3dce4b.x / 400));
     let _0x2b0fa1 = Number.isInteger(_0x3dce4b._eeCollisionSectionIndex) ? _0x3dce4b._eeCollisionSectionIndex : -1;
     if (_0x2b0fa1 < 0 && Array.isArray(this._collisionSections)) {
@@ -3458,30 +3491,35 @@ window.LevelObject = class LevelObject {
   updateVisibility(_0xa5f1e1) {
     this.updateTriggerEditorVisuals();
     if (window.enableLDM) {
-      try {
-        if (this._endPortalEmitter && typeof this._endPortalEmitter.stop === 'function') {
-          this._endPortalEmitter.stop();
-        }
-      } catch (e) {}
-      try {
-        if (Array.isArray(this._sections)) {
-          for (const sec of this._sections) {
-            if (!Array.isArray(sec)) continue;
-            for (const obj of sec) {
-              if (!obj) continue;
-              try {
-                if (typeof obj.stop === 'function') obj.stop();
-                if (obj.emitters && Array.isArray(obj.emitters)) {
-                  for (const em of obj.emitters) {
-                    try { if (typeof em.stop === 'function') em.stop(); } catch (e) {}
+      if (!this._ldmApplied) {
+        this._ldmApplied = true;
+        try {
+          if (this._endPortalEmitter && typeof this._endPortalEmitter.stop === 'function') {
+            this._endPortalEmitter.stop();
+          }
+        } catch (e) {}
+        try {
+          if (Array.isArray(this._sections)) {
+            for (const sec of this._sections) {
+              if (!Array.isArray(sec)) continue;
+              for (const obj of sec) {
+                if (!obj) continue;
+                try {
+                  if (typeof obj.stop === 'function') obj.stop();
+                  if (obj.emitters && Array.isArray(obj.emitters)) {
+                    for (const em of obj.emitters) {
+                      try { if (typeof em.stop === 'function') em.stop(); } catch (e) {}
+                    }
                   }
-                }
-              } catch (e) {}
+                } catch (e) {}
+              }
             }
           }
-        }
-      } catch (e) {}
-      try { if (this._glowSprites) for (const g of this._glowSprites) g.setVisible(false); } catch(e) {}
+        } catch (e) {}
+        try { if (this._glowSprites) for (const g of this._glowSprites) g.setVisible(false); } catch(e) {}
+      }
+    } else {
+      this._ldmApplied = false;
     }
     const _0x1dce22 = this._sectionContainers.length - 1;
     if (_0x1dce22 < 0) {
@@ -3541,22 +3579,21 @@ window.LevelObject = class LevelObject {
     }
   }
   updateObjectDebugIds() {
-    if (window.showObjectIds && !window.enableLDM) {
-      if (this._debugIdTextsList && this._debugIdTextsList.length > 0) {
-        for (const idText of this._debugIdTextsList) {
-          if (idText) idText.setVisible(true);
-        }
-      }
-    } else {
-      if (this._debugIdTextsList && this._debugIdTextsList.length > 0 ) {
-        for (const idText of this._debugIdTextsList) {
-          if (idText) idText.setVisible(false);
-        }
+    const wantVisible = !!(window.showObjectIds && !window.enableLDM);
+    if (this._lastDebugIdsVisible === wantVisible) return;
+    this._lastDebugIdsVisible = wantVisible;
+    if (this._debugIdTextsList && this._debugIdTextsList.length > 0) {
+      for (const idText of this._debugIdTextsList) {
+        if (idText) idText.setVisible(wantVisible);
       }
     }
   }
   getNearbySectionObjects(_0x2e85c7) {
     const _0x55d1b7 = Math.max(0, Math.floor(_0x2e85c7 / 400));
+    if (_0x55d1b7 === this._lastNearbySectionIndex && this._nearbyBuffer && this._nearbyBuffer.length > 0) {
+      return this._nearbyBuffer;
+    }
+    this._lastNearbySectionIndex = _0x55d1b7;
     const _0x31c345 = Math.max(0, _0x55d1b7 - 1);
     const _0x5f1907 = Math.min(this._collisionSections.length - 1, _0x55d1b7 + 1);
     const _0x28a7c0 = this._nearbyBuffer;
@@ -4263,11 +4300,23 @@ window.LevelObject = class LevelObject {
   }
 
   applyColorChannels(colorManager) {
+    const hasActiveActions = colorManager && colorManager._actions && Object.keys(colorManager._actions).length > 0;
+    const hasActivePulses = this._activePulses && this._activePulses.length > 0;
+    this._channelCurrentHex = this._channelCurrentHex || {};
+
     for (const chId in this._colorChannelSprites) {
       const sprites = this._colorChannelSprites[chId];
       if (!sprites || !sprites.length) continue;
-      const hex = colorManager.getHex(parseInt(chId, 10));
-      for (const spr of sprites) {
+      const numId = parseInt(chId, 10);
+      const hex = colorManager.getHex(numId);
+      const channelChanged = this._channelCurrentHex[chId] !== hex;
+      if (!channelChanged && !hasActivePulses && !hasActiveActions) {
+        continue;
+      }
+      this._channelCurrentHex[chId] = hex;
+
+      for (let si = 0; si < sprites.length; si++) {
+        const spr = sprites[si];
         if (!spr || !spr.active) continue;
         if (spr._cantColor) continue;
         if (spr._eePulsed) continue;

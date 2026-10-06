@@ -1708,6 +1708,126 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
         document.body.removeChild(link);
         window.URL.revokeObjectURL(url);
     };
+    this._showShareLevelDialog = (level, onUpdated = null) => {
+        const sw = screenWidth;
+        const sh = screenHeight;
+        const cx = sw / 2;
+        const cy = sh / 2;
+
+        const blocker = this.add.zone(cx, cy, sw, sh).setOrigin(0.5).setDepth(400).setInteractive();
+        const overlay = this.add.graphics().setScrollFactor(0).setDepth(401);
+        overlay.fillStyle(0x000000, 0.7).fillRect(0, 0, sw, sh);
+
+        const dialog = this.add.container(cx, cy).setDepth(402).setScale(0);
+
+        const boxW = 580;
+        const boxH = 340;
+        const cornerRadius = this.textures.get("GJ_square01").source[0].width * 0.325;
+        const panelBg = this._drawScale9(0, 0, boxW, boxH, "GJ_square01", cornerRadius, 0xffffff, 1);
+        dialog.add(panelBg);
+
+        const title = this.add.bitmapText(0, -boxH / 2 + 35, "goldFont", "Share Level", 42).setOrigin(0.5);
+        const subtitle = this.add.text(0, -boxH / 2 + 75, `"${level.levelName || 'Unnamed'}"`, {
+            fontFamily: "Helvetica, Arial, sans-serif",
+            fontSize: "20px",
+            color: "#ffffaa",
+            fontStyle: "bold"
+        }).setOrigin(0.5);
+        const prompt = this.add.text(0, -boxH / 2 + 115, "Choose to download file locally or release publicly to the server:", {
+            fontFamily: "Helvetica, Arial, sans-serif",
+            fontSize: "15px",
+            color: "#cccccc",
+            align: "center"
+        }).setOrigin(0.5);
+        dialog.add([title, subtitle, prompt]);
+
+        const closeDialog = () => {
+            this.tweens.add({
+                targets: dialog,
+                scale: 0,
+                duration: 180,
+                ease: "Back.easeIn",
+                onComplete: () => {
+                    dialog.destroy();
+                    overlay.destroy();
+                    blocker.destroy();
+                }
+            });
+        };
+
+        const closeBtn = this.add.image(boxW / 2 - 25, -boxH / 2 + 25, "GJ_GameSheet03", "GJ_closeBtn_001.png")
+            .setInteractive().setScale(0.85);
+        this._makeBouncyButton(closeBtn, 0.85, () => {
+            this._audio.playEffect("quitSound_01", { volume: 0.8 });
+            closeDialog();
+        });
+        dialog.add(closeBtn);
+
+        // Option 1: Download to Computer (.gmd file)
+        const btnY = 35;
+        const dlBtnW = 220;
+        const dlBtnH = 68;
+        const dlBtn = this.add.nineslice(-130, btnY, "GJ_button01", null, dlBtnW, dlBtnH, 24, 24, 24, 24).setInteractive();
+        const dlText = this.add.bitmapText(-130, btnY - 4, "bigFont", "Download", 22).setOrigin(0.5);
+        const dlSubText = this.add.bitmapText(-130, btnY + 16, "goldFont", "Save to PC (.gmd)", 16).setOrigin(0.5);
+        this._makeCompositeBouncyButton(dlBtn, [dlBtn, dlText, dlSubText], 1, () => {
+            this._audio.playEffect("playSound_01", { volume: 1 });
+            this._exportGMD(level);
+            prompt.setText("Level file (.gmd) saved to your computer!");
+            prompt.setColor("#00ff88");
+            setTimeout(closeDialog, 1100);
+        });
+        dialog.add([dlBtn, dlText, dlSubText]);
+
+        // Option 2: Release to Public / Share Online to Server
+        const shBtnW = 220;
+        const shBtnH = 68;
+        const shBtn = this.add.nineslice(130, btnY, "GJ_button02", null, shBtnW, shBtnH, 24, 24, 24, 24).setInteractive();
+        const shText = this.add.bitmapText(130, btnY - 4, "bigFont", "Public Release", 20).setOrigin(0.5);
+        const shSubText = this.add.bitmapText(130, btnY + 16, "goldFont", "Publish to Server", 16).setOrigin(0.5);
+        let isSharing = false;
+        this._makeCompositeBouncyButton(shBtn, [shBtn, shText, shSubText], 1, async () => {
+            if (isSharing) return;
+            isSharing = true;
+            shText.setText("Publishing...");
+            shBtn.setTint(0x888888);
+            try {
+                const res = await window.AccountAPI.shareLevel(level);
+                this._audio.playEffect("highscoreGet02", { volume: 1 });
+                level.status = "Public";
+                if (res.levelId) {
+                    level.levelId = String(res.levelId);
+                }
+                const rawData = localStorage.getItem("created_levels");
+                let levels = rawData ? JSON.parse(rawData) : [];
+                const idx = levels.findIndex(l => l.createdId === level.createdId);
+                if (idx !== -1) {
+                    levels[idx].levelId = level.levelId;
+                    levels[idx].status = "Public";
+                    localStorage.setItem("created_levels", JSON.stringify(levels));
+                }
+                if (typeof onUpdated === "function") onUpdated();
+                prompt.setText(res.message || `Released to public! (ID: ${level.levelId || 'OK'})`);
+                prompt.setColor("#00ff88");
+                shText.setText("Released!");
+                setTimeout(closeDialog, 1400);
+            } catch (err) {
+                prompt.setText(`Error: ${err.message || 'Server error'}`);
+                prompt.setColor("#ff5555");
+                shText.setText("Public Release");
+                shBtn.clearTint();
+                isSharing = false;
+            }
+        });
+        dialog.add([shBtn, shText, shSubText]);
+
+        this.tweens.add({
+            targets: dialog,
+            scale: 1,
+            duration: 220,
+            ease: "Back.easeOut"
+        });
+    };
     this._getNextLocalId = () => {
         const rawData = localStorage.getItem("created_levels");
         const levels = rawData ? JSON.parse(rawData) : [];
@@ -1886,7 +2006,12 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
             }
         }, () => !playBtnLoading);
         const shareBtn = this.add.image(centerX + 220, btnY, "GJ_GameSheet03", "GJ_shareBtn_001.png").setInteractive().setScale(1.1);
-        this._makeBouncyButton(shareBtn, 1.1, () => { this._exportGMD(level); });
+        this._makeBouncyButton(shareBtn, 1.1, () => {
+            this._showShareLevelDialog(level, () => {
+                if (typeof statusLabel !== "undefined" && statusLabel) statusLabel.setText(level.status || "Public");
+                if (typeof idText !== "undefined" && idText) idText.setText(`ID: ${level.levelId || "na"}`);
+            });
+        });
         const backBtn = this.add.image(50, 48, "GJ_GameSheet03", "GJ_arrow_03_001.png").setFlipX(true).setFlipY(true).setRotation(Math.PI).setInteractive();
         this._makeBouncyButton(backBtn, 1, () => { this._closeLevelView(); });
         const deleteBtn = this.add.image(sw - 50, 48, "GJ_GameSheet03", "GJ_deleteBtn_001.png").setInteractive().setScale(0.8);
@@ -8310,8 +8435,11 @@ _showwippopup() {
     
     if (!window.enableLDM) {
       window._animTimer += deltaTime;
+      const cullMinX = (this._cameraX || 0) - 150;
+      const cullMaxX = (this._cameraX || 0) + screenWidth + 150;
       for (let _as of window._animatedSprites) {
         if (!_as || !_as.active || !_as.visible) continue;
+        if (_as.x !== undefined && (_as.x < cullMinX || _as.x > cullMaxX)) continue;
         if (window._animTimer - (_as._lastAnimSwap || 0) >= _as._animInterval) {
           _as._lastAnimSwap = window._animTimer;
           _as._animIdx = (_as._animIdx + 1) % _as._animFrames.length;
@@ -8328,8 +8456,11 @@ _showwippopup() {
     }
     if (this._level && this._level._sawSprites && !window.enableLDM) {
       const sawTimer = (window._animTimer || 0) / 1000;
+      const cullMinX = (this._cameraX || 0) - 150;
+      const cullMaxX = (this._cameraX || 0) + screenWidth + 150;
       for (let _saw of this._level._sawSprites) {
         if (!_saw || !_saw.active || !_saw.visible) continue;
+        if (_saw.x !== undefined && (_saw.x < cullMinX || _saw.x > cullMaxX)) continue;
         const baseSpeed = _saw._Sawrotationspeed ?? 0.0034;
         let sawRotationSpeed = baseSpeed;
         if (_saw._SawRandom1 !== undefined) {

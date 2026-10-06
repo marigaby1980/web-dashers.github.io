@@ -1,0 +1,6 @@
+{
+  "name": "Web Dashers",
+  "description": "Web Dashers is a fan-made browser mod of the Geometry Dash Web Demo featuring main levels, level creator, and online level search.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

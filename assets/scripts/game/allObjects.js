@@ -7,7 +7,7 @@
 // 1003: 3DL Color
 // 1004: Object Color
 // 1006: Glow
-// 1011: Detail Color For animated blocks (ill add some later)
+// 1011: Detail Color For animated blocks
 
 window.allobjects = function() {
   return {
@@ -127,7 +127,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": -13,
+    "editorOffsetY": -13
   },
   "10": {
     "type": "portal",
@@ -252,15 +252,16 @@ window.allobjects = function() {
         "frame": "rod_ball_01_001.png",
         "localDy": -62,
         "blend": "additive",
-        "tint": 327424,
         "z": 1,
-        "audioScale": true
+        "audioScale": true,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_detail_color_channel": -1,
     "default_z_layer": 1,
     "default_z_order": -6,
-    "editorOffsetY": 6,
+    "editorOffsetY": 6
   },
   "16": {
     "type": "deco",
@@ -273,15 +274,16 @@ window.allobjects = function() {
         "frame": "rod_ball_01_001.png",
         "localDy": -46.5,
         "blend": "additive",
-        "tint": 327424,
         "z": 1,
-        "audioScale": true
+        "audioScale": true,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_detail_color_channel": -1,
     "default_z_layer": 1,
     "default_z_order": -6,
-    "editorOffsetY": -1.8,
+    "editorOffsetY": -1.8
   },
   "17": {
     "type": "deco",
@@ -294,15 +296,16 @@ window.allobjects = function() {
         "frame": "rod_ball_01_001.png",
         "localDy": -32.5,
         "blend": "additive",
-        "tint": 327424,
         "z": 1,
-        "audioScale": true
+        "audioScale": true,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_detail_color_channel": -1,
     "default_z_layer": 1,
     "default_z_order": -6,
-    "editorOffsetY": -8.85,
+    "editorOffsetY": -8.85
   },
   "18": {
     "type": "deco",
@@ -563,7 +566,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
     "default_z_order": 12,
-    "editorOffsetY": -13,
+    "editorOffsetY": -13
   },
   "36": {
     "can_color": false,
@@ -588,7 +591,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": -8.2,
+    "editorOffsetY": -8.2
   },
   "40": {
     "type": "solid",
@@ -596,7 +599,7 @@ window.allobjects = function() {
     "can_color": false,
     "gridW": 1,
     "gridH": 0.5,
-    "editorOffsetY": 8.15, //WE CAN FINALLY MOVE SHIT!!! <3
+    "editorOffsetY": 8.15,
     "children": [
       {
         "frame": "plank_01_color_001.png",
@@ -617,7 +620,7 @@ window.allobjects = function() {
     "default_base_color_channel": 1,
     "default_z_layer": 3,
     "default_z_order": 9,
-    "editorOffsetY": 20,
+    "editorOffsetY": 20
   },
   "44": {
     "type": "deco",
@@ -745,7 +748,7 @@ window.allobjects = function() {
         "z": 1,
         "audioScale": true
       }
-    ],
+    ]
   },
   "51": {
     "type": "deco",
@@ -928,7 +931,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": -15,
+    "editorOffsetY": -15
   },
   "62": {
     "type": "solid",
@@ -940,7 +943,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 7,
+    "editorOffsetY": 7
   },
   "63": {
     "type": "solid",
@@ -964,7 +967,7 @@ window.allobjects = function() {
     "default_z_layer": 5,
     "default_z_order": 2,
     "editorOffsetY": 8.15,
-    "editorOffsetX": -7.95,
+    "editorOffsetX": -7.95
   },
   "65": {
     "type": "solid",
@@ -976,7 +979,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 7,
+    "editorOffsetY": 7
   },
   "66": {
     "type": "solid",
@@ -988,7 +991,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 7,
+    "editorOffsetY": 7
   },
   "67": {
     "type": "pad",
@@ -998,7 +1001,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
     "default_z_order": 12,
-    "editorOffsetY": -12,
+    "editorOffsetY": -12
   },
   "68": {
     "type": "solid",
@@ -1010,7 +1013,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 7.1,
+    "editorOffsetY": 7.1
   },
   "69": {
     "can_color": false,
@@ -1023,8 +1026,9 @@ window.allobjects = function() {
       {
         "frame": "square_c_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_detail_color_channel": -1,
@@ -1042,8 +1046,9 @@ window.allobjects = function() {
       {
         "frame": "square_c_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_detail_color_channel": -1,
@@ -1061,8 +1066,9 @@ window.allobjects = function() {
       {
         "frame": "square_c_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_detail_color_channel": -1,
@@ -1080,8 +1086,9 @@ window.allobjects = function() {
       {
         "frame": "square_c_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_detail_color_channel": -1,
@@ -1109,8 +1116,9 @@ window.allobjects = function() {
       {
         "frame": "square_c_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_detail_color_channel": -1,
@@ -1147,8 +1155,9 @@ window.allobjects = function() {
       {
         "frame": "square_d_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "lightsquare_04_02_001.png",
@@ -1187,8 +1196,9 @@ window.allobjects = function() {
       {
         "frame": "square_d_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -1250,8 +1260,9 @@ window.allobjects = function() {
       {
         "frame": "square_d_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "lightsquare_04_02_001.png",
@@ -1284,8 +1295,9 @@ window.allobjects = function() {
       {
         "frame": "square_d_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "lightsquare_04_02_001.png",
@@ -1346,23 +1358,26 @@ window.allobjects = function() {
       {
         "frame": "d_cogwheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_cogwheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_cogwheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -1627,7 +1642,7 @@ window.allobjects = function() {
     "default_z_layer": 5,
     "default_z_order": 10,
     "portalParticle": true,
-    "portalParticleColor": 16711935,
+    "portalParticleColor": 16711935
   },
   "103": {
     "can_color": false,
@@ -1642,7 +1657,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": -5.8,
+    "editorOffsetY": -5.8
   },
   "104": {
     "type": "trigger",
@@ -1714,7 +1729,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
     "default_z_order": 9,
-    "editorOffsetY": 2.15,
+    "editorOffsetY": 2.15
   },
   "111": {
     "can_color": false,
@@ -1837,7 +1852,7 @@ window.allobjects = function() {
         "localDy": 0,
         "z": -1
       }
-    ],
+    ]
   },
   "120": {
     "type": "soliddeco",
@@ -2006,8 +2021,8 @@ window.allobjects = function() {
         "frame": "d_wheel_01_001.png",
         "localDy": 0,
         "rot": 180,
-        "z": -1 //needs to be flipped, not rotated.
-      },
+        "z": -1
+      }
     ],
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -2039,7 +2054,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
     "default_z_order": 12,
-    "editorOffsetY": -12.7,
+    "editorOffsetY": -12.7
   },
   "141": {
     "type": "ring",
@@ -2127,7 +2142,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 8.15,
+    "editorOffsetY": 8.15
   },
   "148": {
     "can_color": true,
@@ -2217,23 +2232,26 @@ window.allobjects = function() {
       {
         "frame": "d_spikewheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_spikewheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_spikewheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -2309,8 +2327,9 @@ window.allobjects = function() {
       {
         "frame": "square_g_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2331,8 +2350,9 @@ window.allobjects = function() {
       {
         "frame": "square_g_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2360,10 +2380,11 @@ window.allobjects = function() {
       {
         "frame": "square_g_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      },
-    ],
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
+      }
+    ]
   },
   "163": {
     "can_color": true,
@@ -2371,8 +2392,9 @@ window.allobjects = function() {
       {
         "frame": "square_g_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2414,10 +2436,11 @@ window.allobjects = function() {
       {
         "frame": "square_g_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      },
-    ],
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
+      }
+    ]
   },
   "166": {
     "can_color": true,
@@ -2425,15 +2448,17 @@ window.allobjects = function() {
       {
         "frame": "square_g_07_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_05_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2454,14 +2479,16 @@ window.allobjects = function() {
       {
         "frame": "square_g_08_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2482,8 +2509,9 @@ window.allobjects = function() {
       {
         "frame": "square_g_09_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2504,8 +2532,9 @@ window.allobjects = function() {
       {
         "frame": "square_g_10_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2533,7 +2562,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 4.35,
+    "editorOffsetY": 4.35
   },
   "171": {
     "can_color": true,
@@ -2548,7 +2577,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 4.35,
+    "editorOffsetY": 4.35
   },
   "172": {
     "can_color": true,
@@ -2563,7 +2592,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 4.35,
+    "editorOffsetY": 4.35
   },
   "173": {
     "can_color": true,
@@ -2592,7 +2621,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 4.35,
+    "editorOffsetY": 4.35
   },
   "175": {
     "can_color": true,
@@ -2621,7 +2650,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 4.35,
+    "editorOffsetY": 4.35
   },
   "177": {
     "can_color": false,
@@ -2650,7 +2679,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": -7.6,
+    "editorOffsetY": -7.6
   },
   "179": {
     "can_color": false,
@@ -2665,7 +2694,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": -5.8,
+    "editorOffsetY": -5.8
   },
   "180": {
     "can_color": true,
@@ -2673,23 +2702,26 @@ window.allobjects = function() {
       {
         "frame": "d_cartwheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_cartwheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_cartwheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1006,
@@ -2738,23 +2770,26 @@ window.allobjects = function() {
       {
         "frame": "blade_b_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blade_b_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blade_b_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2776,8 +2811,9 @@ window.allobjects = function() {
       {
         "frame": "blade_b_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2799,8 +2835,9 @@ window.allobjects = function() {
       {
         "frame": "blade_b_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2823,25 +2860,28 @@ window.allobjects = function() {
         "frame": "blade_01_001.png",
         "glow_frame": "blade_01_glow_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blade_01_001.png",
         "glow_frame": "blade_01_glow_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blade_01_001.png",
         "glow_frame": "blade_01_glow_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2863,8 +2903,9 @@ window.allobjects = function() {
       {
         "frame": "blade_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2886,8 +2927,9 @@ window.allobjects = function() {
       {
         "frame": "blade_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -2946,7 +2988,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 4.35,
+    "editorOffsetY": 4.35
   },
   "193": {
     "type": "soliddeco",
@@ -2970,7 +3012,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 4.35,
+    "editorOffsetY": 4.35
   },
   "195": {
     "type": "solid",
@@ -2989,7 +3031,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 8.15,
+    "editorOffsetY": 8.15
   },
   "197": {
     "can_color": true,
@@ -3004,7 +3046,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 4.35,
+    "editorOffsetY": 4.35
   },
   "198": {
     "black": true,
@@ -3113,7 +3155,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": -8.3,
+    "editorOffsetY": -8.3
   },
   "206": {
     "can_color": true,
@@ -3135,8 +3177,9 @@ window.allobjects = function() {
       {
         "frame": "block005b_05_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3157,14 +3200,15 @@ window.allobjects = function() {
       {
         "frame": "block005b_05_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
     "default_detail_color_channel": 1,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "blockOutline_02_001.png",
+    "glow_frame": "blockOutline_02_glow_001.png",
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -3179,8 +3223,9 @@ window.allobjects = function() {
       {
         "frame": "block005b_05_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3201,8 +3246,9 @@ window.allobjects = function() {
       {
         "frame": "block005b_05_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3237,8 +3283,9 @@ window.allobjects = function() {
       {
         "frame": "block005b_05_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3259,8 +3306,9 @@ window.allobjects = function() {
       {
         "frame": "block005b_05_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3281,8 +3329,9 @@ window.allobjects = function() {
       {
         "frame": "colorPlank_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3296,7 +3345,7 @@ window.allobjects = function() {
     "z": 2,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 8.15,
+    "editorOffsetY": 8.15
   },
   "216": {
     "can_color": true,
@@ -3304,8 +3353,9 @@ window.allobjects = function() {
       {
         "frame": "colorSpike_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3326,8 +3376,9 @@ window.allobjects = function() {
       {
         "frame": "colorSpike_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3341,7 +3392,7 @@ window.allobjects = function() {
     "z": 2,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": -8.2,
+    "editorOffsetY": -8.2
   },
   "218": {
     "can_color": true,
@@ -3349,8 +3400,9 @@ window.allobjects = function() {
       {
         "frame": "colorSpike_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3364,7 +3416,7 @@ window.allobjects = function() {
     "z": 2,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": -5.8,
+    "editorOffsetY": -5.8
   },
   "219": {
     "can_color": true,
@@ -3372,8 +3424,9 @@ window.allobjects = function() {
       {
         "frame": "colorPlank_01_small_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3394,8 +3447,9 @@ window.allobjects = function() {
       {
         "frame": "colorSquare_01_small_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3429,23 +3483,26 @@ window.allobjects = function() {
       {
         "frame": "d_roundCloud_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_roundCloud_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_roundCloud_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -3756,7 +3813,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": -15.75,
+    "editorOffsetY": -15.75
   },
   "244": {
     "black": true,
@@ -3772,7 +3829,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": -15.75,
+    "editorOffsetY": -15.75
   },
   "245": {
     "can_color": true,
@@ -3808,8 +3865,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_02_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3830,14 +3888,15 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_02_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
     "default_detail_color_channel": 1,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "blockOutline_02_001.png",
+    "glow_frame": "blockOutline_02_glow_001.png",
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -3852,8 +3911,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_02_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3874,8 +3934,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_02_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3910,8 +3971,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_02_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3932,8 +3994,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_02_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3954,8 +4017,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_02_08_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3976,8 +4040,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_03_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -3998,14 +4063,15 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_03_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
     "default_detail_color_channel": 1,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "blockOutline_02_001.png",
+    "glow_frame": "blockOutline_02_glow_001.png",
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -4020,8 +4086,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_03_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4042,8 +4109,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_03_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4078,8 +4146,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_03_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4100,8 +4169,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_03_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4122,26 +4192,30 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_04_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "lightsquare_04_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "lightsquare_04_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "lightsquare_04_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4162,8 +4236,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_04_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4184,14 +4259,16 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_04_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "lightsquare_04_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4226,20 +4303,23 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_04_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "lightsquare_04_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "lightsquare_04_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4260,14 +4340,16 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_04_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "lightsquare_04_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4288,8 +4370,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_05_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4310,14 +4393,15 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_05_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
     "default_detail_color_channel": 1,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "blockOutline_02_001.png",
+    "glow_frame": "blockOutline_02_glow_001.png",
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -4332,8 +4416,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_05_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4354,8 +4439,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_05_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4390,8 +4476,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_05_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4412,8 +4499,9 @@ window.allobjects = function() {
       {
         "frame": "lightsquare_05_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4568,7 +4656,7 @@ window.allobjects = function() {
     "default_z_layer": 5,
     "default_z_order": 10,
     "portalParticle": true,
-    "portalParticleColor": 16753920,
+    "portalParticleColor": 16753920
   },
   "287": {
     "can_color": false,
@@ -4584,7 +4672,7 @@ window.allobjects = function() {
     "default_z_layer": 5,
     "default_z_order": 10,
     "portalParticle": true,
-    "portalParticleColor": 65535,
+    "portalParticleColor": 65535
   },
   "289": {
     "can_color": true,
@@ -4592,8 +4680,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_a_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4614,8 +4703,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_a_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4681,8 +4771,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_07_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "color_channel": "black",
@@ -4705,8 +4796,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_08_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "color_channel": "black",
@@ -4728,8 +4820,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_c_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4750,8 +4843,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_c_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4772,8 +4866,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_d_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4794,8 +4889,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_d_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4861,8 +4957,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_f_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4883,8 +4980,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_f_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4905,8 +5003,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_g_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -4927,8 +5026,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_g_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5033,8 +5133,9 @@ window.allobjects = function() {
       {
         "frame": "lighttriangle_01_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5055,8 +5156,9 @@ window.allobjects = function() {
       {
         "frame": "lighttriangle_01_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5077,8 +5179,9 @@ window.allobjects = function() {
       {
         "frame": "lighttriangle_02_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5099,8 +5202,9 @@ window.allobjects = function() {
       {
         "frame": "lighttriangle_02_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5121,8 +5225,9 @@ window.allobjects = function() {
       {
         "frame": "lighttriangle_03_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5143,8 +5248,9 @@ window.allobjects = function() {
       {
         "frame": "lighttriangle_03_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5165,8 +5271,9 @@ window.allobjects = function() {
       {
         "frame": "lighttriangle_04_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5187,8 +5294,9 @@ window.allobjects = function() {
       {
         "frame": "lighttriangle_04_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5209,8 +5317,9 @@ window.allobjects = function() {
       {
         "frame": "lighttriangle_05_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5231,8 +5340,9 @@ window.allobjects = function() {
       {
         "frame": "lighttriangle_05_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5324,7 +5434,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 1,
-    "editorOffsetY": -8,
+    "editorOffsetY": -8
   },
   "366": {
     "black": true,
@@ -5411,7 +5521,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 8.15,
+    "editorOffsetY": 8.15
   },
   "370": {
     "can_color": true,
@@ -5434,7 +5544,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
     "default_z_order": 2,
-    "editorOffsetY": 8.15,
+    "editorOffsetY": 8.15
   },
   "371": {
     "can_color": true,
@@ -5449,9 +5559,10 @@ window.allobjects = function() {
       {
         "frame": "plank_01_slope_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 10,
-        "rot": -45
+        "rot": -45,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5479,9 +5590,10 @@ window.allobjects = function() {
       {
         "frame": "plank_01_slope_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 10,
-        "rot": -27.5
+        "rot": -27.5,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -5633,20 +5745,20 @@ window.allobjects = function() {
         "frame": "d_geometric_01_001.png",
         "localDy": 0,
         "rot": 90,
-        "z": -1//needs to be flipped, not rotated.
+        "z": -1
       },
       {
         "frame": "d_geometric_01_001.png",
         "localDy": 0,
         "rot": 180,
-        "z": 1//needs to be flipped, not rotated. (part2)
+        "z": 1
       },
       {
         "frame": "d_geometric_01_001.png",
         "localDy": 0,
         "rot": 270,
-        "z": 1//needs to be flipped, not rotated. (part thwee)
-      },
+        "z": 1
+      }
     ],
     "default_base_color_channel": 1005,
     "frame": "d_geometric_01_001.png",
@@ -5695,8 +5807,9 @@ window.allobjects = function() {
       {
         "frame": "darkblade_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "darkblade_01_001.png",
@@ -5743,8 +5856,9 @@ window.allobjects = function() {
       {
         "frame": "darkblade_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "darkblade_02_001.png",
@@ -5775,8 +5889,9 @@ window.allobjects = function() {
       {
         "frame": "darkblade_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "darkblade_03_001.png",
@@ -6113,8 +6228,9 @@ window.allobjects = function() {
       {
         "frame": "d_link_b_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6135,8 +6251,9 @@ window.allobjects = function() {
       {
         "frame": "d_link_b_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6157,8 +6274,9 @@ window.allobjects = function() {
       {
         "frame": "d_link_b_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6179,8 +6297,9 @@ window.allobjects = function() {
       {
         "frame": "d_link_b_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6201,8 +6320,9 @@ window.allobjects = function() {
       {
         "frame": "d_link_b_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6223,8 +6343,9 @@ window.allobjects = function() {
       {
         "frame": "colorSpike_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6414,9 +6535,10 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_05_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6507,8 +6629,9 @@ window.allobjects = function() {
       {
         "frame": "block001_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6529,8 +6652,9 @@ window.allobjects = function() {
       {
         "frame": "block001_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6551,8 +6675,9 @@ window.allobjects = function() {
       {
         "frame": "block001_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6573,8 +6698,9 @@ window.allobjects = function() {
       {
         "frame": "block001_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6595,8 +6721,9 @@ window.allobjects = function() {
       {
         "frame": "block001_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6617,8 +6744,9 @@ window.allobjects = function() {
       {
         "frame": "block001_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6639,14 +6767,16 @@ window.allobjects = function() {
       {
         "frame": "block001_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block001_slope_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6667,14 +6797,16 @@ window.allobjects = function() {
       {
         "frame": "block001_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block001_slope_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6695,8 +6827,9 @@ window.allobjects = function() {
       {
         "frame": "block002_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6717,8 +6850,9 @@ window.allobjects = function() {
       {
         "frame": "block002_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6739,8 +6873,9 @@ window.allobjects = function() {
       {
         "frame": "block002_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6761,8 +6896,9 @@ window.allobjects = function() {
       {
         "frame": "block002_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6783,8 +6919,9 @@ window.allobjects = function() {
       {
         "frame": "block002_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6805,8 +6942,9 @@ window.allobjects = function() {
       {
         "frame": "block002_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6827,8 +6965,9 @@ window.allobjects = function() {
       {
         "frame": "block002_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6849,14 +6988,16 @@ window.allobjects = function() {
       {
         "frame": "block002_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block002_slope_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6877,14 +7018,16 @@ window.allobjects = function() {
       {
         "frame": "block002_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block002_slope_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -6968,7 +7111,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
     "default_z_order": 9,
-    "editorOffsetY": 2,
+    "editorOffsetY": 2
   },
   "499": {
     "can_color": true,
@@ -6983,7 +7126,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
     "default_z_order": 9,
-    "editorOffsetY": -8.9,
+    "editorOffsetY": -8.9
   },
   "500": {
     "can_color": true,
@@ -7086,8 +7229,8 @@ window.allobjects = function() {
   "507": {
     "can_color": true,
     "default_base_color_channel": 1003,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -7204,14 +7347,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockb_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockb_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7232,19 +7377,21 @@ window.allobjects = function() {
       {
         "frame": "persp_blockb_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockb_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -7260,8 +7407,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockb_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7282,14 +7430,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockb_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockb_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7310,14 +7460,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockb_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockb_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7338,8 +7490,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockb_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7360,8 +7513,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockb_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7382,26 +7536,30 @@ window.allobjects = function() {
       {
         "frame": "persp_blockb_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockb_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockb_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockb_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7422,20 +7580,23 @@ window.allobjects = function() {
       {
         "frame": "persp_blockb_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockb_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockb_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7456,14 +7617,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockc_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockc_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7484,19 +7647,21 @@ window.allobjects = function() {
       {
         "frame": "persp_blockc_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockc_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -7512,8 +7677,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockc_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7534,14 +7700,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockc_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockc_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7562,14 +7730,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockc_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockc_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7590,8 +7760,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockc_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7612,8 +7783,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockc_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7634,26 +7806,30 @@ window.allobjects = function() {
       {
         "frame": "persp_blockc_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockc_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockc_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockc_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7675,20 +7851,23 @@ window.allobjects = function() {
       {
         "frame": "persp_blockc_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockc_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockc_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7711,14 +7890,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockd_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockd_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7739,19 +7920,21 @@ window.allobjects = function() {
       {
         "frame": "persp_blockd_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockd_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -7767,8 +7950,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockd_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7789,14 +7973,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockd_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockd_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7817,14 +8003,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockd_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockd_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7845,8 +8033,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockd_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7867,8 +8056,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockd_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7889,26 +8079,30 @@ window.allobjects = function() {
       {
         "frame": "persp_blockd_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockd_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockd_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockd_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7930,20 +8124,23 @@ window.allobjects = function() {
       {
         "frame": "persp_blockd_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockd_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockd_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7966,14 +8163,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blocke_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blocke_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -7994,19 +8193,21 @@ window.allobjects = function() {
       {
         "frame": "persp_blocke_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blocke_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -8022,8 +8223,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blocke_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8044,14 +8246,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blocke_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blocke_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8072,14 +8276,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blocke_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blocke_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8100,8 +8306,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blocke_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8122,8 +8329,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blocke_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8144,26 +8352,30 @@ window.allobjects = function() {
       {
         "frame": "persp_blocke_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blocke_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blocke_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blocke_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8185,20 +8397,23 @@ window.allobjects = function() {
       {
         "frame": "persp_blocke_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blocke_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blocke_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8221,14 +8436,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockf_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockf_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8249,19 +8466,21 @@ window.allobjects = function() {
       {
         "frame": "persp_blockf_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockf_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -8277,8 +8496,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockf_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8299,14 +8519,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockf_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockf_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8327,14 +8549,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockf_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockf_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8355,8 +8579,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockf_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8377,8 +8602,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockf_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8399,26 +8625,30 @@ window.allobjects = function() {
       {
         "frame": "persp_blockf_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockf_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockf_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockf_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8440,20 +8670,23 @@ window.allobjects = function() {
       {
         "frame": "persp_blockf_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockf_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockf_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8476,14 +8709,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockg_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockg_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8504,19 +8739,21 @@ window.allobjects = function() {
       {
         "frame": "persp_blockg_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockg_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -8532,8 +8769,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockg_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8554,14 +8792,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockg_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockg_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8582,14 +8822,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockg_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockg_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8610,8 +8852,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockg_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8632,8 +8875,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockg_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8654,26 +8898,30 @@ window.allobjects = function() {
       {
         "frame": "persp_blockg_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockg_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockg_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockg_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8695,20 +8943,23 @@ window.allobjects = function() {
       {
         "frame": "persp_blockg_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockg_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockg_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8731,14 +8982,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockh_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockh_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8759,19 +9012,21 @@ window.allobjects = function() {
       {
         "frame": "persp_blockh_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockh_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -8787,8 +9042,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockh_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8809,14 +9065,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockh_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockh_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8837,14 +9095,16 @@ window.allobjects = function() {
       {
         "frame": "persp_blockh_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockh_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8865,8 +9125,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockh_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8887,8 +9148,9 @@ window.allobjects = function() {
       {
         "frame": "persp_blockh_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8909,26 +9171,30 @@ window.allobjects = function() {
       {
         "frame": "persp_blockh_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockh_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockh_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockh_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8950,20 +9216,23 @@ window.allobjects = function() {
       {
         "frame": "persp_blockh_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockh_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_blockh_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -8986,14 +9255,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock01_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9014,19 +9285,21 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock01_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -9042,8 +9315,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock01_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9064,14 +9338,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock01_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9092,14 +9368,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock01_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9120,8 +9398,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock01_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9142,8 +9421,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock01_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9164,26 +9444,30 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock01_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9205,20 +9489,23 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock01_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9241,14 +9528,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock02_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock02_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9269,19 +9558,21 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock02_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock02_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -9297,8 +9588,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock02_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9319,14 +9611,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock02_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock02_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9347,14 +9641,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock02_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock02_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9375,8 +9671,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock02_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9397,8 +9694,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock02_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9419,26 +9717,30 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock02_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock02_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock02_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock02_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9460,20 +9762,23 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock02_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock02_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock02_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9496,14 +9801,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock03_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock03_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9524,19 +9831,21 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock03_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock03_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -9552,8 +9861,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock03_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9574,14 +9884,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock03_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock03_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9602,14 +9914,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock03_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock03_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9630,8 +9944,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock03_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9652,8 +9967,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock03_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9674,26 +9990,30 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock03_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock03_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock03_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock03_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9715,20 +10035,23 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock03_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock03_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock03_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9751,14 +10074,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock04_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock04_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9779,19 +10104,21 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock04_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock04_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -9807,8 +10134,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock04_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9829,14 +10157,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock04_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock04_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9857,14 +10187,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock04_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock04_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9885,8 +10217,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock04_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9907,8 +10240,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock04_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9929,26 +10263,30 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock04_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock04_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock04_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock04_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -9970,20 +10308,23 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock04_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock04_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock04_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -10006,14 +10347,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock05_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock05_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -10034,19 +10377,21 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock05_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock05_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -10062,8 +10407,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock05_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -10084,14 +10430,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock05_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock05_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -10112,14 +10460,16 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock05_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock05_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -10140,8 +10490,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock05_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -10162,8 +10513,9 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock05_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -10184,26 +10536,30 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock05_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock05_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock05_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock05_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -10225,20 +10581,23 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock05_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock05_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock05_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -10261,14 +10620,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block001_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block001_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10289,19 +10650,21 @@ window.allobjects = function() {
       {
         "frame": "persp_block001_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block001_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -10317,8 +10680,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block001_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10339,14 +10703,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block001_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block001_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10367,14 +10733,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block001_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block001_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10395,8 +10763,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block001_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10417,8 +10786,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block001_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10439,26 +10809,30 @@ window.allobjects = function() {
       {
         "frame": "persp_block001_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block001_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block001_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block001_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10480,20 +10854,23 @@ window.allobjects = function() {
       {
         "frame": "persp_block001_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block001_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block001_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10516,14 +10893,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block002_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block002_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10544,19 +10923,21 @@ window.allobjects = function() {
       {
         "frame": "persp_block002_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block002_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -10572,8 +10953,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block002_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10594,14 +10976,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block002_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block002_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10622,14 +11006,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block002_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block002_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10650,8 +11036,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block002_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10672,8 +11059,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block002_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10694,26 +11082,30 @@ window.allobjects = function() {
       {
         "frame": "persp_block002_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block002_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block002_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block002_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10735,20 +11127,23 @@ window.allobjects = function() {
       {
         "frame": "persp_block002_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block002_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block002_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10771,22 +11166,25 @@ window.allobjects = function() {
       {
         "frame": "block003_color_02_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10807,15 +11205,17 @@ window.allobjects = function() {
       {
         "frame": "block003_color_03_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10836,8 +11236,9 @@ window.allobjects = function() {
       {
         "frame": "block003_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10858,8 +11259,9 @@ window.allobjects = function() {
       {
         "frame": "block003_color_05_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10880,22 +11282,25 @@ window.allobjects = function() {
       {
         "frame": "block003_color_06_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10915,24 +11320,26 @@ window.allobjects = function() {
       {
         "frame": "block003_color_02_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": -100,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
-        
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10953,29 +11360,33 @@ window.allobjects = function() {
       {
         "frame": "block003_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -90
+        "rot": -90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -180
+        "rot": -180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -270
+        "rot": -270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -10996,29 +11407,33 @@ window.allobjects = function() {
       {
         "frame": "block003_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -11039,29 +11454,33 @@ window.allobjects = function() {
       {
         "frame": "block003_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -11082,8 +11501,9 @@ window.allobjects = function() {
       {
         "frame": "block003_color_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -11104,14 +11524,16 @@ window.allobjects = function() {
       {
         "frame": "block003_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_slope_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -11132,14 +11554,16 @@ window.allobjects = function() {
       {
         "frame": "block003_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_slope_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -11500,8 +11924,9 @@ window.allobjects = function() {
         "frame": "blackCogwheel_01_001.png",
         "localDy": 0,
         "cant_color": true,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blackCogwheel_01_color_001.png",
@@ -11517,7 +11942,7 @@ window.allobjects = function() {
         "z": -1,
         "rot": 180
       },
-            {
+      {
         "frame": "blackCogwheel_01_color_001.png",
         "localDy": 0,
         "tint": 0,
@@ -11527,27 +11952,30 @@ window.allobjects = function() {
       {
         "frame": "blackCogwheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "cant_color": true,
         "z": 1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blackCogwheel_01_001.png",
         "localDy": 0,
         "cant_color": true,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
-            {
+      {
         "frame": "blackCogwheel_01_001.png",
         "localDy": 0,
         "cant_color": true,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
-      },
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
+      }
     ],
     "cant_color": true,
     "default_base_color_channel": 1004,
@@ -11563,15 +11991,16 @@ window.allobjects = function() {
     "default_z_layer": 5,
     "default_z_order": 1
   },
-    "676": {
+  "676": {
     "black": true,
     "children": [
       {
         "frame": "blackCogwheel_02_001.png",
         "localDy": 0,
         "cant_color": true,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "cant_color": true,
@@ -11616,50 +12045,57 @@ window.allobjects = function() {
       {
         "frame": "lightBlade_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -2
-      },
-            {
-        "frame": "lightBlade_01_color_001.png",
-        "localDy": 0,
-        "tint": 52224,
         "z": -2,
-	      "rot": 90
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "lightBlade_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": -2,
-	      "rot": 180
+        "rot": 90,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "lightBlade_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": -2,
-	      "rot": 270
+        "rot": 180,
+        "colorChannel": 1,
+        "can_color": true
+      },
+      {
+        "frame": "lightBlade_01_color_001.png",
+        "localDy": 0,
+        "z": -2,
+        "rot": 270,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "lightBlade_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "lightBlade_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "lightBlade_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -11680,14 +12116,16 @@ window.allobjects = function() {
       {
         "frame": "lightBlade_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "lightBlade_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -11708,14 +12146,16 @@ window.allobjects = function() {
       {
         "frame": "lightBlade_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "lightBlade_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12048,8 +12488,9 @@ window.allobjects = function() {
       {
         "frame": "block001_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12070,8 +12511,9 @@ window.allobjects = function() {
       {
         "frame": "block001_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12092,8 +12534,9 @@ window.allobjects = function() {
       {
         "frame": "block002_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12114,8 +12557,9 @@ window.allobjects = function() {
       {
         "frame": "block002_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12136,8 +12580,9 @@ window.allobjects = function() {
       {
         "frame": "block003_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12158,8 +12603,9 @@ window.allobjects = function() {
       {
         "frame": "block003_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12180,8 +12626,9 @@ window.allobjects = function() {
       {
         "frame": "block004_slope_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12202,8 +12649,9 @@ window.allobjects = function() {
       {
         "frame": "block004_slope_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12224,8 +12672,9 @@ window.allobjects = function() {
       {
         "frame": "block004_slope_01b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12246,8 +12695,9 @@ window.allobjects = function() {
       {
         "frame": "block004_slope_02b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12424,8 +12874,9 @@ window.allobjects = function() {
       {
         "frame": "block004_slope_01c_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12446,8 +12897,9 @@ window.allobjects = function() {
       {
         "frame": "block004_slope_02c_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12468,8 +12920,9 @@ window.allobjects = function() {
       {
         "frame": "block004_slope_01d_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12490,8 +12943,9 @@ window.allobjects = function() {
       {
         "frame": "block004_slope_02d_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12640,14 +13094,16 @@ window.allobjects = function() {
       {
         "frame": "block003_color_03_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12668,24 +13124,27 @@ window.allobjects = function() {
       {
         "frame": "blade_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blade_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blade_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
-      },
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
+      }
     ],
     "default_base_color_channel": 1004,
     "frame": "blade_01_001.png",
@@ -12706,8 +13165,9 @@ window.allobjects = function() {
       {
         "frame": "blade_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12729,8 +13189,9 @@ window.allobjects = function() {
       {
         "frame": "blade_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12810,7 +13271,7 @@ window.allobjects = function() {
     "default_z_layer": 5,
     "default_z_order": 10,
     "portalParticle": true,
-    "portalParticleColor": 65535,
+    "portalParticleColor": 65535
   },
   "749": {
     "can_color": false,
@@ -12828,7 +13289,7 @@ window.allobjects = function() {
     "default_z_layer": 5,
     "default_z_order": 10,
     "portalParticle": true,
-    "portalParticleColor": 16753920,
+    "portalParticleColor": 16753920
   },
   "752": {
     "can_color": true,
@@ -12836,8 +13297,9 @@ window.allobjects = function() {
       {
         "frame": "block005_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12858,8 +13320,9 @@ window.allobjects = function() {
       {
         "frame": "block005_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12880,8 +13343,9 @@ window.allobjects = function() {
       {
         "frame": "block005_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12916,8 +13380,9 @@ window.allobjects = function() {
       {
         "frame": "block005_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12938,15 +13403,17 @@ window.allobjects = function() {
       {
         "frame": "block005_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 1
+        "z": 1,
+        "colorChannel": 1,
+        "can_color": true
       },
-            {
+      {
         "frame": "block005_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12967,15 +13434,17 @@ window.allobjects = function() {
       {
         "frame": "block005_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block005_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": 1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -12996,8 +13465,9 @@ window.allobjects = function() {
       {
         "frame": "block005_09_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -13018,8 +13488,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -13040,8 +13511,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -13062,8 +13534,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -13084,8 +13557,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -13150,8 +13624,9 @@ window.allobjects = function() {
       {
         "frame": "block005_02_color_001.png",
         "localDy": 7,
-        "tint": 52224,
-        "z": -1
+        "z": -1,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -13172,8 +13647,9 @@ window.allobjects = function() {
       {
         "frame": "plank005_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -13194,8 +13670,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -13216,8 +13693,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -13238,8 +13716,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -13260,8 +13739,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -13297,8 +13777,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_001_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_002_001.png",
@@ -13327,8 +13808,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_001_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_002_001.png",
@@ -13357,8 +13839,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_002_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_003_001.png",
@@ -13387,8 +13870,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_002_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_003_001.png",
@@ -13417,8 +13901,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_008_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_004_001.png",
@@ -13447,8 +13932,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_008_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_004_001.png",
@@ -13477,8 +13963,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_003_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_005_001.png",
@@ -13507,8 +13994,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_003_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_005_001.png",
@@ -13537,8 +14025,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_003_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_006_001.png",
@@ -13567,8 +14056,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_003_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_006_001.png",
@@ -13597,8 +14087,9 @@ window.allobjects = function() {
       {
         "frame": "block007_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_001_001.png",
@@ -13627,8 +14118,9 @@ window.allobjects = function() {
       {
         "frame": "block007_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_001_001.png",
@@ -13657,8 +14149,9 @@ window.allobjects = function() {
       {
         "frame": "block007_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_007_001.png",
@@ -13687,8 +14180,9 @@ window.allobjects = function() {
       {
         "frame": "block007_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_007_001.png",
@@ -13717,8 +14211,9 @@ window.allobjects = function() {
       {
         "frame": "block007_08_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_008_001.png",
@@ -13753,8 +14248,9 @@ window.allobjects = function() {
       {
         "frame": "block007_08_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_008_001.png",
@@ -13837,8 +14333,9 @@ window.allobjects = function() {
       {
         "frame": "block007_bgcolor_001_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "color_channel": "black",
@@ -13861,8 +14358,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_009_001.png",
@@ -13891,8 +14389,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_009_001.png",
@@ -13921,8 +14420,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_010_001.png",
@@ -13957,8 +14457,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_010_001.png",
@@ -13993,8 +14494,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_001_001.png",
@@ -14023,8 +14525,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_001_001.png",
@@ -14053,8 +14556,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_001_001.png",
@@ -14083,8 +14587,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_001_001.png",
@@ -14112,8 +14617,9 @@ window.allobjects = function() {
       {
         "frame": "block007b_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14134,20 +14640,23 @@ window.allobjects = function() {
       {
         "frame": "block007b_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block007b_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block007b_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14168,14 +14677,16 @@ window.allobjects = function() {
       {
         "frame": "block007b_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block007b_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14196,14 +14707,16 @@ window.allobjects = function() {
       {
         "frame": "block007b_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block007b_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14224,26 +14737,30 @@ window.allobjects = function() {
       {
         "frame": "block007b_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block007b_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block007b_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block007b_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14264,8 +14781,9 @@ window.allobjects = function() {
       {
         "frame": "block007b_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14286,8 +14804,9 @@ window.allobjects = function() {
       {
         "frame": "block007b_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14308,8 +14827,9 @@ window.allobjects = function() {
       {
         "frame": "block007b_08_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14330,8 +14850,9 @@ window.allobjects = function() {
       {
         "frame": "block008_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14352,8 +14873,9 @@ window.allobjects = function() {
       {
         "frame": "block008_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14374,8 +14896,9 @@ window.allobjects = function() {
       {
         "frame": "block008_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14396,8 +14919,9 @@ window.allobjects = function() {
       {
         "frame": "block008_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14418,8 +14942,9 @@ window.allobjects = function() {
       {
         "frame": "block008_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14440,8 +14965,9 @@ window.allobjects = function() {
       {
         "frame": "block008_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14462,8 +14988,9 @@ window.allobjects = function() {
       {
         "frame": "block008_08_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14484,8 +15011,9 @@ window.allobjects = function() {
       {
         "frame": "block008_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14506,8 +15034,9 @@ window.allobjects = function() {
       {
         "frame": "block008_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14528,8 +15057,9 @@ window.allobjects = function() {
       {
         "frame": "block008_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14550,8 +15080,9 @@ window.allobjects = function() {
       {
         "frame": "block009_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14572,8 +15103,9 @@ window.allobjects = function() {
       {
         "frame": "block009_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14594,8 +15126,9 @@ window.allobjects = function() {
       {
         "frame": "block009_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14616,8 +15149,9 @@ window.allobjects = function() {
       {
         "frame": "block009_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14638,8 +15172,9 @@ window.allobjects = function() {
       {
         "frame": "block009_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14660,8 +15195,9 @@ window.allobjects = function() {
       {
         "frame": "block009_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14682,8 +15218,9 @@ window.allobjects = function() {
       {
         "frame": "block009_part_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14704,8 +15241,9 @@ window.allobjects = function() {
       {
         "frame": "block009_part_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14726,8 +15264,9 @@ window.allobjects = function() {
       {
         "frame": "block009_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14748,8 +15287,9 @@ window.allobjects = function() {
       {
         "frame": "block009_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14770,8 +15310,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14792,8 +15333,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14814,8 +15356,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14836,8 +15379,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14858,8 +15402,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14880,8 +15425,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14902,14 +15448,16 @@ window.allobjects = function() {
       {
         "frame": "block009b_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block009b_slope_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14930,14 +15478,16 @@ window.allobjects = function() {
       {
         "frame": "block009b_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block009b_slope_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14958,8 +15508,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -14980,8 +15531,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -15002,8 +15554,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -15024,8 +15577,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -15046,8 +15600,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -15068,8 +15623,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -15090,9 +15646,10 @@ window.allobjects = function() {
       {
         "frame": "block009c_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": 100,
-        "rot": -45
+        "rot": -45,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -15113,9 +15670,10 @@ window.allobjects = function() {
       {
         "frame": "block009c_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": 100,
-        "rot": -27.5
+        "rot": -27.5,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -15183,26 +15741,30 @@ window.allobjects = function() {
       {
         "frame": "persp_lblock01_06_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_06_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_06_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_lblock01_06_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 3,
@@ -15224,8 +15786,9 @@ window.allobjects = function() {
       {
         "frame": "block005_10_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -15246,8 +15809,9 @@ window.allobjects = function() {
       {
         "frame": "block005_11_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -15450,7 +16014,7 @@ window.allobjects = function() {
         "tint": 0,
         "z": 1
       },
-    {
+      {
         "frame": "GJBeast01_03_001.png",
         "localDy": -19,
         "localDx": -4,
@@ -15487,7 +16051,7 @@ window.allobjects = function() {
         "localDx": -14,
         "tint": 0,
         "z": 1
-      },
+      }
     ]
   },
   "920": {
@@ -15539,7 +16103,7 @@ window.allobjects = function() {
       "Fire_04_2_looped_008.png",
       "Fire_04_2_looped_009.png",
       "Fire_04_2_looped_010.png",
-      "Fire_04_2_looped_011.png",
+      "Fire_04_2_looped_011.png"
     ],
     "animInterval": 75
   },
@@ -15601,20 +16165,23 @@ window.allobjects = function() {
       {
         "frame": "d_rainbow_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_rainbow_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_rainbow_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -15655,7 +16222,7 @@ window.allobjects = function() {
         "localDy": 0,
         "z": -1,
         "rot": 15
-      },
+      }
     ],
     "default_base_color_channel": 1011,
     "frame": "none",
@@ -15668,7 +16235,7 @@ window.allobjects = function() {
     "default_z_layer": 1,
     "default_z_order": 2,
     "editorOffsetY": -15,
-    "editorOffsetX": 15,
+    "editorOffsetX": 15
   },
   "927": {
     "can_color": true,
@@ -15690,9 +16257,10 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -15741,22 +16309,25 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -15777,8 +16348,9 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -15827,22 +16399,25 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": "180"
+        "rot": "180",
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": "270"
+        "rot": "270",
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -15905,8 +16480,9 @@ window.allobjects = function() {
       {
         "frame": "d_flower01_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -15969,14 +16545,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block005_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -15997,19 +16575,21 @@ window.allobjects = function() {
       {
         "frame": "persp_block005_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -16025,8 +16605,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block005_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16047,14 +16628,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block005_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16075,14 +16658,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block005_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16103,8 +16688,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block005_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16125,8 +16711,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block005_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16147,26 +16734,30 @@ window.allobjects = function() {
       {
         "frame": "persp_block005_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16188,20 +16779,23 @@ window.allobjects = function() {
       {
         "frame": "persp_block005_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16224,8 +16818,9 @@ window.allobjects = function() {
       {
         "frame": "block005_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16246,8 +16841,9 @@ window.allobjects = function() {
       {
         "frame": "block005_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16268,8 +16864,9 @@ window.allobjects = function() {
       {
         "frame": "block005_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16304,8 +16901,9 @@ window.allobjects = function() {
       {
         "frame": "block005_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16326,8 +16924,9 @@ window.allobjects = function() {
       {
         "frame": "block005_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16348,8 +16947,9 @@ window.allobjects = function() {
       {
         "frame": "block005_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16370,8 +16970,9 @@ window.allobjects = function() {
       {
         "frame": "block005_09_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16392,8 +16993,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16414,8 +17016,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16436,8 +17039,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16458,8 +17062,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16494,8 +17099,9 @@ window.allobjects = function() {
       {
         "frame": "block005_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16516,8 +17122,9 @@ window.allobjects = function() {
       {
         "frame": "plank005_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16538,8 +17145,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16560,8 +17168,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16582,8 +17191,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16604,8 +17214,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16640,8 +17251,9 @@ window.allobjects = function() {
       {
         "frame": "block005_10_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16662,8 +17274,9 @@ window.allobjects = function() {
       {
         "frame": "block005_11_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16712,20 +17325,23 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block007_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block007_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16744,28 +17360,31 @@ window.allobjects = function() {
     "can_color": true,
     "children": [
       {
-        "frame": "block008_topcolor_15_001.png",
+        "frame": "persp_outline_02_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block007_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block007_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
     "default_detail_color_channel": 1,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -16780,14 +17399,16 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_03_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block007_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16808,20 +17429,23 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block007_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block007_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16842,20 +17466,23 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_05_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block007_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block007_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16876,14 +17503,16 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_06_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block007_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16904,14 +17533,16 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_07_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block007_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16932,32 +17563,37 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_08_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block007_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block007_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block007_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block007_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -16979,26 +17615,30 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_09_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block007_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block007_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block007_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -17081,23 +17721,26 @@ window.allobjects = function() {
       {
         "frame": "d_ringSeg_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_ringSeg_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_ringSeg_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -17118,23 +17761,26 @@ window.allobjects = function() {
       {
         "frame": "d_ringSeg_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_ringSeg_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_ringSeg_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -17155,23 +17801,26 @@ window.allobjects = function() {
       {
         "frame": "d_ringSeg_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_ringSeg_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_ringSeg_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -17192,24 +17841,27 @@ window.allobjects = function() {
       {
         "frame": "d_ringSeg_04_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_ringSeg_04_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_ringSeg_04_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
-      },
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
+      }
     ],
     "default_base_color_channel": 1005,
     "frame": "d_ringSeg_04_001.png",
@@ -17229,8 +17881,9 @@ window.allobjects = function() {
       {
         "frame": "d_link_d_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -17251,8 +17904,9 @@ window.allobjects = function() {
       {
         "frame": "d_link_d_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -17273,8 +17927,9 @@ window.allobjects = function() {
       {
         "frame": "d_link_d_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -17295,8 +17950,9 @@ window.allobjects = function() {
       {
         "frame": "d_link_d_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -17317,8 +17973,9 @@ window.allobjects = function() {
       {
         "frame": "d_link_d_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -17509,51 +18166,58 @@ window.allobjects = function() {
       {
         "frame": "d_flashRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -45
+        "rot": -45,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -90
+        "rot": -90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -135
+        "rot": -135,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -180
+        "rot": -180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -225
+        "rot": -225,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -270
+        "rot": -270,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -315
+        "rot": -315,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -17574,51 +18238,58 @@ window.allobjects = function() {
       {
         "frame": "d_flashRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 45
+        "rot": 45,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 135
+        "rot": 135,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 225
+        "rot": 225,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 315
+        "rot": 315,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -17639,51 +18310,58 @@ window.allobjects = function() {
       {
         "frame": "d_flashRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 45
+        "rot": 45,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 135
+        "rot": 135,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 225
+        "rot": 225,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_flashRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 315
+        "rot": 315,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -17704,9 +18382,10 @@ window.allobjects = function() {
     "can_color": false,
     "children": [
       {
-        "frame": "gravJumpRing_01_001.png",
-        "localDy": 0,
-        "z": -1
+        "type": "ring",
+        "frame": "gravJumpRing_01_extra_001.png",
+        "z": 0,
+        "orbGuide": true
       }
     ],
     "default_base_color_channel": 0,
@@ -17719,15 +18398,7 @@ window.allobjects = function() {
     "z": 12,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
-    "default_z_order": 12,
-    "children": [
-      {
-        "type": "ring",
-        "frame": "gravJumpRing_01_extra_001.png",
-        "z": 0,
-        "orbGuide": true
-      }
-    ]
+    "default_z_order": 12
   },
   "1024": {
     "can_color": true,
@@ -17735,14 +18406,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block005b_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005b_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -17763,19 +18436,21 @@ window.allobjects = function() {
       {
         "frame": "persp_block005b_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005b_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -17791,8 +18466,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block005b_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -17813,14 +18489,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block005b_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005b_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -17841,14 +18519,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block005b_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005b_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -17869,8 +18549,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block005b_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -17891,8 +18572,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block005b_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -17913,26 +18595,30 @@ window.allobjects = function() {
       {
         "frame": "persp_block005b_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005b_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005b_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005b_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -17954,20 +18640,23 @@ window.allobjects = function() {
       {
         "frame": "persp_block005b_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005b_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block005b_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -17990,8 +18679,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18012,8 +18702,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18034,8 +18725,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18056,8 +18748,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18078,8 +18771,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18100,8 +18794,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18122,8 +18817,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18144,8 +18840,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18312,17 +19009,16 @@ window.allobjects = function() {
       "animWave_01_001.png",
       "animWave_01_002.png",
       "animWave_01_003.png",
-	    "animWave_01_009.png",
+      "animWave_01_009.png",
       "animWave_01_004.png",
       "animWave_01_005.png",
       "animWave_01_006.png",
       "animWave_01_007.png",
-      "animWave_01_008.png",
+      "animWave_01_008.png"
     ],
     "animInterval": 45
   },
   "1051": {
-    
     "can_color": true,
     "default_base_color_channel": 1007,
     "frame": "animWave_02_001.png",
@@ -18344,7 +19040,7 @@ window.allobjects = function() {
       "animWave_02_007.png",
       "animWave_02_008.png",
       "animWave_02_009.png",
-      "animWave_02_010.png",
+      "animWave_02_010.png"
     ],
     "animInterval": 45
   },
@@ -18370,7 +19066,7 @@ window.allobjects = function() {
       "animWave_03_007.png",
       "animWave_03_008.png",
       "animWave_03_009.png",
-      "animWave_03_010.png",
+      "animWave_03_010.png"
     ],
     "animInterval": 45
   },
@@ -18380,8 +19076,9 @@ window.allobjects = function() {
       {
         "frame": "d_animLoading_01_color_006.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -18402,8 +19099,9 @@ window.allobjects = function() {
       {
         "frame": "d_animLoading_02_color_006.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -18424,23 +19122,26 @@ window.allobjects = function() {
       {
         "frame": "d_pickupCircle_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -90
+        "rot": -90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_pickupCircle_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -180
+        "rot": -180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_pickupCircle_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -270
+        "rot": -270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -18461,23 +19162,26 @@ window.allobjects = function() {
       {
         "frame": "d_pickupCircle_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -90
+        "rot": -90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_pickupCircle_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -180
+        "rot": -180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_pickupCircle_02_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -270
+        "rot": -270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -18498,23 +19202,26 @@ window.allobjects = function() {
       {
         "frame": "d_pickupCircle_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -90
+        "rot": -90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_pickupCircle_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -180
+        "rot": -180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_pickupCircle_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": -270
+        "rot": -270,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -18535,8 +19242,9 @@ window.allobjects = function() {
       {
         "frame": "d_spiral_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -18557,8 +19265,9 @@ window.allobjects = function() {
       {
         "frame": "d_spiral_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -18579,8 +19288,9 @@ window.allobjects = function() {
       {
         "frame": "d_spiral_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -18601,8 +19311,9 @@ window.allobjects = function() {
       {
         "frame": "d_spiral_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -18623,8 +19334,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18645,14 +19357,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block009_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block009_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18673,19 +19387,21 @@ window.allobjects = function() {
       {
         "frame": "persp_block009_01b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block009_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -18701,8 +19417,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block009_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18723,14 +19440,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block009_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block009_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18751,14 +19470,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block009_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block009_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18779,8 +19500,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block009_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18801,8 +19523,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block009_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18823,26 +19546,30 @@ window.allobjects = function() {
       {
         "frame": "persp_block009_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block009_05b_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block009_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block009_05b_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18864,20 +19591,23 @@ window.allobjects = function() {
       {
         "frame": "persp_block009_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block009_04b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block009_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18900,20 +19630,23 @@ window.allobjects = function() {
       {
         "frame": "block003_color_02_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18934,26 +19667,30 @@ window.allobjects = function() {
       {
         "frame": "block003_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -18974,26 +19711,30 @@ window.allobjects = function() {
       {
         "frame": "block003_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19015,8 +19756,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_005_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_012_001.png",
@@ -19045,8 +19787,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_006_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_013_001.png",
@@ -19075,8 +19818,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_006_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_013_001.png",
@@ -19105,8 +19849,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_006_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_013_001.png",
@@ -19134,8 +19879,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_001_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19156,8 +19902,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_002_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19178,8 +19925,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_008_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19200,8 +19948,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_003_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19222,8 +19971,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_003_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19244,8 +19994,9 @@ window.allobjects = function() {
       {
         "frame": "block007_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19266,8 +20017,9 @@ window.allobjects = function() {
       {
         "frame": "block007_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19288,8 +20040,9 @@ window.allobjects = function() {
       {
         "frame": "block007_08_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19324,8 +20077,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19346,8 +20100,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19368,8 +20123,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19390,8 +20146,9 @@ window.allobjects = function() {
       {
         "frame": "block007_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19412,8 +20169,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_005_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19434,8 +20192,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_006_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19456,8 +20215,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_006_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19478,8 +20238,9 @@ window.allobjects = function() {
       {
         "frame": "block007_color_006_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -19626,14 +20387,16 @@ window.allobjects = function() {
       {
         "frame": "block007_bgcolor_010_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block007_bgcolor_011_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -19822,8 +20585,9 @@ window.allobjects = function() {
       {
         "frame": "block008_topcolor_15_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -19872,14 +20636,16 @@ window.allobjects = function() {
       {
         "frame": "block008_topcolor_24b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_topcolor_15_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -19900,20 +20666,23 @@ window.allobjects = function() {
       {
         "frame": "block008_topcolor_24b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_topcolor_24b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_topcolor_24b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -19934,8 +20703,9 @@ window.allobjects = function() {
       {
         "frame": "block008_topcolor_22_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -19956,8 +20726,9 @@ window.allobjects = function() {
       {
         "frame": "block008_topcolor_23_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -19978,8 +20749,9 @@ window.allobjects = function() {
       {
         "frame": "block008_topcolor_25_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -20000,8 +20772,9 @@ window.allobjects = function() {
       {
         "frame": "block008_topcolor_26_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -20022,8 +20795,9 @@ window.allobjects = function() {
       {
         "frame": "block008_topcolor_27_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -20044,8 +20818,9 @@ window.allobjects = function() {
       {
         "frame": "block008_topcolor_28_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -20332,8 +21107,9 @@ window.allobjects = function() {
       {
         "frame": "smallOutline_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20368,8 +21144,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_08_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20390,8 +21167,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_09_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20412,8 +21190,9 @@ window.allobjects = function() {
       {
         "frame": "block009b_10_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20434,8 +21213,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20456,8 +21236,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_02_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20478,8 +21259,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_03_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20500,8 +21282,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20522,8 +21305,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_05_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20544,8 +21328,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20566,8 +21351,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20588,8 +21374,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20610,8 +21397,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_06_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20632,8 +21420,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20654,8 +21443,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20676,8 +21466,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_02_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20698,8 +21489,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20720,8 +21512,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_03_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20742,8 +21535,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_03_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20764,8 +21558,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20786,8 +21581,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20808,8 +21604,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20830,8 +21627,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20852,8 +21650,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20874,8 +21673,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20896,8 +21696,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20918,8 +21719,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20940,8 +21742,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20976,8 +21779,9 @@ window.allobjects = function() {
       {
         "frame": "block006_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -20998,8 +21802,9 @@ window.allobjects = function() {
       {
         "frame": "block006_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21020,8 +21825,9 @@ window.allobjects = function() {
       {
         "frame": "block006_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21042,8 +21848,9 @@ window.allobjects = function() {
       {
         "frame": "block006_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21148,8 +21955,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21240,8 +22048,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutlineThick_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21262,14 +22071,16 @@ window.allobjects = function() {
       {
         "frame": "blockOutlineThick_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutlineThick_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21332,20 +22143,23 @@ window.allobjects = function() {
       {
         "frame": "blockOutlineThick_07_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutlineThick_07_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutlineThick_07_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21366,8 +22180,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutlineThick_08_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21388,20 +22203,23 @@ window.allobjects = function() {
       {
         "frame": "blockOutlineThick_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutlineThick_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutlineThick_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21436,8 +22254,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutlineThickb_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21458,14 +22277,16 @@ window.allobjects = function() {
       {
         "frame": "blockOutlineThickb_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutlineThickb_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21528,8 +22349,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutlineThickb_08_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21550,20 +22372,23 @@ window.allobjects = function() {
       {
         "frame": "blockOutlineThickb_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutlineThickb_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutlineThickb_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -21598,20 +22423,23 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -21632,20 +22460,23 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -21666,20 +22497,23 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -21700,26 +22534,30 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -21740,26 +22578,30 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -21780,26 +22622,30 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -21820,26 +22666,30 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -21860,26 +22710,30 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -21900,26 +22754,30 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -21940,20 +22798,23 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -21974,8 +22835,9 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -21996,8 +22858,9 @@ window.allobjects = function() {
       {
         "frame": "block010_piece_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -22088,20 +22951,23 @@ window.allobjects = function() {
       {
         "frame": "block008_topcolor_11_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_topcolor_11_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_topcolor_11_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -22122,14 +22988,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_color_02_001.png",
@@ -22140,8 +23008,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_color_02_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22162,20 +23031,23 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_05_color_001.png",
@@ -22186,8 +23058,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_color_03_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22208,14 +23081,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_color_03_001.png",
@@ -22232,14 +23107,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22260,14 +23137,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_color_03_001.png",
@@ -22278,14 +23157,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_06_color_b_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22306,8 +23187,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22328,8 +23210,9 @@ window.allobjects = function() {
       {
         "frame": "block008_06_color_b_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22350,14 +23233,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_06_color_b_001.png",
@@ -22368,8 +23253,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_color_02_001.png",
@@ -22380,8 +23266,9 @@ window.allobjects = function() {
       {
         "frame": "block008_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22402,14 +23289,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_05_color_001.png",
@@ -22426,14 +23315,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_06_color_b_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22454,14 +23345,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_05_color_001.png",
@@ -22472,14 +23365,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_06_color_b_001.png",
@@ -22496,8 +23391,9 @@ window.allobjects = function() {
       {
         "frame": "block008_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22524,9 +23420,10 @@ window.allobjects = function() {
       {
         "frame": "block009c_color_06_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": 100,
-        "rot": -45
+        "rot": -45,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22553,8 +23450,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_color_07_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22581,8 +23479,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_color_08_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22609,8 +23508,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_color_09_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22715,8 +23615,9 @@ window.allobjects = function() {
       {
         "frame": "block009_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22737,8 +23638,9 @@ window.allobjects = function() {
       {
         "frame": "block009_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22858,8 +23760,9 @@ window.allobjects = function() {
       {
         "frame": "d_key01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -22894,14 +23797,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_color_02_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22922,8 +23827,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_color_02_001.png",
@@ -22950,20 +23856,23 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_color_03_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -22984,14 +23893,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_color_03_001.png",
@@ -23024,14 +23935,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_color_03_001.png",
@@ -23042,8 +23955,9 @@ window.allobjects = function() {
       {
         "frame": "block008_06_color_b_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23064,14 +23978,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_06_color_b_001.png",
@@ -23082,8 +23998,9 @@ window.allobjects = function() {
       {
         "frame": "block008_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23104,14 +24021,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_05_color_001.png",
@@ -23128,8 +24047,9 @@ window.allobjects = function() {
       {
         "frame": "block008_06_color_b_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23150,14 +24070,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_05_color_001.png",
@@ -23168,8 +24090,9 @@ window.allobjects = function() {
       {
         "frame": "block008_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23190,14 +24113,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_06_color_b_001.png",
@@ -23214,8 +24139,9 @@ window.allobjects = function() {
       {
         "frame": "block008_06_color_b_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23236,14 +24162,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_05_color_001.png",
@@ -23254,8 +24182,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_06_color_b_001.png",
@@ -23266,8 +24195,9 @@ window.allobjects = function() {
       {
         "frame": "block008_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23288,14 +24218,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_05_color_001.png",
@@ -23306,8 +24238,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_color_02_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23328,14 +24261,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block008_06_color_b_001.png",
@@ -23346,8 +24281,9 @@ window.allobjects = function() {
       {
         "frame": "block009c_color_02_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23368,14 +24304,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_color_02_001.png",
@@ -23386,8 +24324,9 @@ window.allobjects = function() {
       {
         "frame": "block008_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23408,14 +24347,16 @@ window.allobjects = function() {
       {
         "frame": "block009c_line_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_line_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block009c_color_02_001.png",
@@ -23432,8 +24373,9 @@ window.allobjects = function() {
       {
         "frame": "block008_06_color_b_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23496,8 +24438,9 @@ window.allobjects = function() {
       {
         "frame": "block005_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23518,8 +24461,9 @@ window.allobjects = function() {
       {
         "frame": "block005_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23540,8 +24484,9 @@ window.allobjects = function() {
       {
         "frame": "block005_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23562,8 +24507,9 @@ window.allobjects = function() {
       {
         "frame": "block005_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23584,26 +24530,30 @@ window.allobjects = function() {
       {
         "frame": "block003_color_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "block003_part01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block003_part02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23624,8 +24574,9 @@ window.allobjects = function() {
       {
         "frame": "block005_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23646,8 +24597,9 @@ window.allobjects = function() {
       {
         "frame": "block005_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23668,8 +24620,9 @@ window.allobjects = function() {
       {
         "frame": "block005_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23690,8 +24643,9 @@ window.allobjects = function() {
       {
         "frame": "block005_10_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23712,8 +24666,9 @@ window.allobjects = function() {
       {
         "frame": "block005_11_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23734,8 +24689,9 @@ window.allobjects = function() {
       {
         "frame": "block005_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23756,8 +24712,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23778,8 +24735,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23800,8 +24758,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -23822,8 +24781,9 @@ window.allobjects = function() {
       {
         "frame": "block005_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24012,8 +24972,9 @@ window.allobjects = function() {
       {
         "frame": "block006_color_02_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24034,8 +24995,9 @@ window.allobjects = function() {
       {
         "frame": "block006_slope_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24056,8 +25018,9 @@ window.allobjects = function() {
       {
         "frame": "block006_slope_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24189,7 +25152,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
     "default_z_order": 12,
-    "editorOffsetY": -11.8,
+    "editorOffsetY": -11.8
   },
   "1333": {
     "type": "ring",
@@ -24204,7 +25167,7 @@ window.allobjects = function() {
         "type": "ring",
         "frame": "ring_02_extra_001.png",
         "z": 0,
-        "orbGuide": true,
+        "orbGuide": true
       }
     ]
   },
@@ -24228,8 +25191,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_14new_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24250,8 +25214,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_15new_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24286,8 +25251,9 @@ window.allobjects = function() {
       {
         "frame": "invisibleOutline_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24308,8 +25274,9 @@ window.allobjects = function() {
       {
         "frame": "invisibleOutline_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24344,8 +25311,9 @@ window.allobjects = function() {
       {
         "frame": "invisibleOutline_b_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24366,8 +25334,9 @@ window.allobjects = function() {
       {
         "frame": "invisibleOutline_b_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24418,8 +25387,9 @@ window.allobjects = function() {
       {
         "frame": "block011_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24440,8 +25410,9 @@ window.allobjects = function() {
       {
         "frame": "block011_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24462,8 +25433,9 @@ window.allobjects = function() {
       {
         "frame": "block011_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24484,8 +25456,9 @@ window.allobjects = function() {
       {
         "frame": "block011_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24506,8 +25479,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -24528,8 +25502,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -24550,8 +25525,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -24572,8 +25548,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -24594,8 +25571,9 @@ window.allobjects = function() {
       {
         "frame": "block011_edge_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24616,8 +25594,9 @@ window.allobjects = function() {
       {
         "frame": "block011_edge_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24638,8 +25617,9 @@ window.allobjects = function() {
       {
         "frame": "block011_edge_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24660,8 +25640,9 @@ window.allobjects = function() {
       {
         "frame": "block011_edge_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24682,8 +25663,9 @@ window.allobjects = function() {
       {
         "frame": "block011_edge_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24704,8 +25686,9 @@ window.allobjects = function() {
       {
         "frame": "block011_edge_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24727,8 +25710,9 @@ window.allobjects = function() {
       {
         "frame": "block011_edge_08_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24749,8 +25733,9 @@ window.allobjects = function() {
       {
         "frame": "block011_edge_09_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24771,8 +25756,9 @@ window.allobjects = function() {
       {
         "frame": "block011_edge_10_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -24793,8 +25779,9 @@ window.allobjects = function() {
       {
         "frame": "block011_edge_11_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25109,8 +26096,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_piece_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25131,8 +26119,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_piece_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25153,8 +26142,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_piece_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25175,8 +26165,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_piece_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25197,8 +26188,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_piece_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25219,8 +26211,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_piece_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25241,8 +26234,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_piece_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25263,8 +26257,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_piece_08_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25285,8 +26280,9 @@ window.allobjects = function() {
       {
         "frame": "block011_edge_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25307,8 +26303,9 @@ window.allobjects = function() {
       {
         "frame": "block012_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25329,8 +26326,9 @@ window.allobjects = function() {
       {
         "frame": "block012_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25351,8 +26349,9 @@ window.allobjects = function() {
       {
         "frame": "block012_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25373,8 +26372,9 @@ window.allobjects = function() {
       {
         "frame": "block012_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25395,8 +26395,9 @@ window.allobjects = function() {
       {
         "frame": "block012_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25417,8 +26418,9 @@ window.allobjects = function() {
       {
         "frame": "block012_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25439,8 +26441,9 @@ window.allobjects = function() {
       {
         "frame": "block012_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25461,8 +26464,9 @@ window.allobjects = function() {
       {
         "frame": "block012_08_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25483,8 +26487,9 @@ window.allobjects = function() {
       {
         "frame": "block012_09_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25505,8 +26510,9 @@ window.allobjects = function() {
       {
         "frame": "block012_10_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25541,8 +26547,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25563,8 +26570,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25585,8 +26593,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25607,8 +26616,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25629,8 +26639,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25651,8 +26662,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25673,8 +26685,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -25863,8 +26876,9 @@ window.allobjects = function() {
       {
         "frame": "block013_01c_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25885,8 +26899,9 @@ window.allobjects = function() {
       {
         "frame": "block013_02c_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25907,8 +26922,9 @@ window.allobjects = function() {
       {
         "frame": "block013_03c_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25929,8 +26945,9 @@ window.allobjects = function() {
       {
         "frame": "block013_04c_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25951,8 +26968,9 @@ window.allobjects = function() {
       {
         "frame": "block013_detail_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25973,8 +26991,9 @@ window.allobjects = function() {
       {
         "frame": "block013_detail_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -25995,8 +27014,9 @@ window.allobjects = function() {
       {
         "frame": "block013_detail_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26017,8 +27037,9 @@ window.allobjects = function() {
       {
         "frame": "block013_detail_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26039,8 +27060,9 @@ window.allobjects = function() {
       {
         "frame": "block013_detail_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26061,8 +27083,9 @@ window.allobjects = function() {
       {
         "frame": "block012_12_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26083,8 +27106,9 @@ window.allobjects = function() {
       {
         "frame": "block012_13_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26105,8 +27129,9 @@ window.allobjects = function() {
       {
         "frame": "block012_14_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26127,8 +27152,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_12_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -26149,8 +27175,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_13_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -26171,8 +27198,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_14_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -26210,7 +27238,7 @@ window.allobjects = function() {
       "waterfallAnim_007.png",
       "waterfallAnim_008.png",
       "waterfallAnim_009.png",
-      "waterfallAnim_010.png",
+      "waterfallAnim_010.png"
     ],
     "animInterval": 60
   },
@@ -26220,8 +27248,9 @@ window.allobjects = function() {
       {
         "frame": "waterfallAnim_color_007.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -26242,8 +27271,9 @@ window.allobjects = function() {
       {
         "frame": "waterSplash_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -26307,8 +27337,9 @@ window.allobjects = function() {
       {
         "frame": "d_rotatingLine_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -26330,8 +27361,9 @@ window.allobjects = function() {
       {
         "frame": "d_rotatingLine_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1006,
@@ -26352,8 +27384,9 @@ window.allobjects = function() {
       {
         "frame": "d_rotatingLine_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -26374,8 +27407,9 @@ window.allobjects = function() {
       {
         "frame": "d_rotatingLine_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1006,
@@ -26396,8 +27430,9 @@ window.allobjects = function() {
       {
         "frame": "d_rotatingSquare_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -26418,8 +27453,9 @@ window.allobjects = function() {
       {
         "frame": "d_rotatingSquare_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1006,
@@ -26440,8 +27476,9 @@ window.allobjects = function() {
       {
         "frame": "d_rotatingSquare_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1005,
@@ -26462,8 +27499,9 @@ window.allobjects = function() {
       {
         "frame": "d_rotatingSquare_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1006,
@@ -26484,14 +27522,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block013_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block013_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26526,8 +27566,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block013_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26548,14 +27589,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block013_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block013_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26576,14 +27619,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block013_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block013_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26604,8 +27649,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block013_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26626,8 +27672,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block013_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26648,14 +27695,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block013_05_001.png",
         "localDy": -7.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block013_05_001.png",
         "localDy": 7.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26677,14 +27726,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block013_04_001.png",
         "localDy": -7.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block013_04_001.png",
         "localDy": 7.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26707,14 +27758,16 @@ window.allobjects = function() {
       {
         "frame": "persp_block013_07_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block013_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26735,19 +27788,21 @@ window.allobjects = function() {
       {
         "frame": "persp_block013_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block013_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -26763,8 +27818,9 @@ window.allobjects = function() {
       {
         "frame": "persp_block013_08_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26785,20 +27841,23 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block011_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block011_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26817,28 +27876,31 @@ window.allobjects = function() {
     "can_color": true,
     "children": [
       {
-        "frame": "block008_topcolor_15_001.png",
+        "frame": "persp_outline_02_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block011_01b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block011_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
     "default_detail_color_channel": 1,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -26853,14 +27915,16 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_03_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block011_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26881,20 +27945,23 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_04_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block011_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block011_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26915,20 +27982,23 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_05_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block011_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block011_02_001.png",
         "localDy": 2.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26949,14 +28019,16 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_06_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block011_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -26977,14 +28049,16 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_07_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block011_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -27005,32 +28079,37 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_08_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block011_05_001.png",
         "localDy": -11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block011_05_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block011_05_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block011_05_001.png",
         "localDy": 11.25,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -27052,26 +28131,30 @@ window.allobjects = function() {
       {
         "frame": "persp_outline_09_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "persp_block011_04_001.png",
         "localDy": -10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block011_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "persp_block011_04_001.png",
         "localDy": 10,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -27105,8 +28188,8 @@ window.allobjects = function() {
   "1562": {
     "can_color": true,
     "default_base_color_channel": 1004,
-    "frame": "block008_topcolor_15_001.png",
-    "glow_frame": "block008_topcolor_15_glow_001.png",
+    "frame": "persp_outline_02_001.png",
+    "glow_frame": "persp_outline_02_glow_001.png",
     "gridH": 0.06666667014360428,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
@@ -27220,14 +28303,16 @@ window.allobjects = function() {
       {
         "frame": "fireball_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "fireball_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -27290,7 +28375,7 @@ window.allobjects = function() {
         "localDy": 18,
         "tint": 0,
         "z": 1,
-        "rot": -15,
+        "rot": -15
       },
       {
         "frame": "GJBeast04_03_001.png",
@@ -27298,7 +28383,7 @@ window.allobjects = function() {
         "localDx": -13,
         "z": 1
       },
-    {
+      {
         "frame": "GJBeast04_04_001.png",
         "localDy": -25,
         "localDx": 53,
@@ -27329,8 +28414,9 @@ window.allobjects = function() {
       {
         "frame": null,
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -27352,8 +28438,9 @@ window.allobjects = function() {
       {
         "frame": "d_heart01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -27388,8 +28475,9 @@ window.allobjects = function() {
       {
         "frame": "d_potion01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -27439,9 +28527,9 @@ window.allobjects = function() {
       "lava_top_bubble_color_005.png",
       "lava_top_bubble_color_006.png",
       "lava_top_bubble_color_007.png",
-      "lava_top_bubble_color_008.png",
+      "lava_top_bubble_color_008.png"
     ],
-    "animInterval": 100,
+    "animInterval": 100
   },
   "1592": {
     "can_color": true,
@@ -27449,8 +28537,9 @@ window.allobjects = function() {
       {
         "frame": "d_animSquare_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -27486,7 +28575,7 @@ window.allobjects = function() {
       "lava_top_color_005.png",
       "lava_top_color_006.png",
       "lava_top_color_007.png",
-      "lava_top_color_008.png",
+      "lava_top_color_008.png"
     ],
     "animInterval": 100
   },
@@ -27548,8 +28637,9 @@ window.allobjects = function() {
       {
         "frame": "d_skull01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -27584,8 +28674,9 @@ window.allobjects = function() {
       {
         "frame": "d_sign_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -27606,8 +28697,9 @@ window.allobjects = function() {
       {
         "frame": "d_sign_pole_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -27810,7 +28902,7 @@ window.allobjects = function() {
       "smallCoin_01_001.png",
       "smallCoin_02_001.png",
       "smallCoin_03_001.png",
-      "smallCoin_04_001.png",
+      "smallCoin_04_001.png"
     ],
     "animInterval": 100
   },
@@ -27851,8 +28943,9 @@ window.allobjects = function() {
       {
         "frame": "block013_detail_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -27887,7 +28980,7 @@ window.allobjects = function() {
       "explosion_01_004.png",
       "explosion_01_005.png",
       "explosion_01_006.png",
-      "explosion_01_007.png",
+      "explosion_01_007.png"
     ],
     "animInterval": 75
   },
@@ -27897,28 +28990,32 @@ window.allobjects = function() {
       {
         "frame": "spinBlade01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -2
+        "z": -2,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "spinBlade01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": -2,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "spinBlade01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "spinBlade01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 2,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -27940,14 +29037,16 @@ window.allobjects = function() {
       {
         "frame": "spinBlade02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "spinBlade02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -27969,8 +29068,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28005,8 +29105,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28027,8 +29128,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28077,8 +29179,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28113,8 +29216,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_09_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28135,8 +29239,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_10_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28157,8 +29262,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_11_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28179,8 +29285,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_12_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28257,8 +29364,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_c_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28279,8 +29387,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_c_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28329,8 +29438,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_c_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28351,8 +29461,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_c_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28401,8 +29512,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_c_09_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28423,8 +29535,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_c_10_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28473,8 +29586,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_c_13_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28495,8 +29609,9 @@ window.allobjects = function() {
       {
         "frame": "block013_edge_c_14_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -28993,32 +30108,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29039,32 +30159,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29085,32 +30210,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29131,32 +30261,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29177,32 +30312,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29223,32 +30363,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29269,32 +30414,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29315,32 +30465,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29361,32 +30516,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29407,32 +30567,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29453,32 +30618,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29499,32 +30669,37 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29555,7 +30730,7 @@ window.allobjects = function() {
     "animFrames": [
       "d_zag_01_001.png",
       "d_zag_01_002.png",
-      "d_zag_01_003.png",
+      "d_zag_01_003.png"
     ],
     "animInterval": 75
   },
@@ -29593,8 +30768,9 @@ window.allobjects = function() {
       {
         "frame": null,
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -29616,14 +30792,16 @@ window.allobjects = function() {
       {
         "frame": "bladeTrap01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "bladeTrap01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29645,14 +30823,16 @@ window.allobjects = function() {
       {
         "frame": "bladeTrap02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "bladeTrap02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29674,14 +30854,16 @@ window.allobjects = function() {
       {
         "frame": "bladeTrap03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "bladeTrap03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -29712,14 +30894,16 @@ window.allobjects = function() {
       {
         "frame": "sawblade_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "sawblade_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1010,
@@ -29741,8 +30925,9 @@ window.allobjects = function() {
       {
         "frame": "sawblade_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1010,
@@ -29764,8 +30949,9 @@ window.allobjects = function() {
       {
         "frame": "sawblade_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1010,
@@ -29787,30 +30973,34 @@ window.allobjects = function() {
       {
         "frame": "darkblade_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -1
-      },
-      {
-        "frame": "darkblade_01_001.png",
-        "localDy": 0,
-        "tint": 65280,
         "z": -1,
-        "rot": 90
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "darkblade_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 1,
-        "rot": 180
+        "z": -1,
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "darkblade_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
+      {
+        "frame": "darkblade_01_001.png",
+        "localDy": 0,
+        "z": 1,
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
+      }
     ],
     "default_base_color_channel": 1010,
     "default_detail_color_channel": 1,
@@ -29831,14 +31021,16 @@ window.allobjects = function() {
       {
         "frame": "darkblade_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -1
+        "z": -1,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "darkblade_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1010,
@@ -29861,14 +31053,16 @@ window.allobjects = function() {
       {
         "frame": "darkblade_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -1
+        "z": -1,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "darkblade_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1010,
@@ -29974,8 +31168,9 @@ window.allobjects = function() {
       {
         "frame": "pit_01_slope_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1010,
@@ -29996,8 +31191,9 @@ window.allobjects = function() {
       {
         "frame": "pit_01_slope_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1010,
@@ -30074,8 +31270,9 @@ window.allobjects = function() {
       {
         "frame": "pit_04_slope_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1010,
@@ -30096,8 +31293,9 @@ window.allobjects = function() {
       {
         "frame": "pit_04_slope_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1010,
@@ -30244,51 +31442,58 @@ window.allobjects = function() {
       {
         "frame": "blackCogwheel_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -1
+        "z": -1,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "blackCogwheel_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": -1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "blackCogwheel_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": -1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 1,
+        "can_color": true
       },
-            {
+      {
         "frame": "blackCogwheel_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
         "z": -1,
-        "rot": 270
+        "rot": 270,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "blackCogwheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 90
+        "rot": 90,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blackCogwheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 180
+        "rot": 180,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blackCogwheel_01_001.png",
         "localDy": 0,
-        "tint": 65280,
         "z": 1,
-        "rot": 270
-      },
+        "rot": 270,
+        "colorChannel": 2,
+        "can_color": true
+      }
     ],
     "default_base_color_channel": 1004,
     "default_detail_color_channel": 1010,
@@ -30309,14 +31514,16 @@ window.allobjects = function() {
       {
         "frame": "blackCogwheel_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -1
+        "z": -1,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "blackCogwheel_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -30338,14 +31545,16 @@ window.allobjects = function() {
       {
         "frame": "blackCogwheel_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -1
+        "z": -1,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "blackCogwheel_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -30451,8 +31660,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_14new_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -30473,8 +31683,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_15new_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -30495,8 +31706,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_14new_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -30517,8 +31729,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_15new_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -30540,8 +31753,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_14new_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "color_channel": "black",
@@ -30564,8 +31778,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_15new_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "color_channel": "black",
@@ -30587,8 +31802,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_14new_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -30609,8 +31825,9 @@ window.allobjects = function() {
       {
         "frame": "blockOutline_15new_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 2
+        "z": 2,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -30640,8 +31857,9 @@ window.allobjects = function() {
       {
         "frame": "d_ringSpiral_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -30731,8 +31949,9 @@ window.allobjects = function() {
       {
         "frame": "d_gradient_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -30753,8 +31972,9 @@ window.allobjects = function() {
       {
         "frame": "d_gradient_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -30775,8 +31995,9 @@ window.allobjects = function() {
       {
         "frame": "d_gradient_b_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -30797,8 +32018,9 @@ window.allobjects = function() {
       {
         "frame": "d_gradient_b_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -30819,8 +32041,9 @@ window.allobjects = function() {
       {
         "frame": "d_gradient_c_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -30841,8 +32064,9 @@ window.allobjects = function() {
       {
         "frame": "d_gradient_c_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -30989,18 +32213,21 @@ window.allobjects = function() {
       {
         "frame": "block013_01c_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block013_02c_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_15_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31021,18 +32248,21 @@ window.allobjects = function() {
       {
         "frame": "block013_03c_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block013_04c_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_15_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31053,18 +32283,21 @@ window.allobjects = function() {
       {
         "frame": "block013_01c_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block013_02c_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_15_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31085,12 +32318,14 @@ window.allobjects = function() {
       {
         "frame": "block013_03c_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block013_04c_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31167,8 +32402,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31189,8 +32425,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31211,8 +32448,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31233,8 +32471,9 @@ window.allobjects = function() {
       {
         "frame": "block011b_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31255,12 +32494,14 @@ window.allobjects = function() {
       {
         "frame": "block011_01_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011_02_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31281,12 +32522,14 @@ window.allobjects = function() {
       {
         "frame": "block011_03_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011_04_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31307,12 +32550,14 @@ window.allobjects = function() {
       {
         "frame": "block011_01_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011_02_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31333,12 +32578,14 @@ window.allobjects = function() {
       {
         "frame": "block011_03_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011_04_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31359,18 +32606,21 @@ window.allobjects = function() {
       {
         "frame": "block011b_01_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011b_02_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011b_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31391,18 +32641,21 @@ window.allobjects = function() {
       {
         "frame": "block011b_03_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011b_04_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011b_03_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31423,18 +32676,21 @@ window.allobjects = function() {
       {
         "frame": "block011b_01_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011b_02_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011b_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31455,18 +32711,21 @@ window.allobjects = function() {
       {
         "frame": "block011b_03_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011b_04_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block011b_03_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31487,8 +32746,9 @@ window.allobjects = function() {
       {
         "frame": "block012_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31509,18 +32769,21 @@ window.allobjects = function() {
       {
         "frame": "block012_03_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block012_01_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_15_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31555,18 +32818,21 @@ window.allobjects = function() {
       {
         "frame": "block012_13_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block012_13_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_15_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31587,20 +32853,23 @@ window.allobjects = function() {
       {
         "frame": "puzzle_base_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -1
+        "z": -1,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "puzzle_piece_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31635,8 +32904,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31657,18 +32927,21 @@ window.allobjects = function() {
       {
         "frame": "block012b_03_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block012b_01_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_15_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31689,8 +32962,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_12_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31711,18 +32985,21 @@ window.allobjects = function() {
       {
         "frame": "block012b_13_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block012b_13_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_15_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31743,8 +33020,9 @@ window.allobjects = function() {
       {
         "frame": "block012_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31765,18 +33043,21 @@ window.allobjects = function() {
       {
         "frame": "block012_01_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block012_03_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_15_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31797,8 +33078,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31819,18 +33101,21 @@ window.allobjects = function() {
       {
         "frame": "block012b_01_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block012b_03_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_15_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31851,8 +33136,9 @@ window.allobjects = function() {
       {
         "frame": "block012_13_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31873,18 +33159,21 @@ window.allobjects = function() {
       {
         "frame": "block012_13_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block012_14_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_15_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -31905,8 +33194,9 @@ window.allobjects = function() {
       {
         "frame": "block012b_13_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -31927,18 +33217,21 @@ window.allobjects = function() {
       {
         "frame": "block012b_13_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "block012b_14_001.png",
         "localDy": 0,
-        "tint": 65280
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "blockOutline_15_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -32231,8 +33524,9 @@ window.allobjects = function() {
       {
         "frame": "d_scaleFadeRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -32253,8 +33547,9 @@ window.allobjects = function() {
       {
         "frame": "d_scaleFadeRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -32275,8 +33570,9 @@ window.allobjects = function() {
       {
         "frame": "d_scaleFadeRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -32297,8 +33593,9 @@ window.allobjects = function() {
       {
         "frame": "d_scaleFadeRing_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1007,
@@ -32375,26 +33672,30 @@ window.allobjects = function() {
       {
         "frame": "d_scaleFadeRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -32415,26 +33716,30 @@ window.allobjects = function() {
       {
         "frame": "d_scaleFadeRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_03_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -32455,26 +33760,30 @@ window.allobjects = function() {
       {
         "frame": "d_scaleFadeRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -32495,26 +33804,30 @@ window.allobjects = function() {
       {
         "frame": "d_scaleFadeRing_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_scaleFadeRing_04_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -32535,8 +33848,9 @@ window.allobjects = function() {
       {
         "frame": "d_sign_tile_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -32662,8 +33976,7 @@ window.allobjects = function() {
       "gj_smoke02_color_002.png",
       "gj_smoke02_color_003.png",
       "gj_smoke02_color_004.png",
-      "gj_smoke02_color_005.png",
-
+      "gj_smoke02_color_005.png"
     ],
     "animInterval": 100
   },
@@ -32687,7 +34000,7 @@ window.allobjects = function() {
       "gj_drops01_005.png",
       "gj_drops01_006.png",
       "gj_drops01_007.png",
-      "gj_drops01_008.png",
+      "gj_drops01_008.png"
     ],
     "animInterval": 75
   },
@@ -32711,7 +34024,7 @@ window.allobjects = function() {
       "gj_drops02_005.png",
       "gj_drops02_006.png",
       "gj_drops02_007.png",
-      "gj_drops02_008.png",
+      "gj_drops02_008.png"
     ],
     "animInterval": 75
   },
@@ -32735,7 +34048,7 @@ window.allobjects = function() {
       "gj_drops03_005.png",
       "gj_drops03_006.png",
       "gj_drops03_007.png",
-      "gj_drops03_008.png",
+      "gj_drops03_008.png"
     ],
     "animInterval": 75
   },
@@ -32745,8 +34058,9 @@ window.allobjects = function() {
       {
         "frame": "gj_drops04_color_014.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -32773,8 +34087,9 @@ window.allobjects = function() {
       {
         "frame": "gj_drops05_color_016.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -32803,13 +34118,6 @@ window.allobjects = function() {
     "default_z_layer": 5,
     "default_z_order": 2,
     "animFrames": [
-      "smallCoin_01_color_001.png",
-      "smallCoin_02_color_001.png",
-      "smallCoin_03_color_001.png",
-      "smallCoin_04_color_001.png",
-    ],
-    "animInterval": 75,
-    "animFrames": [
       "gj_bubble01_001.png",
       "gj_bubble01_002.png",
       "gj_bubble01_003.png",
@@ -32824,7 +34132,7 @@ window.allobjects = function() {
       "gj_bubble01_012.png",
       "gj_bubble01_013.png",
       "gj_bubble01_014.png",
-      "gj_bubble01_015.png",
+      "gj_bubble01_015.png"
     ],
     "animInterval": 75
   },
@@ -32841,15 +34149,9 @@ window.allobjects = function() {
     "default_z_layer": 5,
     "default_z_order": 2,
     "animFrames": [
-      "gj_lightning01_001.png",
-      "gj_lightning01_002.png",
-      "gj_lightning01_003.png",
-    ],
-    "animInterval": 75,
-    "animFrames": [
       "gj_lightning01_color_001.png",
       "gj_lightning01_color_002.png",
-      "gj_lightning01_color_003.png",
+      "gj_lightning01_color_003.png"
     ],
     "animInterval": 75
   },
@@ -32897,8 +34199,9 @@ window.allobjects = function() {
       {
         "frame": "gj_lightning02_color_010.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -32919,8 +34222,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign01_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -32941,8 +34245,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign01_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -32963,8 +34268,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign01_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -32985,8 +34291,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign01_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33007,8 +34314,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign02_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33029,8 +34337,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign02_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33051,8 +34360,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign02_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33073,8 +34383,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign02_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33095,8 +34406,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign03_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33117,8 +34429,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign03_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33139,8 +34452,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign03_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33161,8 +34475,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign03_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33183,8 +34498,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign04_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33205,8 +34521,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign05_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33227,8 +34544,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign05_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33249,8 +34567,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign05_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33271,8 +34590,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign05_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33293,8 +34613,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign06_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33315,8 +34636,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign06_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33337,8 +34659,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign06_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33359,8 +34682,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign06_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33381,8 +34705,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign07_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33403,8 +34728,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign07_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33425,8 +34751,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign07_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33447,8 +34774,9 @@ window.allobjects = function() {
       {
         "frame": "blockDesign07_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33469,26 +34797,30 @@ window.allobjects = function() {
       {
         "frame": "d_gradient_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_gradient_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_gradient_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_gradient_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -33509,26 +34841,30 @@ window.allobjects = function() {
       {
         "frame": "d_gradient_b_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_gradient_b_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_gradient_b_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_gradient_b_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -33549,26 +34885,30 @@ window.allobjects = function() {
       {
         "frame": "d_gradient_c_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_gradient_c_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_gradient_c_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "d_gradient_c_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -33713,8 +35053,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_b_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -33735,8 +35076,9 @@ window.allobjects = function() {
       {
         "frame": "triangle_b_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -33785,8 +35127,9 @@ window.allobjects = function() {
       {
         "frame": "plank_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33807,8 +35150,9 @@ window.allobjects = function() {
       {
         "frame": "plank_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33829,8 +35173,9 @@ window.allobjects = function() {
       {
         "frame": "plank_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33851,14 +35196,16 @@ window.allobjects = function() {
       {
         "frame": "emptyFrame.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "plank_01_slope_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 10
+        "z": 10,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33879,14 +35226,16 @@ window.allobjects = function() {
       {
         "frame": "emptyFrame.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "plank_01_slope_02_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": 10
+        "z": 10,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33907,8 +35256,9 @@ window.allobjects = function() {
       {
         "frame": "plank_01_square_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33929,8 +35279,9 @@ window.allobjects = function() {
       {
         "frame": "plank_01_square_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33951,8 +35302,9 @@ window.allobjects = function() {
       {
         "frame": "square_01_small_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -33973,8 +35325,9 @@ window.allobjects = function() {
       {
         "frame": "plank_01_small_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -34085,8 +35438,9 @@ window.allobjects = function() {
       {
         "frame": "bush_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34107,8 +35461,9 @@ window.allobjects = function() {
       {
         "frame": "bush_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34129,8 +35484,9 @@ window.allobjects = function() {
       {
         "frame": "bush_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34151,8 +35507,9 @@ window.allobjects = function() {
       {
         "frame": "edge_01_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34173,8 +35530,9 @@ window.allobjects = function() {
       {
         "frame": "edge_01_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34195,8 +35553,9 @@ window.allobjects = function() {
       {
         "frame": "edge_01_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34217,8 +35576,9 @@ window.allobjects = function() {
       {
         "frame": "edge_01_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34239,8 +35599,9 @@ window.allobjects = function() {
       {
         "frame": "edge_01_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34275,8 +35636,9 @@ window.allobjects = function() {
       {
         "frame": "edge_01_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34419,8 +35781,9 @@ window.allobjects = function() {
       {
         "frame": "fire_b_02_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -34443,7 +35806,7 @@ window.allobjects = function() {
       "fire_b_02_005.png",
       "fire_b_02_006.png",
       "fire_b_02_007.png",
-      "fire_b_02_008.png",
+      "fire_b_02_008.png"
     ],
     "animInterval": 75
   },
@@ -34468,7 +35831,7 @@ window.allobjects = function() {
       "fire_b_03_005.png",
       "fire_b_03_006.png",
       "fire_b_03_007.png",
-      "fire_b_03_008.png",
+      "fire_b_03_008.png"
     ],
     "animInterval": 75
   },
@@ -34478,8 +35841,9 @@ window.allobjects = function() {
       {
         "frame": "fire_b_04_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1011,
@@ -34501,7 +35865,7 @@ window.allobjects = function() {
       "fire_b_04_005.png",
       "fire_b_04_006.png",
       "fire_b_04_007.png",
-      "fire_b_04_008.png",
+      "fire_b_04_008.png"
     ],
     "animInterval": 75
   },
@@ -34596,7 +35960,7 @@ window.allobjects = function() {
       "gj22_anim_01_color_003.png",
       "gj22_anim_01_color_004.png",
       "gj22_anim_01_color_005.png",
-      "gj22_anim_01_color_006.png",
+      "gj22_anim_01_color_006.png"
     ],
     "animInterval": 75
   },
@@ -34619,7 +35983,7 @@ window.allobjects = function() {
       "gj22_anim_02_color_003.png",
       "gj22_anim_02_color_004.png",
       "gj22_anim_02_color_005.png",
-      "gj22_anim_02_color_006.png",
+      "gj22_anim_02_color_006.png"
     ],
     "animInterval": 100
   },
@@ -34642,7 +36006,7 @@ window.allobjects = function() {
       "gj22_anim_03_color_003.png",
       "gj22_anim_03_color_004.png",
       "gj22_anim_03_color_005.png",
-      "gj22_anim_03_color_006.png",
+      "gj22_anim_03_color_006.png"
     ],
     "animInterval": 100
   },
@@ -34662,7 +36026,7 @@ window.allobjects = function() {
     "animFrames": [
       "gj22_anim_04_color_001.png",
       "gj22_anim_04_color_002.png",
-      "gj22_anim_04_color_003.png",
+      "gj22_anim_04_color_003.png"
     ],
     "animInterval": 100
   },
@@ -34684,7 +36048,7 @@ window.allobjects = function() {
       "gj22_anim_05_color_002.png",
       "gj22_anim_05_color_003.png",
       "gj22_anim_05_color_004.png",
-      "gj22_anim_05_color_005.png",
+      "gj22_anim_05_color_005.png"
     ],
     "animInterval": 75
   },
@@ -34713,7 +36077,7 @@ window.allobjects = function() {
       "gj22_anim_06_color_009.png",
       "gj22_anim_06_color_010.png",
       "gj22_anim_06_color_011.png",
-      "gj22_anim_06_color_012.png",
+      "gj22_anim_06_color_012.png"
     ],
     "animInterval": 75
   },
@@ -34736,7 +36100,7 @@ window.allobjects = function() {
       "gj22_anim_07_color_003.png",
       "gj22_anim_07_color_004.png",
       "gj22_anim_07_color_005.png",
-      "gj22_anim_07_color_006.png",
+      "gj22_anim_07_color_006.png"
     ],
     "animInterval": 100
   },
@@ -34762,7 +36126,7 @@ window.allobjects = function() {
       "gj22_anim_08_color_006.png",
       "gj22_anim_08_color_007.png",
       "gj22_anim_08_color_008.png",
-      "gj22_anim_08_color_009.png",
+      "gj22_anim_08_color_009.png"
     ],
     "animInterval": 100
   },
@@ -34784,7 +36148,7 @@ window.allobjects = function() {
       "gj22_anim_09_color_002.png",
       "gj22_anim_09_color_003.png",
       "gj22_anim_09_color_004.png",
-      "gj22_anim_09_color_005.png",
+      "gj22_anim_09_color_005.png"
     ],
     "animInterval": 100
   },
@@ -34794,8 +36158,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_10_005.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34817,8 +36182,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_11_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34839,8 +36205,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_12_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34861,8 +36228,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_13_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34883,8 +36251,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_14_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34905,8 +36274,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_15_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34927,8 +36297,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_16_002.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34949,8 +36320,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_17_002.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34971,8 +36343,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_18_003.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -34993,8 +36366,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_19_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35015,8 +36389,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_20_002.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35037,8 +36412,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_21_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35112,8 +36488,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_24_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35134,8 +36511,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_25_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35156,8 +36534,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_26_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35201,7 +36580,7 @@ window.allobjects = function() {
       "gj22_anim_27_color_006.png",
       "gj22_anim_27_color_007.png",
       "gj22_anim_27_color_008.png",
-      "gj22_anim_27_color_009.png",
+      "gj22_anim_27_color_009.png"
     ],
     "animInterval": 75
   },
@@ -35232,8 +36611,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_29_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35254,8 +36634,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_30_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35276,8 +36657,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_31_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35298,8 +36680,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_32_color_009.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35320,8 +36703,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_33_color_007.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35342,8 +36726,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_34_color_007.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35364,8 +36749,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_35_color_008.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35386,8 +36772,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_36_002.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35410,7 +36797,7 @@ window.allobjects = function() {
       "gj22_anim_36_color_006.png",
       "gj22_anim_36_color_007.png",
       "gj22_anim_36_color_008.png",
-      "gj22_anim_36_color_009.png",
+      "gj22_anim_36_color_009.png"
     ],
     "animInterval": 100
   },
@@ -35435,32 +36822,37 @@ window.allobjects = function() {
       {
         "frame": "checkpoint_d_01_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "checkpoint_d_01_001.png",
         "localDy": 3.304872512817383,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "checkpoint_d_02_001.png",
         "localDy": 0.8172760009765625,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "checkpoint_d_03_001.png",
         "localDy": 1.9917716979980469,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "checkpoint_01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -35495,14 +36887,16 @@ window.allobjects = function() {
       {
         "frame": null,
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": null,
         "localDy": 0,
-        "tint": 65280,
-        "z": 1
+        "z": 1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -35584,8 +36978,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_03_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35606,8 +37001,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_03_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35628,8 +37024,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_03_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35650,8 +37047,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_03_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35672,8 +37070,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_03_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35694,8 +37093,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_03_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35716,8 +37116,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_03_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35752,8 +37153,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_02_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35774,8 +37176,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_02_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35796,8 +37199,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_02_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35818,8 +37222,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_02_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35840,8 +37245,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_02_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35862,8 +37268,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_01_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35884,8 +37291,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_01_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35906,8 +37314,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_01_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35928,8 +37337,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_01_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35950,8 +37360,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_01_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -35972,8 +37383,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_01_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36050,8 +37462,9 @@ window.allobjects = function() {
       {
         "frame": "pixelb_02_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36128,8 +37541,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_001_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36150,8 +37564,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_002_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36172,8 +37587,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_003_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36194,8 +37610,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_004_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36216,8 +37633,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_005_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36238,8 +37656,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_006_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36260,8 +37679,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_007_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36282,8 +37702,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_008_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36304,8 +37725,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_009_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36326,8 +37748,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_010_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36348,8 +37771,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_011_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36370,8 +37794,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_012_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36392,8 +37817,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_013_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36414,8 +37840,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_014_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36436,8 +37863,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_015_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36458,8 +37886,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_016_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36480,8 +37909,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_017_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36502,8 +37932,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_018_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36524,8 +37955,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_019_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36546,8 +37978,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_020_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36568,8 +38001,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_021_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36590,8 +38024,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_022_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36640,8 +38075,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_023_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36662,8 +38098,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_024_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36698,8 +38135,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_024b_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36720,8 +38158,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_026_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36742,8 +38181,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_027_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36764,8 +38204,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_028_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36786,8 +38227,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_029_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36808,8 +38250,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_030_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36830,8 +38273,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_031_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36866,8 +38310,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_033_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36888,8 +38333,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_034_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36910,8 +38356,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_035_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36932,8 +38379,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_036_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36968,8 +38416,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_038_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -36990,8 +38439,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_039_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37012,8 +38462,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_040_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37034,8 +38485,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_041_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37070,8 +38522,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_043_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37092,8 +38545,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_044_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37114,8 +38568,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_045_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37136,8 +38591,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_046_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37158,8 +38614,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_047_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37180,8 +38637,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_048_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37202,8 +38660,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_049_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37224,8 +38683,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_050_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37246,8 +38706,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_051_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37268,8 +38729,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_052_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37290,8 +38752,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_053_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37312,8 +38775,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_054_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37348,8 +38812,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_056_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37370,8 +38835,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_057_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37392,8 +38858,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_058_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37414,8 +38881,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_059_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37436,8 +38904,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_060_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37458,8 +38927,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_061_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37480,8 +38950,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_062_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37502,8 +38973,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_063_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37524,8 +38996,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_064_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37546,8 +39019,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_065_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37568,8 +39042,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_066_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37590,8 +39065,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_067_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37612,8 +39088,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_068_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37634,8 +39111,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_069_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37656,8 +39134,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_070_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37678,8 +39157,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_071_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37700,8 +39180,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_072_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37722,8 +39203,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_073_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37744,8 +39226,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_074_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37766,8 +39249,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_075_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37788,8 +39272,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_076_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37838,8 +39323,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_079_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37860,8 +39346,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_080_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37882,8 +39369,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_081_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37904,8 +39392,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_082_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37926,8 +39415,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_083_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37948,8 +39438,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_084_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37970,8 +39461,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_085_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -37992,8 +39484,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_086_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38014,8 +39507,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_087_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38036,8 +39530,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_088_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38058,8 +39553,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_089_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38080,8 +39576,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_090_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38102,8 +39599,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_091_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38124,8 +39622,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_092_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38146,8 +39645,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_093_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38168,8 +39668,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_094_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38190,8 +39691,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_095_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38212,8 +39714,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_096_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38234,8 +39737,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_097_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38256,8 +39760,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_098_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38278,8 +39783,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_099_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38300,8 +39806,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_100_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38322,8 +39829,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_101_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38344,8 +39852,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_102_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38366,8 +39875,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_103_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38388,8 +39898,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_104_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38410,8 +39921,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_105_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38446,8 +39958,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_107_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38468,8 +39981,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_108_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38490,8 +40004,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_109_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38512,8 +40027,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_110_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38534,8 +40050,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_111_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38556,8 +40073,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_112_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38578,8 +40096,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_113_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38600,8 +40119,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_114_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38622,8 +40142,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_115_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38644,8 +40165,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_116_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38666,8 +40188,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_117_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38688,8 +40211,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_118_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38710,8 +40234,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_119_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38732,8 +40257,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_120_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38754,8 +40280,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_121_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38776,8 +40303,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_122_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38798,8 +40326,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_123_color_002.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38820,8 +40349,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_124_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38842,8 +40372,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_125_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38864,8 +40395,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_126_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38886,8 +40418,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_127_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38908,8 +40441,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_128_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38930,8 +40464,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_129_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38952,8 +40487,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_130_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38974,8 +40510,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_131_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -38996,8 +40533,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_132_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39018,8 +40556,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_133_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39040,8 +40579,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_134_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39062,8 +40602,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_135_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39084,8 +40625,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_136_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39106,8 +40648,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_137_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39128,8 +40671,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_138_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39150,8 +40694,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_139_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39172,8 +40717,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_140_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39194,8 +40740,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_141_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39216,8 +40763,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_142_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39238,8 +40786,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_143_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39260,8 +40809,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_144_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39282,8 +40832,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_145_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39304,8 +40855,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_146_color_002.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39326,8 +40878,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_147_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39348,8 +40901,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_148_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39370,8 +40924,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_149_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39392,8 +40947,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_150_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39414,8 +40970,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_151_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39436,8 +40993,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_152_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39458,8 +41016,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_153_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39480,8 +41039,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_154_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39502,8 +41062,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_155_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39524,8 +41085,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_156_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39546,8 +41108,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_157_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39568,8 +41131,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_158_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39590,8 +41154,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_159_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39612,8 +41177,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_160_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39634,8 +41200,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_161_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39656,8 +41223,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_162_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39678,8 +41246,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_163_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39700,8 +41269,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_164_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39722,8 +41292,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_165_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39744,8 +41315,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_166_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39766,8 +41338,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_167_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39788,8 +41361,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_168_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39810,8 +41384,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_169_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39832,8 +41407,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_170_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39854,8 +41430,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_171_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39876,8 +41453,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_172_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39898,8 +41476,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_173_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39920,8 +41499,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_174_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39942,8 +41522,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_175_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39964,8 +41545,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_176_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -39986,8 +41568,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_177_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40008,8 +41591,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_178_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40030,8 +41614,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_179_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40052,8 +41637,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_180_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40074,8 +41660,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_181_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40096,8 +41683,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_182_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40118,8 +41706,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_183_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40140,8 +41729,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_184_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40162,8 +41752,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_185_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40184,8 +41775,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_186_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40206,8 +41798,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_187_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40228,8 +41821,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_188_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40250,8 +41844,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_189_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40272,8 +41867,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_190_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40294,8 +41890,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_183_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40316,8 +41913,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_192_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40338,8 +41936,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_193_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40360,8 +41959,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_194_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40382,8 +41982,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_195_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40404,8 +42005,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_196_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40426,8 +42028,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_197_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40448,8 +42051,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_198_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40470,8 +42074,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_199_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40492,8 +42097,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_200_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40514,8 +42120,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_201_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40536,8 +42143,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_202_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40558,8 +42166,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_203_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40580,8 +42189,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_204_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40602,8 +42212,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_205_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40624,8 +42235,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_206_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40646,8 +42258,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_207_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40668,8 +42281,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_208_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40690,8 +42304,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_209_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40712,8 +42327,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_210_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40734,8 +42350,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_211_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40756,8 +42373,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_212_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40778,8 +42396,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_213_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40814,8 +42433,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_215_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40836,8 +42456,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_216_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40858,8 +42479,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_217_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40880,8 +42502,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_218_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40902,8 +42525,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_219_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40924,8 +42548,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_220_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40946,8 +42571,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_221_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40968,8 +42594,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_222_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -40990,8 +42617,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_223_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41012,8 +42640,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_224_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41034,8 +42663,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_225_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41056,8 +42686,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_226_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41078,8 +42709,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_227_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41100,8 +42732,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_228_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41122,8 +42755,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_229_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41144,8 +42778,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_230_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41166,8 +42801,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_231_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41188,8 +42824,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_232_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41210,8 +42847,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_233_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41232,8 +42870,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_234_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41254,8 +42893,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_235_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41332,8 +42972,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_240_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41354,8 +42995,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_241_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41376,8 +43018,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_242_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41398,8 +43041,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_243_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41420,8 +43064,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_244_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41442,8 +43087,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_245_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41464,8 +43110,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_246_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41486,8 +43133,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_247_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41578,8 +43226,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_253_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41600,8 +43249,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_254_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41622,8 +43272,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_255_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41686,8 +43337,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_259_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41708,8 +43360,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_260_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41730,8 +43383,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_261_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41752,8 +43406,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_262_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41774,8 +43429,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_263_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41796,8 +43452,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_264_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41818,8 +43475,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_265_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41840,8 +43498,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_266_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41862,8 +43521,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_267_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41884,8 +43544,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_268_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41906,8 +43567,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_269_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41928,8 +43590,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_270_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41950,8 +43613,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_271_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41972,8 +43636,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_272_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -41994,8 +43659,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_273_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42016,8 +43682,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_274_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42038,8 +43705,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_275_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42060,8 +43728,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_276_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42082,8 +43751,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_277_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42104,8 +43774,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_278_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42126,8 +43797,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_279_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42148,8 +43820,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_280_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42170,8 +43843,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_281_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42192,8 +43866,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_282_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42214,8 +43889,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_283_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42236,8 +43912,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_284_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42258,8 +43935,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_285_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42280,8 +43958,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_286_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42302,8 +43981,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_287_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42324,8 +44004,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_288_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42346,8 +44027,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_289_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42368,8 +44050,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_290_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42390,8 +44073,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_291_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42412,8 +44096,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_292_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42476,8 +44161,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_296_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42498,8 +44184,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_297_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42520,8 +44207,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_298_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42542,8 +44230,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_299_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42564,8 +44253,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_300_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42586,8 +44276,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_301_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42608,8 +44299,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_302_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42630,8 +44322,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_303_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42652,8 +44345,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_304_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42674,8 +44368,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_305_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42710,8 +44405,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_307_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42732,8 +44428,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_308_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42754,8 +44451,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_309_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42776,8 +44474,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_310_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42798,8 +44497,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_311_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42820,8 +44520,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_312_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42842,8 +44543,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_313_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42864,8 +44566,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_314_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42886,8 +44589,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_315_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42908,8 +44612,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_316_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42930,8 +44635,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_317_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42952,8 +44658,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_318_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42974,8 +44681,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_319_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -42996,8 +44704,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_320_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43018,8 +44727,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_321_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43040,8 +44750,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_322_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43062,8 +44773,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_323_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43084,8 +44796,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_324_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43106,8 +44819,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_325_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43128,8 +44842,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_326_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43150,8 +44865,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_327_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43172,8 +44888,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_328_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43194,8 +44911,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_329_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43216,8 +44934,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_330_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43238,8 +44957,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_331_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43260,8 +44980,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_332_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43282,8 +45003,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_147_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43556,8 +45278,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_352_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43578,8 +45301,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_353_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43600,8 +45324,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_354_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43636,8 +45361,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_356_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43658,8 +45384,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_357_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43680,8 +45407,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_358_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43702,8 +45430,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_359_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43724,8 +45453,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_360_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43746,8 +45476,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_361_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43768,8 +45499,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_362_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43790,8 +45522,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_363_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43812,8 +45545,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_364_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43834,8 +45568,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_365_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43870,8 +45605,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_367_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43892,8 +45628,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_368_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43914,8 +45651,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_369_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43936,8 +45674,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_370_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43958,8 +45697,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_371_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -43980,8 +45720,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_372_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44002,8 +45743,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_373_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44024,8 +45766,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_374_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44046,8 +45789,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_375_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44068,8 +45812,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_376_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44090,8 +45835,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_377_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44112,8 +45858,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_378_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44134,8 +45881,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_379_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44156,8 +45904,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_380_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44178,8 +45927,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_381_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44200,8 +45950,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_382_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44222,8 +45973,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_383_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44300,8 +46052,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_388_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44322,8 +46075,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_389_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44344,8 +46098,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_390_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44366,8 +46121,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_391_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44388,8 +46144,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_392_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44410,8 +46167,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_393_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44432,8 +46190,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_394_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44454,8 +46213,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_395_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44504,8 +46264,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_398_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44526,8 +46287,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_399_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44548,8 +46310,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_400_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44570,8 +46333,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_401_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44592,8 +46356,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_402_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44614,8 +46379,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_403_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44636,8 +46402,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_404_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44658,8 +46425,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_405_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44680,8 +46448,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_406_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44702,8 +46471,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_407_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44724,8 +46494,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_408_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44746,8 +46517,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_409_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44768,8 +46540,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_410_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44790,8 +46563,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_411_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44812,8 +46586,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_412_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44834,8 +46609,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_413_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44856,8 +46632,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_414_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44878,8 +46655,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_415_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44900,8 +46678,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_416_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44922,8 +46701,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_417_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -44944,8 +46724,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_418_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45036,8 +46817,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_424_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45072,8 +46854,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_426_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45094,8 +46877,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_427_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45116,8 +46900,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_428_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45138,8 +46923,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_429_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45160,8 +46946,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_430_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45182,8 +46969,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_431_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45204,8 +46992,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_432_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45226,8 +47015,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_433_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45248,8 +47038,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_434_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45270,8 +47061,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_435_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45292,8 +47084,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_436_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45314,8 +47107,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_437_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45336,8 +47130,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_438_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45372,8 +47167,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_440_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45408,8 +47204,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_442_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45444,8 +47241,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_444_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45480,8 +47278,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_446_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45516,8 +47315,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_448_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45552,8 +47352,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_450_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45574,8 +47375,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_451_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45596,8 +47398,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_452_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45618,8 +47421,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_453_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45640,8 +47444,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_454_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45676,8 +47481,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_456_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45712,8 +47518,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_458_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45734,8 +47541,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_459_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45784,8 +47592,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_462_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45820,8 +47629,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_464_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45856,8 +47666,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_466_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45892,8 +47703,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_468_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45928,8 +47740,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_470_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -45964,8 +47777,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_472_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46000,8 +47814,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_474_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46036,8 +47851,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_476_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46072,8 +47888,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_478_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46108,8 +47925,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_480_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46130,8 +47948,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_481_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46152,8 +47971,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_482_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46174,8 +47994,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_483_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46196,8 +48017,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_484_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46218,8 +48040,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_485_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46240,8 +48063,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_486_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46262,8 +48086,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_487_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46284,8 +48109,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_488_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46306,8 +48132,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_489_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46328,8 +48155,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_490_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46350,8 +48178,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_491_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46372,8 +48201,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_492_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46464,8 +48294,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_498_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46486,8 +48317,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_499_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46508,8 +48340,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_500_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46530,8 +48363,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_501_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46552,8 +48386,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_502_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46574,8 +48409,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_503_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46596,8 +48432,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_504_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46618,8 +48455,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_505_color_006.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46640,8 +48478,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_506_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46928,8 +48767,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_526_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46950,8 +48790,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_527_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46972,8 +48813,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_528_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -46994,8 +48836,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_529_color_003.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47016,8 +48859,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_530_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47038,8 +48882,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_454_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47060,8 +48905,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_532_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47082,8 +48928,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_533_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47104,8 +48951,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_291_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47154,8 +49002,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_537_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47204,8 +49053,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_540_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47240,8 +49090,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_542_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47276,8 +49127,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_544_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47326,8 +49178,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_547_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47362,8 +49215,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_549_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47398,8 +49252,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_551_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47448,8 +49303,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_554_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47498,8 +49354,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_557_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47548,8 +49405,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_560_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47584,8 +49442,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_562_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47620,8 +49479,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_564_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47656,8 +49516,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_566_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47692,8 +49553,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_568_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47728,8 +49590,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_570_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47778,8 +49641,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_573_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47828,8 +49692,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_576_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47878,8 +49743,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_579_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47914,8 +49780,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_581_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -47964,8 +49831,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_584_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48014,8 +49882,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_587_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48036,8 +49905,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_588_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48058,8 +49928,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_589_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48094,8 +49965,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_591_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48116,8 +49988,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_592_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48138,8 +50011,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_593_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48160,8 +50034,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_594_color_004.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48196,8 +50071,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_596_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48218,8 +50094,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_597_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48240,8 +50117,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_598_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48262,8 +50140,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_599_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48284,8 +50163,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_600_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48306,8 +50186,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48328,8 +50209,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48686,8 +50568,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_05_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48736,8 +50619,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_05b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48786,8 +50670,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_06_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48836,8 +50721,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_06b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48886,8 +50772,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_07_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48908,8 +50795,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_07b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48930,8 +50818,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_08_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48952,8 +50841,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_08b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48974,8 +50864,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_09_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -48996,8 +50887,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_09b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49018,8 +50910,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_10_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49040,8 +50933,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_10b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49062,8 +50956,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_11_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49112,8 +51007,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_11b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49162,8 +51058,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_12_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49212,8 +51109,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_12b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49262,8 +51160,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_01_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49284,8 +51183,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_01b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49306,8 +51206,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_02_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49328,8 +51229,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_02b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49350,8 +51252,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_03_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49372,8 +51275,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_03b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49394,8 +51298,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_04_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49416,8 +51321,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_04b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49438,8 +51344,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_05_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49488,8 +51395,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_05b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49538,8 +51446,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_06_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49588,8 +51497,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_06b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49750,8 +51660,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_11_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49800,8 +51711,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_11b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49850,8 +51762,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_12_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49900,8 +51813,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_12b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49950,20 +51864,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_01b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_02_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -49984,20 +51901,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_09_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_10b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50018,20 +51938,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_11_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_12b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50052,20 +51975,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_05b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50086,32 +52012,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_11_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_12b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_05b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50132,32 +52063,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_01b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_02_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_09_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_10b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50178,32 +52114,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_01_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_02_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_11_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_12_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50224,32 +52165,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_01b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_02b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50270,32 +52216,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_09_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_10_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_11b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_12b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50316,32 +52267,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_09b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_10b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_05b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_06b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50362,44 +52318,51 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_01_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_02b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_11_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_12_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50420,44 +52383,51 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_09b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_10_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_11b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_12b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_05b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_06b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50478,44 +52448,51 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_01_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_02_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_09_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_10_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_11b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_12_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50536,44 +52513,51 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_01b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_02b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_09b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_10b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_06b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50594,56 +52578,65 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_1_01_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_02b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_09b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_10_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_06b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_11b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_12_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_1_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50664,20 +52657,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_01b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_02_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50698,20 +52694,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_09_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_10b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50732,20 +52731,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_11b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_12_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50766,20 +52768,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_06b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50800,32 +52805,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_11b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_12_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_06b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50846,32 +52856,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_01b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_02_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_09_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_10b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50892,32 +52907,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_01_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_02_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_11b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_12b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50938,32 +52958,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_01b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_02b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_05b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_06b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -50984,32 +53009,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_09_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_10_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_11_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_12_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51030,32 +53060,37 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_09b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_10b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51076,44 +53111,51 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_01_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_02b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_11b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_12b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_05b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_06b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51134,44 +53176,51 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_09b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_10_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_11_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_12_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_05_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51192,44 +53241,51 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_01_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_02_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_09_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_10_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_11_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_12b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51250,44 +53306,51 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_01b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_02b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_09b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_10b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_05b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51308,56 +53371,65 @@ window.allobjects = function() {
       {
         "frame": "gdh_01_2_01_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_02b_001.png",
         "localDy": 14.799999237060547,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_09b_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_10_001.png",
         "localDy": -14.800000190734863,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_05b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_06_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_11_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_12b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_01_2_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51378,8 +53450,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_1_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51400,8 +53473,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_2_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51422,8 +53496,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_3_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51444,8 +53519,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_4_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51466,8 +53542,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_1b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51488,8 +53565,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_2b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51510,8 +53588,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_3b_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51532,8 +53611,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_4_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51554,8 +53634,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_1c_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51576,8 +53657,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_2_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51598,8 +53680,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_3_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51620,8 +53703,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_02_4_2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51838,8 +53922,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_37_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51860,8 +53945,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_38_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51895,8 +53981,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_39_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51931,8 +54018,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_40_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51967,8 +54055,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_41_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -51989,8 +54078,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_42_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52011,8 +54101,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_43_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52033,8 +54124,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_44_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52055,8 +54147,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_45_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52077,8 +54170,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_46_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52099,8 +54193,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_47_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52121,8 +54216,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_48_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52143,8 +54239,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_49_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52165,8 +54262,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_50_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52187,8 +54285,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_51_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52209,8 +54308,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_52_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52231,8 +54331,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_53_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52253,8 +54354,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_54_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52275,8 +54377,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_55_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52297,8 +54400,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_56_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52319,8 +54423,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_57_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52341,8 +54446,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_58_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52363,8 +54469,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_59_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52385,8 +54492,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_60_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52407,8 +54515,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_61_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52429,14 +54538,16 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_62_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "gj22_anim_62_002.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52457,14 +54568,16 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_63_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "gj22_anim_63_002.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52485,8 +54598,9 @@ window.allobjects = function() {
       {
         "frame": "gj22_anim_64_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -52608,8 +54722,9 @@ window.allobjects = function() {
       {
         "frame": null,
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1004,
@@ -53187,14 +55302,16 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b4_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b4_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53215,20 +55332,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b1_001.png",
         "localDy": 7.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b1_001.png",
         "localDy": -7.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b1_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53249,20 +55369,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b4_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b1_001.png",
         "localDy": -7.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b1_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53283,20 +55406,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b2_001.png",
         "localDy": 7.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_001.png",
         "localDy": -7.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53317,20 +55443,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b2_001.png",
         "localDy": 7.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53351,26 +55480,30 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b2_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_001.png",
         "localDy": -7.5,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53391,8 +55524,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b3_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53413,8 +55547,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b3_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53449,14 +55584,16 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b4_s_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b4_s_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53477,20 +55614,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b1_s_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b1_s_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b1_s_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53511,20 +55651,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b4_s_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b1_s_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b1_s_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53545,20 +55688,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b2_s_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_s_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_s_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53579,20 +55725,23 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b2_s_001.png",
         "localDy": 3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_s_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_s_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53613,26 +55762,30 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b2_s_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_s_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_s_001.png",
         "localDy": -3.75,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       },
       {
         "frame": "gdh_03_1_b2_s_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53653,8 +55806,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b3_s_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -53675,8 +55829,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_03_1_b3_s_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -54232,14 +56387,16 @@ window.allobjects = function() {
       {
         "frame": "d_animWave_01b_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "d_animWave_01b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -54274,14 +56431,16 @@ window.allobjects = function() {
       {
         "frame": "d_animWave_03b_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       },
       {
         "frame": "d_animWave_03b_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -54323,8 +56482,7 @@ window.allobjects = function() {
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
     "default_z_order": 12,
-    "editorOffsetY": -9.8,
-
+    "editorOffsetY": -9.8
   },
   "3006": {
     "can_color": false,
@@ -54617,8 +56775,9 @@ window.allobjects = function() {
       {
         "frame": "teleportRing_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 0,
@@ -54713,8 +56872,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_spike_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -54735,8 +56895,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_spike_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -54757,8 +56918,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_spike_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -54779,8 +56941,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_spike_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -54969,8 +57132,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_chain_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55005,8 +57169,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_chain_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55041,8 +57206,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55063,8 +57229,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55085,8 +57252,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55107,8 +57275,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55129,8 +57298,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55151,8 +57321,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55173,8 +57344,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_07_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55195,8 +57367,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_08_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55217,8 +57390,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_09_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55239,8 +57413,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_10_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55261,8 +57436,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_11_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55283,8 +57459,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_12_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55305,8 +57482,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_13_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55509,8 +57687,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platformArt_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -55531,8 +57710,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platformArt_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -55553,8 +57733,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platformArt_03_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -55575,8 +57756,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platformArt_04_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -55597,8 +57779,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platformArt_05_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -55619,8 +57802,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platformArt_06_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 2,
@@ -55641,8 +57825,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_crystal_01_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55677,8 +57862,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_crystal_02_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55713,8 +57899,9 @@ window.allobjects = function() {
       {
         "frame": "gdh_platform1_14_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": -100
+        "z": -100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55833,8 +58020,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_601_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55869,8 +58057,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_603_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55905,8 +58094,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_605_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55941,8 +58131,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_607_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -55977,8 +58168,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_609_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56027,8 +58219,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_612_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56063,8 +58256,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_614_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56127,8 +58321,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_618_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56149,8 +58344,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_619_color_004.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56171,8 +58367,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_620_color_003.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56193,8 +58390,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_621_color_002.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56215,8 +58413,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_622_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56237,8 +58436,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_623_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56259,8 +58459,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_624_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56281,8 +58482,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_625_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56303,8 +58505,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_626_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56325,8 +58528,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_627_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56347,8 +58551,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_628_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56369,8 +58574,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_629_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56419,8 +58625,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_632_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56441,8 +58648,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_633_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56463,8 +58671,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_634_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56485,8 +58694,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_635_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56507,8 +58717,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_636_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56529,8 +58740,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_637_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56551,8 +58763,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_638_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56573,8 +58786,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_639_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56595,8 +58809,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_640_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56617,8 +58832,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_641_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56653,8 +58869,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_643_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56675,8 +58892,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_644_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56697,8 +58915,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_645_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56719,8 +58938,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_646_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56741,8 +58961,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_647_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56763,8 +58984,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_648_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56785,8 +59007,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_649_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56807,8 +59030,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_650_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56829,8 +59053,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_651_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56851,8 +59076,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_652_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -56999,8 +59225,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_662_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57021,8 +59248,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_663_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57043,8 +59271,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_664_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57065,8 +59294,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_665_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57087,8 +59317,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_666_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57137,8 +59368,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_669_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57159,8 +59391,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_670_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57181,8 +59414,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_671_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57203,8 +59437,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_672_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57225,8 +59460,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_673_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57247,8 +59483,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_674_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57269,8 +59506,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_675_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57291,8 +59529,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_676_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57313,8 +59552,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_677_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57335,8 +59575,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_678_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57385,8 +59626,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_681_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57407,8 +59649,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_682_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57429,8 +59672,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_683_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57451,8 +59695,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_684_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57473,8 +59718,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_685_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57495,8 +59741,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_686_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57517,8 +59764,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_687_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57539,8 +59787,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_688_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57561,8 +59810,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_689_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57583,8 +59833,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_690_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57605,8 +59856,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_691_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57627,8 +59879,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_692_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57649,8 +59902,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_693_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57671,8 +59925,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_694_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57693,8 +59948,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_695_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57715,8 +59971,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_696_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57737,8 +59994,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_697_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57759,8 +60017,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_698_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57781,8 +60040,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_699_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57803,8 +60063,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_700_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57825,8 +60086,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_701_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57847,8 +60109,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_702_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57869,8 +60132,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_703_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57891,8 +60155,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_704_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57913,8 +60178,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_705_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57935,8 +60201,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_706_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57957,8 +60224,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_707_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -57979,8 +60247,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_708_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58001,8 +60270,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_709_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58023,8 +60293,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_710_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58045,8 +60316,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_711_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58067,8 +60339,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_712_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58089,8 +60362,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_713_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58111,8 +60385,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_714_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58133,8 +60408,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_715_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58155,8 +60431,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_716_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58177,8 +60454,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_717_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58199,8 +60477,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_718_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58221,8 +60500,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_719_color_002.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58243,8 +60523,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_720_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58265,8 +60546,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_721_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58287,8 +60569,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_722_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58309,8 +60592,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_723_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58331,8 +60615,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_724_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58353,8 +60638,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_725_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58375,8 +60661,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_726_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58397,8 +60684,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_727_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58419,8 +60707,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_728_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58441,8 +60730,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_729_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58463,8 +60753,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_730_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58485,8 +60776,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_731_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58507,8 +60799,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_732_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58529,8 +60822,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_733_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58551,8 +60845,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_734_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58573,8 +60868,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_735_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58595,8 +60891,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_736_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58617,8 +60914,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_737_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58639,8 +60937,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_738_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58661,8 +60960,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_739_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58683,8 +60983,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_740_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58705,8 +61006,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_741_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58727,8 +61029,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_742_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58749,8 +61052,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_743_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58771,8 +61075,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_744_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58793,8 +61098,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_745_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58815,8 +61121,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_746_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58837,8 +61144,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_747_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58859,8 +61167,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_748_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58881,8 +61190,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_749_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58903,8 +61213,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_750_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58925,8 +61236,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_751_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58947,8 +61259,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_752_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58969,8 +61282,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_753_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -58991,8 +61305,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_754_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59013,8 +61328,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_755_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59035,8 +61351,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_756_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59057,8 +61374,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_757_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59079,8 +61397,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1139_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59101,8 +61420,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1126_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59123,8 +61443,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_760_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59145,8 +61466,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_761_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59167,8 +61489,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_762_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59189,8 +61512,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_763_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59211,8 +61535,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_764_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59233,8 +61558,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_765_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59255,8 +61581,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_766_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59277,8 +61604,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_767_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59299,8 +61627,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_768_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59321,8 +61650,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_769_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59343,8 +61673,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_770_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59365,8 +61696,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_771_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59387,8 +61719,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_772_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59409,8 +61742,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_773_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59431,8 +61765,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_774_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59453,8 +61788,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_775_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59475,8 +61811,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_776_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59497,8 +61834,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_777_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59519,8 +61857,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_778_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59541,8 +61880,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_779_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59563,8 +61903,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_780_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59585,8 +61926,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_781_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59607,8 +61949,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_782_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59629,8 +61972,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_783_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59651,8 +61995,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_784_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59673,8 +62018,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_785_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59695,8 +62041,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_786_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59717,8 +62064,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_787_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59739,8 +62087,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_788_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59761,8 +62110,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_789_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59783,8 +62133,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_790_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59805,8 +62156,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_791_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59827,8 +62179,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_792_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59849,8 +62202,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_793_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59871,8 +62225,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_794_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59893,8 +62248,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_795_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59915,8 +62271,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_796_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59937,8 +62294,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_797_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59959,8 +62317,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_798_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -59981,8 +62340,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_799_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60003,8 +62363,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_800_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60025,8 +62386,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_801_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60047,8 +62409,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_802_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60111,8 +62474,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_805_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60133,8 +62497,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_806_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60155,8 +62520,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_807_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60177,8 +62543,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_808_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60199,8 +62566,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_809_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60221,8 +62589,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_810_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60243,8 +62612,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_811_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60265,8 +62635,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_812_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60287,8 +62658,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_813_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60309,8 +62681,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_814_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60331,8 +62704,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_815_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60353,8 +62727,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_816_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60375,8 +62750,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_817_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60397,8 +62773,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_818_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60419,8 +62796,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_819_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60441,8 +62819,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_820_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60463,8 +62842,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_821_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60485,8 +62865,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_822_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60507,8 +62888,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_823_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60529,8 +62911,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_824_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60551,8 +62934,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_825_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60573,8 +62957,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_826_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60595,8 +62980,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_827_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60617,8 +63003,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_828_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60639,8 +63026,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_829_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60661,8 +63049,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_830_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60683,8 +63072,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_831_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60705,8 +63095,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_832_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60727,8 +63118,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_833_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60749,8 +63141,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_834_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60785,8 +63178,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_836_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60807,8 +63201,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_837_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60829,8 +63224,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_838_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60851,8 +63247,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_839_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60873,8 +63270,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_840_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60895,8 +63293,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_841_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60917,8 +63316,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_842_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60939,8 +63339,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_843_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60961,8 +63362,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_844_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -60983,8 +63385,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1139_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61005,8 +63408,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_846_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61027,8 +63431,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_847_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61049,8 +63454,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_848_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61071,8 +63477,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_849_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61093,8 +63500,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_850_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61115,8 +63523,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_851_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61221,8 +63630,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_858_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61257,8 +63667,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_860_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61279,8 +63690,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_861_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61301,8 +63713,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_862_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61323,8 +63736,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_863_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61345,8 +63759,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_864_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61367,8 +63782,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_865_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61389,8 +63805,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_866_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61411,8 +63828,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_867_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61433,8 +63851,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_868_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61455,8 +63874,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_869_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61477,8 +63897,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_870_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61499,8 +63920,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_871_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61521,8 +63943,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_872_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61543,8 +63966,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_873_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61565,8 +63989,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_874_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61587,8 +64012,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_875_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61609,8 +64035,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_876_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61631,8 +64058,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_877_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61653,8 +64081,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_878_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61675,8 +64104,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_879_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61697,8 +64127,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_880_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61719,8 +64150,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_881_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61741,8 +64173,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_882_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61763,8 +64196,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_883_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61785,8 +64219,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_884_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61807,8 +64242,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_885_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61829,8 +64265,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_886_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61851,8 +64288,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_887_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61873,8 +64311,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_888_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61895,8 +64334,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_889_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61917,8 +64357,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_890_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61939,8 +64380,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_891_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61961,8 +64403,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_892_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -61983,8 +64426,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_893_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62005,8 +64449,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_894_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62027,8 +64472,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_895_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62049,8 +64495,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_896_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62071,8 +64518,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_897_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62149,8 +64597,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_902_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62171,8 +64620,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_903_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62193,8 +64643,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_904_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62215,8 +64666,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_905_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62237,8 +64689,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_906_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62259,8 +64712,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_907_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62281,8 +64735,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_908_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62303,8 +64758,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_909_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62325,8 +64781,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_910_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62347,8 +64804,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_911_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62369,8 +64827,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_912_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62391,8 +64850,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_913_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62413,8 +64873,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_914_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62435,8 +64896,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_915_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62457,8 +64919,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_916_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62479,8 +64942,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_917_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62501,8 +64965,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_918_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62523,8 +64988,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_919_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62545,8 +65011,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_920_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62567,8 +65034,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_921_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62589,8 +65057,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_922_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62611,8 +65080,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_923_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62633,8 +65103,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_924_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62655,8 +65126,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_925_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62677,8 +65149,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_926_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62699,8 +65172,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_927_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62721,8 +65195,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_928_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62743,8 +65218,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_929_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62765,8 +65241,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_930_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62787,8 +65264,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_931_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62809,8 +65287,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_932_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62831,8 +65310,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_933_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62853,8 +65333,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_934_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62875,8 +65356,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_935_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62897,8 +65379,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_936_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62919,8 +65402,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_937_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62941,8 +65425,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_938_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62963,8 +65448,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_939_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -62985,8 +65471,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_940_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63007,8 +65494,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_941_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63029,8 +65517,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_942_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63051,8 +65540,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_943_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63073,8 +65563,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_944_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63095,8 +65586,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_945_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63117,8 +65609,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_946_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63139,8 +65632,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_947_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63161,8 +65655,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_948_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63183,8 +65678,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_949_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63205,8 +65701,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_950_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63227,8 +65724,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_951_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63249,8 +65747,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_952_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63271,8 +65770,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_953_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63293,8 +65793,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_954_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63315,8 +65816,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_955_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63337,8 +65839,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_956_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63359,8 +65862,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_957_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63381,8 +65885,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_958_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63403,8 +65908,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_959_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63425,8 +65931,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_960_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63447,8 +65954,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_961_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63469,8 +65977,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_962_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63491,8 +66000,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_963_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63513,8 +66023,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_964_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63535,8 +66046,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_965_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63557,8 +66069,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_966_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63579,8 +66092,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_967_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63601,8 +66115,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_968_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63623,8 +66138,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_969_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63645,8 +66161,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_970_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63667,8 +66184,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_971_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63689,8 +66207,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_972_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63711,8 +66230,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_973_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63733,8 +66253,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_974_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63755,8 +66276,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_975_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63777,8 +66299,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_976_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63799,8 +66322,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_976_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63821,8 +66345,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_978_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63843,8 +66368,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_979_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63865,8 +66391,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_980_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63887,8 +66414,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_981_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63922,7 +66450,7 @@ window.allobjects = function() {
       "pixelart_982_color_003.png",
       "pixelart_982_color_004.png",
       "pixelart_982_color_005.png",
-      "pixelart_982_color_006.png",
+      "pixelart_982_color_006.png"
     ],
     "animInterval": 100
   },
@@ -63945,7 +66473,7 @@ window.allobjects = function() {
       "pixelart_983_color_003.png",
       "pixelart_983_color_004.png",
       "pixelart_983_color_005.png",
-      "pixelart_983_color_006.png",
+      "pixelart_983_color_006.png"
     ],
     "animInterval": 100
   },
@@ -63955,8 +66483,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_984_color_002.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63977,8 +66506,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_985_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -63999,8 +66529,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_986_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64021,8 +66552,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_987_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64043,8 +66575,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_988_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64065,8 +66598,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_989_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64087,8 +66621,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_990_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64109,8 +66644,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_991_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64131,8 +66667,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_992_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64153,8 +66690,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_993_color_004.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64273,8 +66811,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1001_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64295,8 +66834,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1002_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64317,8 +66857,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1003_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64339,8 +66880,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1004_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64361,8 +66903,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1005_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64383,8 +66926,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1006_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64405,8 +66949,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1007_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64427,8 +66972,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1008_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64449,8 +66995,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1009_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64471,8 +67018,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1010_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64507,8 +67055,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1012_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64529,8 +67078,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1013_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64551,8 +67101,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1014_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64573,8 +67124,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1015_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64595,8 +67147,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1016_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64617,8 +67170,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1017_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64639,8 +67193,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1018_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64661,8 +67216,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1019_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64683,8 +67239,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1020_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64705,8 +67262,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1021_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64727,8 +67285,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1022_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64749,8 +67308,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1023_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64771,8 +67331,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1024_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64793,8 +67354,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1025_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64815,8 +67377,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1026_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64837,8 +67400,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1027_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64859,8 +67423,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1028_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64881,8 +67446,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1029_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64903,8 +67469,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1030_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64925,8 +67492,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1031_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64947,8 +67515,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1032_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64969,8 +67538,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1033_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -64991,8 +67561,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1034_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65013,8 +67584,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1035_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65035,8 +67607,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1036_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65057,8 +67630,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1037_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65079,8 +67653,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1038_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65101,8 +67676,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1039_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65123,8 +67699,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1040_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65145,8 +67722,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1041_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65195,8 +67773,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1044_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65217,8 +67796,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1045_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65239,8 +67819,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1046_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65289,8 +67870,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1049_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65311,8 +67893,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1050_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65333,8 +67916,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1049_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65355,8 +67939,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1050_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65377,8 +67962,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1053_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65399,8 +67985,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1054_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65421,8 +68008,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1055_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65485,8 +68073,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1059_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65507,8 +68096,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1060_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65529,8 +68119,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1061_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65551,8 +68142,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1062_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65629,8 +68221,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1067_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65693,8 +68286,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1071_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65715,8 +68309,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1072_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65737,8 +68332,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1073_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65759,8 +68355,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1074_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65781,8 +68378,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1075_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65803,8 +68401,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1076_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65825,8 +68424,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1077_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65847,8 +68447,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1078_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65869,8 +68470,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1079_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65891,8 +68493,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1080_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65913,8 +68516,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1081_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65935,8 +68539,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1082_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -65957,8 +68562,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1083_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66007,8 +68613,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1086_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66029,8 +68636,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1087_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66051,8 +68659,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1088_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66073,8 +68682,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1089_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66095,8 +68705,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1090_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66117,8 +68728,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1091_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66153,8 +68765,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1093_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66175,8 +68788,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1094_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66197,8 +68811,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1095_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66219,8 +68834,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1096_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66241,8 +68857,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1097_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -66306,8 +68923,9 @@ window.allobjects = function() {
       {
         "frame": "d_time01_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67212,8 +69830,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1102_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67234,8 +69853,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1103_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67256,8 +69876,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1104_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67278,8 +69899,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1105_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67300,8 +69922,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1106_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67322,8 +69945,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1107_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67344,8 +69968,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1108_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67366,8 +69991,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1109_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67388,8 +70014,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1110_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67410,8 +70037,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1111_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67432,8 +70060,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1112_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67454,8 +70083,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1113_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67476,8 +70106,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1114_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67498,8 +70129,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1115_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67520,8 +70152,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1116_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67542,8 +70175,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1117_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67564,8 +70198,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1118_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67586,8 +70221,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1119_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67608,8 +70244,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1120_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67630,8 +70267,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1121_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67652,8 +70290,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1122_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67674,8 +70313,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1123_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67696,8 +70336,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1124_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67718,8 +70359,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1125_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67740,8 +70382,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1126_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67762,8 +70405,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1127_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67784,8 +70428,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1128_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67806,8 +70451,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1129_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67828,8 +70474,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1130_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67850,8 +70497,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1131_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67872,8 +70520,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1132_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67894,8 +70543,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1133_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67916,8 +70566,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1134_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67938,8 +70589,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1135_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67960,8 +70612,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1136_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -67982,8 +70635,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1137_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68004,8 +70658,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1138_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68026,8 +70681,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1139_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68048,8 +70704,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1140_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68070,8 +70727,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1141_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68092,8 +70750,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1142_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68114,8 +70773,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1143_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68136,8 +70796,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1144_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68158,8 +70819,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1145_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68180,8 +70842,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1146_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68202,8 +70865,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1147_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68224,8 +70888,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1148_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68246,8 +70911,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1149_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68268,8 +70934,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1150_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68290,8 +70957,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1151_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68312,8 +70980,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1126_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68334,8 +71003,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1153_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68356,8 +71026,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1154_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68378,8 +71049,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1155_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68400,8 +71072,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1156_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68422,8 +71095,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1157_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68444,8 +71118,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1158_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68466,8 +71141,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1159_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68488,8 +71164,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1160_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68510,8 +71187,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1161_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68532,8 +71210,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1162_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68554,8 +71233,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1163_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68576,8 +71256,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1164_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68598,8 +71279,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1165_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68620,8 +71302,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1166_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68642,8 +71325,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1167_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68664,8 +71348,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1168_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68686,8 +71371,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1169_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68708,8 +71394,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1170_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68730,8 +71417,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1171_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68752,8 +71440,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1172_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68774,8 +71463,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1173_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68796,8 +71486,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1174_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68818,8 +71509,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1175_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68840,8 +71532,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1176_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68862,8 +71555,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1177_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68884,8 +71578,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1178_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68920,8 +71615,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1180_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68942,8 +71638,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1181_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68964,8 +71661,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1182_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -68986,8 +71684,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1183_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69008,8 +71707,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1184_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69030,8 +71730,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1185_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69052,8 +71753,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1186_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69074,8 +71776,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1187_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69096,8 +71799,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1188_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69118,8 +71822,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1189_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69140,8 +71845,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1190_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69176,8 +71882,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1192_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69212,8 +71919,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1194_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69234,8 +71942,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1195_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69256,8 +71965,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1196_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69278,8 +71988,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1197_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69300,8 +72011,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1197_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -69322,8 +72034,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1197_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72144,8 +74857,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1200_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72166,8 +74880,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1201_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72188,8 +74903,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1202_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72210,8 +74926,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1203_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72232,8 +74949,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1204_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72254,8 +74972,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1205_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72276,8 +74995,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1206_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72298,8 +75018,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1207_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72320,8 +75041,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1208_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72342,8 +75064,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1209_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72392,8 +75115,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1212_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72414,8 +75138,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1213_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72436,8 +75161,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1214_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72458,8 +75184,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1215_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72480,8 +75207,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1216_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72502,8 +75230,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1217_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72524,8 +75253,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1218_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72546,8 +75276,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1219_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72568,8 +75299,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1220_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72590,8 +75322,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1221_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72612,8 +75345,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1222_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72648,8 +75382,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1224_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72670,8 +75405,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1225_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72692,8 +75428,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1226_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72714,8 +75451,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1227_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72736,8 +75474,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1228_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72758,8 +75497,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1229_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72836,8 +75576,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1234_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72858,8 +75599,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1235_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72880,8 +75622,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1236_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72902,8 +75645,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1237_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72924,8 +75668,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1238_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -72946,8 +75691,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1239_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73052,8 +75798,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1246_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73074,8 +75821,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1247_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73096,8 +75844,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1248_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73118,8 +75867,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1249_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73140,8 +75890,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1250_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73162,8 +75913,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1251_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73184,8 +75936,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1252_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73206,8 +75959,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1253_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73228,8 +75982,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1254_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73250,8 +76005,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1255_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73272,8 +76028,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1256_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73294,8 +76051,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1257_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73316,8 +76074,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1258_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73338,8 +76097,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1259_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73360,8 +76120,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1260_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73382,8 +76143,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1261_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73404,8 +76166,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1262_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73440,8 +76203,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1264_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73462,8 +76226,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1265_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73484,8 +76249,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1266_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73520,8 +76286,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1268_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73556,8 +76323,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1270_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73578,8 +76346,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1271_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73600,8 +76369,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1272_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73622,8 +76392,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1273_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73644,8 +76415,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1274_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73666,8 +76438,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1275_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73688,8 +76461,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1276_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73822,8 +76596,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1285_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73844,8 +76619,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1286_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73866,8 +76642,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1287_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73888,8 +76665,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1288_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73910,8 +76688,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1289_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73932,8 +76711,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1290_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73954,8 +76734,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1291_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73976,8 +76757,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1292_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -73998,8 +76780,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1293_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74020,8 +76803,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1294_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74042,8 +76826,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1295_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74064,8 +76849,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1296_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74086,8 +76872,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1297_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74108,8 +76895,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1298_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74130,8 +76918,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1299_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74152,8 +76941,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1300_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74174,8 +76964,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1301_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74196,8 +76987,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1302_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74218,8 +77010,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1303_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74240,8 +77033,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1304_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74262,8 +77056,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1305_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74284,8 +77079,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1305_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74306,8 +77102,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1307_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74328,8 +77125,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1308_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74350,8 +77148,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1309_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74372,8 +77171,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1310_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74394,8 +77194,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1311_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74416,8 +77217,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1312_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74438,8 +77240,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1313_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74460,8 +77263,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1314_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74482,8 +77286,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1315_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74504,8 +77309,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1316_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74526,8 +77332,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1317_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74548,8 +77355,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1318_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74570,8 +77378,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1319_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74592,8 +77401,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1320_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74614,8 +77424,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1321_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74636,8 +77447,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1255_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74658,8 +77470,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1323_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74680,8 +77493,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1324_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74702,8 +77516,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1325_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74724,8 +77539,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1326_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74746,8 +77562,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1327_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74768,8 +77585,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1327_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74790,8 +77608,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1329_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74812,8 +77631,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1330_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74834,8 +77654,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1331_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74856,8 +77677,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1332_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74878,8 +77700,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1333_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74900,8 +77723,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1334_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74922,8 +77746,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1335_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74944,8 +77769,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1336_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74966,8 +77792,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1337_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -74988,8 +77815,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1338_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75010,8 +77838,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1339_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75032,8 +77861,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1340_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75054,8 +77884,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1341_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75076,8 +77907,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1342_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75098,8 +77930,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1343_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75120,8 +77953,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1344_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75142,8 +77976,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1345_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75192,8 +78027,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1348_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75214,8 +78050,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1349_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75236,8 +78073,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1350_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75258,8 +78096,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1351_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75308,8 +78147,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1354_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75330,8 +78170,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1355_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75380,8 +78221,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1358_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75402,8 +78244,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1359_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75424,8 +78267,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1360_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75474,8 +78318,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1363_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75496,8 +78341,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1364_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75518,8 +78364,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1365_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75540,8 +78387,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1366_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75562,8 +78410,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1367_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75584,8 +78433,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1368_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75606,8 +78456,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1369_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75628,8 +78479,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1370_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75650,8 +78502,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1371_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75672,8 +78525,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1372_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75708,8 +78562,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1374_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75730,8 +78585,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1375_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75752,8 +78608,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1376_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75774,8 +78631,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1377_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75796,8 +78654,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1258_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75818,8 +78677,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1379_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75840,8 +78700,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1380_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75918,8 +78779,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1385_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75940,8 +78802,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1386_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75962,8 +78825,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1387_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -75984,8 +78848,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1388_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76006,8 +78871,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1389_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76028,8 +78894,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1390_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76050,8 +78917,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1391_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76072,8 +78940,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1392_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76094,8 +78963,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1392_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76116,8 +78986,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1394_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76138,8 +79009,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1395_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76160,8 +79032,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1396_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76182,8 +79055,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1397_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76204,8 +79078,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1398_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76226,8 +79101,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1399_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76248,8 +79124,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1258_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76284,8 +79161,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1402_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76306,8 +79184,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1403_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76328,8 +79207,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1404_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76350,8 +79230,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1405_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76372,8 +79253,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1406_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76394,8 +79276,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1407_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76416,8 +79299,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1408_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76438,8 +79322,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1409_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76460,8 +79345,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1410_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76482,8 +79368,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1411_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76504,8 +79391,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1412_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76526,8 +79414,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1413_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76548,8 +79437,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1414_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76570,8 +79460,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1415_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76592,8 +79483,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1416_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76614,8 +79506,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1417_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76636,8 +79529,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1418_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76658,8 +79552,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1419_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76680,8 +79575,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1420_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76702,8 +79598,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1421_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76724,8 +79621,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1422_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76746,8 +79644,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1423_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76768,8 +79667,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1424_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76790,8 +79690,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1425_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76812,8 +79713,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1426_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76834,8 +79736,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1427_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76856,8 +79759,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1428_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76878,8 +79782,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1429_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76900,8 +79805,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1430_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76922,8 +79828,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1431_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76944,8 +79851,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1432_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76966,8 +79874,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1433_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -76988,8 +79897,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1434_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77010,8 +79920,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1435_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77032,8 +79943,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1436_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77054,8 +79966,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1437_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77076,8 +79989,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1438_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77098,8 +80012,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1439_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77120,8 +80035,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1440_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77142,8 +80058,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1441_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77164,8 +80081,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1442_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77186,8 +80104,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1443_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77208,8 +80127,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1444_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77230,8 +80150,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1445_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77252,8 +80173,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1446_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77274,8 +80196,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1447_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77296,8 +80219,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1448_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77318,8 +80242,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1449_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77340,8 +80265,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1450_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77362,8 +80288,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1451_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77384,8 +80311,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1452_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77406,8 +80334,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1453_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77428,8 +80357,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1454_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77450,8 +80380,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1455_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77472,8 +80403,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1456_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77494,8 +80426,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1457_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77516,8 +80449,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1458_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77538,8 +80472,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1459_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77560,8 +80495,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1460_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77582,8 +80518,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1461_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77604,8 +80541,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1462_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77626,8 +80564,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1463_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77648,8 +80587,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1464_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77670,8 +80610,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1465_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77692,8 +80633,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1466_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77714,8 +80656,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1467_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77736,8 +80679,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1468_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77758,8 +80702,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1469_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77780,8 +80725,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1470_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77802,8 +80748,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1471_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77824,8 +80771,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1472_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77846,8 +80794,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1468_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77868,8 +80817,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1474_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77890,8 +80840,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1475_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77912,8 +80863,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1476_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77934,8 +80886,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1477_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77956,8 +80909,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1478_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -77978,8 +80932,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1479_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78000,8 +80955,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1480_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78022,8 +80978,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1481_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78044,8 +81001,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1482_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78066,8 +81024,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1483_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78088,8 +81047,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1484_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78110,8 +81070,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1485_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78132,8 +81093,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1486_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78154,8 +81116,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1487_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78176,8 +81139,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1488_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78198,8 +81162,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1489_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78220,8 +81185,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1490_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78242,8 +81208,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1491_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78264,8 +81231,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1492_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78286,8 +81254,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1493_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78308,8 +81277,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1494_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78330,8 +81300,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1495_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78352,8 +81323,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1496_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78374,8 +81346,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1497_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78396,8 +81369,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1498_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78418,8 +81392,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1499_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78440,8 +81415,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1500_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78462,8 +81438,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1501_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78484,8 +81461,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1502_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78506,8 +81484,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1503_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78528,8 +81507,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1504_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78550,8 +81530,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1505_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78572,8 +81553,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1506_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78594,8 +81576,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1507_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78616,8 +81599,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1508_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78638,8 +81622,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1509_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78660,8 +81645,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1510_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78682,8 +81668,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1511_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78704,8 +81691,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1512_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78740,8 +81728,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1126_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78762,8 +81751,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1515_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78784,8 +81774,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1516_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78806,8 +81797,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1517_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78828,8 +81820,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1518_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78850,8 +81843,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1519_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78872,8 +81866,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1520_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78894,8 +81889,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1521_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78916,8 +81912,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1522_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78938,8 +81935,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1523_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78960,8 +81958,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1524_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -78982,8 +81981,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1525_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79004,8 +82004,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1526_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79026,8 +82027,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1527_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79048,8 +82050,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1528_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79070,8 +82073,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1529_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79092,8 +82096,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1529_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79114,8 +82119,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1531_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79136,8 +82142,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1532_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79158,8 +82165,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1533_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79180,8 +82188,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1534_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79202,8 +82211,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1535_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79224,8 +82234,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1536_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79246,8 +82257,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1537_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79268,8 +82280,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1538_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79290,8 +82303,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1539_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79312,8 +82326,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1540_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79334,8 +82349,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1541_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79356,8 +82372,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1542_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79378,8 +82395,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1543_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79400,8 +82418,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1544_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79422,8 +82441,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1545_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79444,8 +82464,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1546_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79466,8 +82487,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1547_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79488,8 +82510,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1548_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79510,8 +82533,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1549_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79532,8 +82556,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1550_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79554,8 +82579,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1551_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79576,8 +82602,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1552_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79598,8 +82625,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1553_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79620,8 +82648,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1554_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79642,8 +82671,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1555_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79664,8 +82694,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1556_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79686,8 +82717,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1557_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79708,8 +82740,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1558_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79730,8 +82763,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1559_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79752,8 +82786,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1560_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79788,8 +82823,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1562_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79810,8 +82846,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1563_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79832,8 +82869,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1564_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79854,8 +82892,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1565_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79876,8 +82915,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1566_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -79898,8 +82938,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1567_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80144,8 +83185,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1584_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80166,8 +83208,9 @@ window.allobjects = function() {
       {
         "frame": "pixelart_1585_color_001.png",
         "localDy": 0,
-        "tint": 52224,
-        "z": 100
+        "z": 100,
+        "colorChannel": 1,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80188,8 +83231,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_001_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80210,8 +83254,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_002_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80232,8 +83277,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_003_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80254,8 +83300,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_004_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80276,8 +83323,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_005_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80298,8 +83346,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_006_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80320,8 +83369,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_007_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80342,8 +83392,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_008_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80364,8 +83415,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_009_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80386,8 +83438,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_010_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80408,8 +83461,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_011_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80430,8 +83484,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_012_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80452,8 +83507,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_013_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80474,8 +83530,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_014_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80496,8 +83553,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_015_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80518,8 +83576,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_016_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80540,8 +83599,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_017_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80562,8 +83622,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_018_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80584,8 +83645,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_019_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80606,8 +83668,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_020_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80628,8 +83691,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_021_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80650,8 +83714,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_022_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80672,8 +83737,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_023_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80694,8 +83760,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_024_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80716,8 +83783,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_025_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80738,8 +83806,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_026_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80760,8 +83829,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_027_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80782,8 +83852,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_028_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80804,8 +83875,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_029_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80826,8 +83898,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_030_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80848,8 +83921,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_031_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80870,8 +83944,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_032_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80892,8 +83967,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_033_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80914,8 +83990,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_034_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80936,8 +84013,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_035_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80958,8 +84036,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_036_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -80980,8 +84059,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_037_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81002,8 +84082,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_038_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81024,8 +84105,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_039_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81046,8 +84128,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_040_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81068,8 +84151,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_041_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81090,8 +84174,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_042_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81112,8 +84197,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_043_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81134,8 +84220,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_044_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81156,8 +84243,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_045_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81178,8 +84266,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_046_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81200,8 +84289,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_047_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81222,8 +84312,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_048_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81244,8 +84335,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_049_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81266,8 +84358,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_050_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81288,8 +84381,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_051_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81310,8 +84404,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_052_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81332,8 +84427,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_053_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81354,8 +84450,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_054_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81376,8 +84473,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_055_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81398,8 +84496,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_056_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81420,8 +84519,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_057_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81442,8 +84542,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_058_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81464,8 +84565,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_059_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81486,8 +84588,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_060_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81508,8 +84611,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_061_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81530,8 +84634,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_062_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81552,8 +84657,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_063_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81574,8 +84680,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_064_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81596,8 +84703,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_065_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81618,8 +84726,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_066_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81640,8 +84749,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_067_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81662,8 +84772,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_068_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81684,8 +84795,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_069_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81706,8 +84818,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_070_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81728,8 +84841,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_071_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81750,8 +84864,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_072_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81772,8 +84887,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_073_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81794,8 +84910,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_074_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81816,8 +84933,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_075_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81838,8 +84956,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_076_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81860,8 +84979,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_077_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81882,8 +85002,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_078_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81904,8 +85025,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_079_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81926,8 +85048,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_080_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81948,8 +85071,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_081_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81970,8 +85094,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_082_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -81992,8 +85117,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_083_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82014,8 +85140,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_084_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82036,8 +85163,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_085_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82058,8 +85186,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_086_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82080,8 +85209,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_087_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82102,8 +85232,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_088_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82124,8 +85255,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_089_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82146,8 +85278,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_090_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82168,8 +85301,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_091_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82190,8 +85324,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_092_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82212,8 +85347,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_093_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82234,8 +85370,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_094_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82256,8 +85393,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_095_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82278,8 +85416,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_096_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82300,8 +85439,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_097_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82322,8 +85462,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_098_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82344,8 +85485,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_099_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82366,8 +85508,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_100_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82388,8 +85531,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_101_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82410,8 +85554,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_102_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82432,8 +85577,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_103_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82454,8 +85600,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_104_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82476,8 +85623,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_105_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82498,8 +85646,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_106_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82520,8 +85669,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_107_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82542,8 +85692,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_108_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82564,8 +85715,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_109_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82586,8 +85738,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_110_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82608,8 +85761,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_111_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82630,8 +85784,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_112_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82652,8 +85807,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_113_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82674,8 +85830,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_114_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82696,8 +85853,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_115_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82718,8 +85876,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_116_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82740,8 +85899,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_117_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82762,8 +85922,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_118_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82784,8 +85945,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_119_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82806,8 +85968,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_120_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82828,8 +85991,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_121_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82850,8 +86014,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_122_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82872,8 +86037,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_123_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82894,8 +86060,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_124_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82916,8 +86083,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_125_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82938,8 +86106,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_126_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82960,8 +86129,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_127_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -82982,8 +86152,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_128_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -83004,8 +86175,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_129_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -83026,8 +86198,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_130_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -83048,8 +86221,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_131_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -83070,8 +86244,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_132_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -83092,8 +86267,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_133_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -83114,8 +86290,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_134_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -83136,8 +86313,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_135_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -83158,8 +86336,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_136_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -83180,8 +86359,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_137_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -83202,8 +86382,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_138_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,
@@ -83224,8 +86405,9 @@ window.allobjects = function() {
       {
         "frame": "pixelitem_139_001.png",
         "localDy": 0,
-        "tint": 65280,
-        "z": -1
+        "z": -1,
+        "colorChannel": 2,
+        "can_color": true
       }
     ],
     "default_base_color_channel": 1,

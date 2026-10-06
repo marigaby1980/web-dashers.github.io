@@ -44,7 +44,10 @@ const phaserConfig = {
   height: screenHeight,
   resolution: 1,
   fps: {
-    smoothStep: true
+    min: 30,
+    target: 60,
+    smoothStep: true,
+    forceSetTimeOut: false
   },
   backgroundColor: "#000000",
   parent: document.body,
@@ -52,7 +55,11 @@ const phaserConfig = {
     windowEvents: false
   },
   render: {
-    powerPreference: "default"
+    powerPreference: "high-performance",
+    batchSize: 4096,
+    roundPixels: true,
+    antialias: false,
+    desynchronized: true
   },
   scale: {
     mode: Phaser.Scale.FIT,
