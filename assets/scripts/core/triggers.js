@@ -99,45 +99,63 @@ class ColorManager {
     this._initialColors = {};
     this.reset();
   }
+  clearInitialColors() {
+    this._initialColors = {};
+    this.reset();
+  }
+  _getDefaultChannelColor(index) {
+    const num = parseInt(index, 10);
+    if (num === 1000) return { r: 0, g: 102, b: 255 }; // BG
+    if (num === 1001 || num === 1009) return { r: 0, g: 68, b: 170 }; // Ground
+    if (num === 1005) { // Player 1 Color
+      const c = window.mainColor != null ? window.mainColor : 0x04FF00;
+      return { r: (c >> 16) & 0xFF, g: (c >> 8) & 0xFF, b: c & 0xFF };
+    }
+    if (num === 1006) { // Player 2 Color
+      const c = window.secondaryColor != null ? window.secondaryColor : 0x00FBFF;
+      return { r: (c >> 16) & 0xFF, g: (c >> 8) & 0xFF, b: c & 0xFF };
+    }
+    if (num === 1010) return { r: 0, g: 0, b: 0 }; // Black
+    if (num === 1) return this.getColor(1004); // Default Channel 1 inherits Object Color
+    return { r: 255, g: 255, b: 255 }; // Default White
+  }
   setInitialColor(channelId, color) {
+    if (!channelId || !color) return;
     this._initialColors[channelId] = { ...color };
     this._colors[channelId] = { ...color };
+    if (!this._coloredChannels) this._coloredChannels = new Set();
+    this._coloredChannels.add(String(channelId));
   }
   reset() {
+    const p1Col = window.mainColor != null ? window.mainColor : 0x04FF00;
+    const p2Col = window.secondaryColor != null ? window.secondaryColor : 0x00FBFF;
     this._colors = {
-      [fs]: {
-        r: 0,
-        g: 102,
-        b: 255
-      },
-      [gs]: {
-        r: 0,
-        g: 68,
-        b: 170
-      },
-      1002: {
-        r: 255,
-        g: 255,
-        b: 255
-      },
-      1003: {
-        r: 255,
-        g: 255,
-        b: 255
-      },
-      1004: {
-        r: 255,
-        g: 255,
-        b: 255
-      }
+      1000: { r: 0, g: 102, b: 255 }, // BG
+      1001: { r: 0, g: 68, b: 170 },   // Ground 1
+      1002: { r: 255, g: 255, b: 255 }, // Line
+      1003: { r: 255, g: 255, b: 255 }, // 3DL
+      1004: { r: 255, g: 255, b: 255 }, // Object
+      1: { r: 255, g: 255, b: 255 },
+      2: { r: 255, g: 255, b: 255 },
+      3: { r: 255, g: 255, b: 255 },
+      4: { r: 255, g: 255, b: 255 },
+      1005: { r: (p1Col >> 16) & 0xFF, g: (p1Col >> 8) & 0xFF, b: p1Col & 0xFF }, // Player Color 1
+      1006: { r: (p2Col >> 16) & 0xFF, g: (p2Col >> 8) & 0xFF, b: p2Col & 0xFF }, // Player Color 2
+      1007: { r: 255, g: 255, b: 255 }, // Light BG
+      1008: { r: 255, g: 255, b: 255 },
+      1009: { r: 0, g: 68, b: 170 },   // Ground 2
+      1010: { r: 0, g: 0, b: 0 },       // Black
+      1011: { r: 255, g: 255, b: 255 }  // White
     };
+    this._coloredChannels = new Set();
     for (let chId in this._initialColors) {
       this._colors[chId] = { ...this._initialColors[chId] };
+      this._coloredChannels.add(String(chId));
     }
-    this._coloredChannels = new Set();
     this._actions = {};
   }
   triggerColor(index, newColor, duration) {
+    if (index == null || !newColor) return;
     this._coloredChannels.add(String(index));
     let oldColor = {
       ...this.getColor(index)
@@ -162,18 +180,14 @@ class ColorManager {
     }
   }
   getColor(index) {
-    return this._colors[index] || {
-      r: 255,
-      g: 255,
-      b: 255
-    };
+    return this._colors[index] || this._getDefaultChannelColor(index);
   }
   hasColor(index) {
     return this._coloredChannels.has(String(index));
   }
   getHex(index) {
     let color = this.getColor(index);
-   return 0xFF000000 | (color.r << 16) | (color.g << 8) | color.b;
+    return ((color.r & 0xFF) << 16) | ((color.g & 0xFF) << 8) | (color.b & 0xFF);
   }
 }
 

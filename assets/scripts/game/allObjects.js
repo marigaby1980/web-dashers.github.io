@@ -10,7 +10,8 @@
 // 1011: Detail Color For animated blocks
 
 window.allobjects = function() {
-  return {
+  if (window._cachedAllObjects) return window._cachedAllObjects;
+  const objs = {
   "0": {
     "can_color": true,
     "default_base_color_channel": 1004,
@@ -86423,4 +86424,47 @@ window.allobjects = function() {
     "default_z_order": 9
   }
 };
+  const uncolorableTypes = new Set(["portal", "speed", "pad", "ring", "coin", "trigger"]);
+  const uncolorableExplicitIds = new Set([
+    5, 15, 16, 17, 20, 21, 48, 49, 88, 89, 98,
+    116, 117, 118, 119, 120, 121, 122, 129, 130, 131,
+    135, 146, 162, 165, 193, 195, 196,
+    1889, 1890, 1891, 1892
+  ]);
+  for (const [idStr, def] of Object.entries(objs)) {
+    if (!def || typeof def !== "object") continue;
+    const idNum = parseInt(idStr, 10);
+    const frameStr = String(def.frame || "");
+    const isPortal = def.type === "portal" || frameStr.startsWith("portal_");
+    const isSpeed = def.type === "speed" || frameStr.startsWith("boost_");
+    const isPad = def.type === "pad" || frameStr.startsWith("bump_") || frameStr.startsWith("gravbump_") || frameStr.startsWith("spiderBump_");
+    const isRing = def.type === "ring" || frameStr.startsWith("ring_") || frameStr.startsWith("gravring_") || frameStr.startsWith("dashRing_") || frameStr.startsWith("dropRing_") || frameStr.startsWith("gravJumpRing_") || frameStr.startsWith("spiderRing_") || frameStr.startsWith("teleportRing_");
+    const isCoin = def.type === "coin" || frameStr.startsWith("secretCoin_");
+    const isTrigger = def.type === "trigger";
+
+    if (isPortal || isSpeed || isPad || isRing || isCoin || isTrigger || uncolorableTypes.has(def.type) || uncolorableExplicitIds.has(idNum)) {
+      def.can_color = false;
+      def.default_base_color_channel = 0;
+    }
+    if (isPortal) def.type = "portal";
+    if (isSpeed) def.type = "speed";
+    if (isPad) def.type = "pad";
+    if (isRing) def.type = "ring";
+    if (isCoin) def.type = "coin";
+
+    if (def.children && Array.isArray(def.children)) {
+      for (const child of def.children) {
+        if (!child) continue;
+        if (isPortal || child.portalGuide || child._portalFront || String(child.frame || "").startsWith("portal")) {
+          child.can_color = false;
+          child.Cant_Color = true;
+        } else if (child.orbGuide) {
+          child.can_color = false;
+          child.Cant_Color = true;
+        }
+      }
+    }
+  }
+  window._cachedAllObjects = objs;
+  return objs;
 };

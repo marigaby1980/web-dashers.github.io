@@ -174,9 +174,8 @@ class AudioManager {
     const songId = match ? match[1] : null;
     const soundMgr = this._scene?.game?.sound;
     const ctx = soundMgr?.context;
-    const songInfoUrl = (typeof window.getGdApiUrl === "function" ? window.getGdApiUrl("/getGJSongInfo.php") : null);
 
-    if (!songId || !ctx || !songInfoUrl) {
+    if (!songId || !ctx) {
       return false;
     }
 
@@ -194,24 +193,57 @@ class AudioManager {
       try {
         if (ctx.state === "suspended") await ctx.resume();
 
-        const ngRes = await window.fetchGdApi("/getGJSongInfo.php", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: `songID=${encodeURIComponent(songId)}&secret=Wmfd2893gb7`
-        });
+        let songTitle = `Song #${songId}`;
+        let songArtist = "Unknown";
+        let ngMap = {};
 
-        const ngText = ngRes.ok ? await ngRes.text() : "-1";
-        if (!ngText || ngText === "-1") throw new Error("Song info unavailable");
+        try {
+          const ngRes = await window.fetchGdApi("/getGJSongInfo.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: `songID=${encodeURIComponent(songId)}&secret=Wmfd2893gb7`
+          });
 
-        const ngParts = ngText.split("~|~");
-        const ngMap = {};
-        for (let i = 0; i + 1 < ngParts.length; i += 2) ngMap[ngParts[i]] = ngParts[i + 1];
-
-        const songTitle = (ngMap["2"] || `Song #${songId}`).replace(/:$/, "").trim();
-        const songArtist = (ngMap["4"] || "Unknown").replace(/:$/, "").trim();
+          if (ngRes.ok) {
+            const ngText = await ngRes.text();
+            if (ngText && ngText !== "-1") {
+              const ngParts = ngText.split("~|~");
+              for (let i = 0; i + 1 < ngParts.length; i += 2) ngMap[ngParts[i]] = ngParts[i + 1];
+              songTitle = (ngMap["2"] || songTitle).replace(/:$/, "").trim();
+              songArtist = (ngMap["4"] || songArtist).replace(/:$/, "").trim();
+            }
+          }
+        } catch (e) {
+          console.warn("Could not fetch song info, trying song download directly", e);
+        }
         
-        const arrayBuf = await window.SongDB.load(songId);
-        if (!arrayBuf) throw new Error("Song not downloaded manually");
+        let arrayBuf = await window.SongDB.load(songId);
+        if (!arrayBuf) {
+          const workerUrl = `https://fetchsongid.lasokar.workers.dev/?id=${encodeURIComponent(songId)}`;
+          let audioRes = null;
+          try {
+            audioRes = await fetch(workerUrl);
+          } catch (e) { }
+
+          if (!audioRes || !audioRes.ok) {
+            const songUrl = decodeURIComponent((ngMap["10"] || "").trim());
+            if (songUrl) {
+              const proxiedUrl = (typeof window.getGdAudioUrl === "function")
+                ? window.getGdAudioUrl(songUrl)
+                : songUrl;
+              try {
+                audioRes = await fetch(proxiedUrl);
+              } catch (e) { }
+            }
+          }
+
+          if (audioRes && audioRes.ok) {
+            arrayBuf = await audioRes.arrayBuffer();
+            await window.SongDB.save(songId, arrayBuf);
+          }
+        }
+
+        if (!arrayBuf) throw new Error(`Song audio unavailable for #${songId}`);
         
         const decoded = await ctx.decodeAudioData(arrayBuf.slice(0));
 

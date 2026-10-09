@@ -14,9 +14,13 @@ window.currentSpider = localStorage.getItem("iconCurrentSpider") || "spider_01";
 window.currentBird   = localStorage.getItem("iconCurrentBird")   || "bird_01";
 const storedUseDirectInternet = localStorage.getItem("gd_useDirectInternet");
 window.useDirectInternet = storedUseDirectInternet === "true";
+const DEFAULT_GD_PROXY = "https://webdashers.webdashersdevelopement.workers.dev";
+if (!window._gdProxyUrl) {
+  window._gdProxyUrl = DEFAULT_GD_PROXY;
+}
 window.getGdApiBase = function () {
   if (window.useDirectInternet) return "https://www.boomlings.com/database";
-  return (window._gdProxyUrl || "https://webdashers.webdashersdevelopement.workers.dev").replace(/\/$/, "");
+  return (window._gdProxyUrl || DEFAULT_GD_PROXY).replace(/\/$/, "");
 };
 window.getGdApiUrl = function (path) {
   const base = window.getGdApiBase();
@@ -24,12 +28,17 @@ window.getGdApiUrl = function (path) {
   return `${base}${path.startsWith("/") ? "" : "/"}${path}`;
 };
 window.fetchGdApi = async function (path, options = {}) {
-  const directUrl = window.useDirectInternet ? window.getGdApiUrl(path) : null;
-  const proxyBase = (window._gdProxyUrl || "").replace(/\/$/, "");
-  const proxyUrl = proxyBase ? `${proxyBase}${path.startsWith("/") ? "" : "/"}${path}` : null;
+  const proxyBase = (window._gdProxyUrl || DEFAULT_GD_PROXY).replace(/\/$/, "");
+  const directBase = "https://www.boomlings.com/database";
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
   const urls = [];
-  if (directUrl) urls.push(directUrl);
-  if (proxyUrl && proxyUrl !== directUrl) urls.push(proxyUrl);
+  if (window.useDirectInternet) {
+    urls.push(`${directBase}${cleanPath}`);
+    if (proxyBase) urls.push(`${proxyBase}${cleanPath}`);
+  } else {
+    if (proxyBase) urls.push(`${proxyBase}${cleanPath}`);
+    urls.push(`${directBase}${cleanPath}`);
+  }
   let lastError = null;
   for (const url of urls) {
     try {
@@ -43,17 +52,18 @@ window.fetchGdApi = async function (path, options = {}) {
   throw lastError || new Error("No GD API endpoint available");
 };
 window.getGdAudioUrl = function (songUrl) {
-  if (window.useDirectInternet) return songUrl;
-  const proxyBase = (window._gdProxyUrl || "").replace(/\/$/, "");
-  return proxyBase ? `${proxyBase}/audio-proxy?url=${encodeURIComponent(songUrl)}` : songUrl;
+  if (!songUrl) return null;
+  const localProxy = (typeof window !== "undefined" && window.location && window.location.origin && !window.location.origin.startsWith("file:"))
+    ? `${window.location.origin}/api/gd/audio-proxy?url=${encodeURIComponent(songUrl)}`
+    : null;
+  return localProxy || `https://corsproxy.io/?url=${encodeURIComponent(songUrl)}`;
 };
 window.fetchGdAudio = async function (songUrl, options = {}) {
-  const directUrl = window.useDirectInternet ? songUrl : null;
-  const proxyBase = (window._gdProxyUrl || "").replace(/\/$/, "");
-  const proxyUrl = proxyBase ? `${proxyBase}/audio-proxy?url=${encodeURIComponent(songUrl)}` : null;
+  if (!songUrl) throw new Error("No song URL provided");
   const urls = [];
-  if (directUrl) urls.push(directUrl);
-  if (proxyUrl && proxyUrl !== directUrl) urls.push(proxyUrl);
+  const proxied = window.getGdAudioUrl(songUrl);
+  if (proxied && !urls.includes(proxied)) urls.push(proxied);
+  if (!urls.includes(songUrl)) urls.push(songUrl);
   let lastError = null;
   for (const url of urls) {
     try {

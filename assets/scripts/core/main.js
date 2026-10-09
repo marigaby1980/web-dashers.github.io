@@ -40,8 +40,8 @@ if (window.gameCache) {
 }
 const phaserConfig = {
   type: Phaser.AUTO,
-  width: screenWidth,
-  height: screenHeight,
+  width: (typeof screenWidth !== "undefined" ? screenWidth : 1138),
+  height: (typeof screenHeight !== "undefined" ? screenHeight : 640),
   resolution: 1,
   fps: {
     min: 30,
@@ -50,7 +50,7 @@ const phaserConfig = {
     forceSetTimeOut: false
   },
   backgroundColor: "#000000",
-  parent: document.body,
+  parent: typeof document !== "undefined" ? (document.body || document.documentElement) : undefined,
   input: {
     windowEvents: false
   },
@@ -67,7 +67,28 @@ const phaserConfig = {
   },
   scene: [BootScene, GameScene]
 };
-new Phaser.Game(phaserConfig);
+
+function launchGame() {
+  if (window.__wdGameInstance) return;
+  const config = {
+    ...phaserConfig,
+    parent: document.body || document.documentElement
+  };
+  window.__wdGameInstance = new Phaser.Game(config);
+  if (typeof window !== "undefined" && window.GraphicsManager) {
+    setTimeout(() => {
+      window.GraphicsManager.applyToGame();
+      window.GraphicsManager.applyFilteringToCanvas();
+    }, 100);
+  }
+}
+
+if (typeof document !== "undefined" && document.body) {
+  launchGame();
+} else if (typeof window !== "undefined") {
+  window.addEventListener("DOMContentLoaded", launchGame);
+  window.addEventListener("load", launchGame);
+}
 
 window.clearGameCache = () => {
   if (window.gameCache) {

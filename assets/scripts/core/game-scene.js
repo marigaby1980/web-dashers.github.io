@@ -393,6 +393,9 @@ class GameScene extends Phaser.Scene {
     });
   }
   create() {
+    if (window.GraphicsManager) {
+      window.GraphicsManager.applyToGame(this);
+    }
     this._bgSpeedX = 0.1;
     this._bgSpeedY = 0.1;
     this._menuCameraX = -centerX;
@@ -498,6 +501,7 @@ class GameScene extends Phaser.Scene {
     this._bg.setTint(this._colorManager.getHex(fs));
     this._level.setGroundColor(this._colorManager.getHex(gs));
     this._level.setGround2Color?.(this._colorManager.getHex(1009));
+    this._level.applyColorChannels(this._colorManager);
     this._level.additiveContainer.setVisible(false);
     this._level.container.setVisible(false);
     this._level.topContainer.setVisible(false);
@@ -580,15 +584,21 @@ class GameScene extends Phaser.Scene {
     this._tryMeImg = this.add.image(0, 150, "GJ_MenuBeta").setScrollFactor(0).setDepth(30).setScale(0.75);
     this._downloadBtns = [];
     const _0x4fc67f = [
-    {
-      key: "GJ_moreGamesBtn_001",
-      url: "https://pinkdev.d13qic2f6zga3.amplifyapp.com"
-    }];
+      {
+        key: "GJ_moreGamesBtn_001",
+        sheet: "GJ_GameSheet04",
+        action: () => window.open("https://pinkdev.d13qic2f6zga3.amplifyapp.com", "_blank")
+      },
+      {
+        key: "GJ_downloadBtn_001",
+        sheet: "GJ_GameSheet03",
+        action: () => this._downloadStandalone()
+      }
+    ];
     for (let _0xfeaf5c = 0; _0xfeaf5c < _0x4fc67f.length; _0xfeaf5c++) {
       const _0x1ce2a6 = _0x4fc67f[_0xfeaf5c];
-      const _0x6bf69f = 1 / 1.5;
-      const _0x1d293f = this.add.image(0, 0, "GJ_GameSheet04", _0x1ce2a6.key + ".png").setScrollFactor(0).setDepth(30).setScale(1).setInteractive();
-      this._makeBouncyButton(_0x1d293f, 1, () => window.open(_0x1ce2a6.url, "_blank"), () => this._menuActive);
+      const _0x1d293f = this.add.image(0, 0, _0x1ce2a6.sheet, _0x1ce2a6.key + ".png").setScrollFactor(0).setDepth(30).setScale(1).setInteractive();
+      this._makeBouncyButton(_0x1d293f, 1, _0x1ce2a6.action, () => this._menuActive);
       this._downloadBtns.push(_0x1d293f);
     }
     const _0x28fa5b = this.scale.isFullscreen;
@@ -600,6 +610,13 @@ this._menuFsBtn = this.add.image(33, 33, "GJ_WebSheet", _0x28fa5b ? "toggleFulls
       this._expandHitArea(this._menuFsBtn, 1.5);
       this._toggleFullscreen();
     }, () => this._menuActive);
+
+    this._menuDownloadBtn = this.add.image(88, 33, "GJ_GameSheet03", "GJ_downloadBtn_001.png").setScrollFactor(0).setDepth(150).setScale(0.64).setInteractive();
+    this._expandHitArea(this._menuDownloadBtn, 1.5);
+    this._makeBouncyButton(this._menuDownloadBtn, 0.64, () => {
+      this._downloadStandalone();
+    }, () => this._menuActive);
+
     this._menuInfoBtn = this.add.image(screenWidth + 20, 33, "GJ_GameSheet03", "communityCreditsBtn_001.png").setScrollFactor(0).setDepth(30).setScale(0.64).setTint(Phaser.Display.Color.GetColor(255, 255, 255)).setInteractive();
     this._expandHitArea(this._menuInfoBtn, 1.5);
     this._makeBouncyButton(this._menuInfoBtn, 0.64, () => {
@@ -610,6 +627,7 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
     this._makeBouncyButton(this._menuUpdateLogBtn, 0.64, () => {
       this._buildUpdateLogPopup();
     }, () => this._menuActive && !this._updateLogPopup);
+
     this._menuSettingsBtn = this.add.image(centerX + 92, screenHeight - 90, "GJ_GameSheet03", "GJ_optionsBtn_001.png").setScrollFactor(0).setDepth(30).setInteractive();
     this._expandHitArea(this._menuSettingsBtn, 1);
     this._makeBouncyButton(this._menuSettingsBtn, 1, () => {
@@ -1133,7 +1151,7 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
 
               if (songName && typeof songNameText !== "undefined" && songNameText) {
                 songNameText.setText(songName);
-                this._fitBitmapText(songTitleText, songBoxW - 100);
+                this._fitBitmapText(songNameText, songBoxW - 100);
               }
             })
             .catch(err => {
@@ -1225,9 +1243,9 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
               if (!audioRes.ok) {
                 const songUrl = decodeURIComponent((ngMap["10"] || "").trim());
                 if (songUrl) {
-                  const proxiedUrl = songUrl.includes("geometrydashfiles.b-cdn.net")
-                    ? songUrl
-                    : `${PROXY_BASE}/audio-proxy?url=${encodeURIComponent(songUrl)}`;
+                  const proxiedUrl = (typeof window.getGdAudioUrl === "function")
+                    ? window.getGdAudioUrl(songUrl)
+                    : `/api/gd/audio-proxy?url=${encodeURIComponent(songUrl)}`;
                   audioRes = await fetch(proxiedUrl);
                 }
               }
@@ -2088,9 +2106,9 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
                       if (songUrl) {
                           const audioCtx = this.game.sound.context;
                           if (audioCtx.state === "suspended") await audioCtx.resume();
-                          const proxiedUrl = songUrl.includes("geometrydashfiles.b-cdn.net")
-                            ? songUrl
-                            : `${PROXY_BASE}/audio-proxy?url=${encodeURIComponent(songUrl)}`;
+                          const proxiedUrl = (typeof window.getGdAudioUrl === "function")
+                            ? window.getGdAudioUrl(songUrl)
+                            : `/api/gd/audio-proxy?url=${encodeURIComponent(songUrl)}`;
                           const audioRes = await fetch(proxiedUrl);
                           const arrayBuf = await audioRes.arrayBuffer();
                           const decoded = await audioCtx.decodeAudioData(arrayBuf);
@@ -4190,12 +4208,8 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
       }
     };
     const isEveryEnd = (levelId) => levelId === "level_99";
-    const levelCoinRequirements = {
-      "level_14": 10,
-      "level_18": 20,
-      "level_20": 30
-    };
-    const getLevelCoinRequirement = (levelId) => levelCoinRequirements[levelId] || 0;
+    const levelCoinRequirements = {};
+    const getLevelCoinRequirement = (levelId) => 0;
     const fadeIn = this.add.graphics().setScrollFactor(0).setDepth(200);
     fadeIn.fillStyle(0x000000, 1);
     fadeIn.fillRect(0, 0, sw, sh);
@@ -4272,7 +4286,7 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
     const arrowL = this.add.image(55, cy - 25, "GJ_GameSheet03", "navArrowBtn_001.png").setScrollFactor(0).setDepth(154).setScale(1.1).setFlipX(true).setInteractive();
     const arrowR = this.add.image(sw - 55, cy - 25, "GJ_GameSheet03", "navArrowBtn_001.png").setScrollFactor(0).setDepth(154).setScale(1.1).setFlipX(false).setInteractive();
     const allLevels = window.allLevels || [];
-    const visibleLevels = allLevels.filter(level => !(level && level[2] === "level_22"));
+    const visibleLevels = allLevels;
     const pageCount = visibleLevels.length + 1;
     let currentPageIndex = visibleLevels.findIndex(l => l[2] === window.currentlevel[2]);
     if (currentPageIndex < 0) currentPageIndex = 0;
@@ -4487,9 +4501,9 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
       }
       const lvl = window.currentlevel;
       const levelId = lvl[2] || "level_1";
-      const requiredCoins = getLevelCoinRequirement(levelId);
+      const requiredCoins = 0;
       const collectedCoins = Number(window._totalsecretcoins) || 0;
-      const levellocked = requiredCoins > collectedCoins;
+      const levellocked = false;
       const levelDifficultyMap = {
         "level_1":         "diffIcon_01_btn_001",
         "level_2":         "diffIcon_01_btn_001",
@@ -5194,6 +5208,13 @@ _buildSettingsPopup() {
     let pageContainer = this.add.container(0, 0);
     innerContainer.add(pageContainer);
 
+    // ... existing buttons
+    const exportBtn = this.add.image(column2X, startY + spacingY * 3, 'export').setScale(0.8).setInteractive();
+    this._makeBouncyButton(exportBtn, 0.8, () => this._generateAndDownloadStandalone());
+    pageContainer.add(exportBtn);
+    const exportTxt = this.add.bitmapText(column2X + 50, startY + spacingY * 3, "bigFont", "Download", 25).setOrigin(0, 0.5);
+    pageContainer.add(exportTxt);
+
     const createToggle = (container, x, y, label, getVal, setVal, callback, fontSize, hasInfoBox, infoText) => {
         if (fontSize === undefined) fontSize = 25;
         if (hasInfoBox === undefined) hasInfoBox = false;
@@ -5621,7 +5642,23 @@ _buildSettingsPopup() {
     };
 
         const buildPerformancePage = (container) => {
-        createNumberInput(container, column1X, startY, "Cull Distance",
+        // Resolution Quality Quick Selector
+        const currentQ = (window.GraphicsManager ? window.GraphicsManager.getQuality() : "high").toUpperCase();
+        const qTxt = this.add.bitmapText(column1X + textOffset, startY, "bigFont", "Resolution (" + currentQ + ")", 23).setOrigin(0, 0.5);
+        container.add(qTxt);
+
+        const gfxBtn = this.add.image(column1X + checkOffset + 30, startY, "GJ_button01").setScale(0.7).setInteractive();
+        const gfxLbl = this.add.bitmapText(column1X + checkOffset + 30, startY, "goldFont", "SET", 22).setOrigin(0.5, 0.5);
+        container.add([gfxBtn, gfxLbl]);
+        this._makeBouncyButton(gfxBtn, 0.7, () => {
+          if (this._settingsPopup) {
+            this._settingsPopup.destroy();
+            this._settingsPopup = null;
+          }
+          this._buildGraphicsPopup();
+        });
+
+        createNumberInput(container, column1X, startY + spacingY, "Cull Distance",
           () => (typeof window.cullDistance !== 'undefined' ? window.cullDistance : 3),
           (v) => window.cullDistance = v,
           0,
@@ -6569,6 +6606,171 @@ _showwippopup() {
       this._howToPlayPopup = null;
     }
   }
+  _buildGraphicsPopup() {
+    if (this._graphicsPopup) return;
+
+    const centerX = screenWidth / 2;
+    const centerY = 320;
+    const panelWidth = 840;
+    const panelHeight = 530;
+
+    this._graphicsPopup = this.add.container(0, 0).setScrollFactor(0).setDepth(260);
+
+    const dim = this.add.rectangle(centerX, centerY, screenWidth, screenHeight, 0, 150 / 255).setInteractive();
+    this._graphicsPopup.add(dim);
+
+    const innerContainer = this.add.container(centerX, centerY).setScale(0);
+    this._graphicsPopup.add(innerContainer);
+
+    const corner = 0.325 * this.textures.get("GJ_square01").source[0].width;
+    const panel = this._drawScale9(0, 0, panelWidth, panelHeight, 'GJ_square01', corner, 16777215, 1);
+    innerContainer.add(panel);
+
+    const closeBtn = this.add.image(-(panelWidth / 2) + 25, -(panelHeight / 2) + 25, 'GJ_WebSheet', "GJ_closeBtn_001.png").setScale(0.8).setInteractive();
+    innerContainer.add(closeBtn);
+    this._makeBouncyButton(closeBtn, 0.8, () => {
+      this.tweens.add({
+        targets: innerContainer,
+        scale: 0,
+        duration: 180,
+        ease: "Back.In",
+        onComplete: () => {
+          if (this._graphicsPopup) {
+            this._graphicsPopup.destroy();
+            this._graphicsPopup = null;
+          }
+        }
+      });
+    });
+
+    const title = this.add.bitmapText(0, -(panelHeight / 2) + 40, "bigFont", "Graphics", 46).setOrigin(0.5);
+    innerContainer.add(title);
+
+    const sectionSubtitle = this.add.bitmapText(0, -170, "goldFont", "RESOLUTION & PERFORMANCE", 28).setOrigin(0.5);
+    innerContainer.add(sectionSubtitle);
+
+    const descText = this.add.bitmapText(0, -20, "bigFont", "", 19).setOrigin(0.5).setMaxWidth(760);
+    innerContainer.add(descText);
+
+    const qualityKeys = ["low", "medium", "high"];
+    const qualityButtons = [];
+    const btnW = 230;
+    const btnH = 80;
+    const startX = -250;
+    const gapX = 250;
+    const posY = -95;
+
+    const updateDisplay = () => {
+      const currentQ = window.GraphicsManager ? window.GraphicsManager.getQuality() : "high";
+      const preset = window.GraphicsManager ? window.GraphicsManager.getPreset(currentQ) : { desc: "" };
+      descText.setText(preset.desc || "");
+
+      qualityButtons.forEach(({ key, btnBg, checkIcon }) => {
+        const isSelected = key === currentQ;
+        btnBg.setTint(isSelected ? 0xffffff : 0x666666);
+        if (checkIcon) checkIcon.setVisible(isSelected);
+      });
+    };
+
+    qualityKeys.forEach((key, index) => {
+      const preset = window.GraphicsManager ? window.GraphicsManager.PRESETS[key] : { name: key, width: 1138, height: 640, scale: 1.0 };
+      const bx = startX + index * gapX;
+      const grp = this.add.container(bx, posY);
+      innerContainer.add(grp);
+
+      const btnBg = this.add.nineslice(0, 0, "GJ_button01", null, btnW, btnH, 18, 18, 18, 18).setOrigin(0.5);
+      grp.add(btnBg);
+
+      const nameTxt = this.add.bitmapText(0, -16, "goldFont", preset.name.toUpperCase(), 34).setOrigin(0.5);
+      grp.add(nameTxt);
+
+      const resTxt = this.add.bitmapText(0, 16, "bigFont", `${preset.width}x${preset.height} (${Math.round(preset.scale * 100)}%)`, 20).setOrigin(0.5);
+      grp.add(resTxt);
+
+      const checkIcon = this.add.image(btnW / 2 - 20, -btnH / 2 + 18, "GJ_GameSheet03", "GJ_checkOn_001.png").setScale(0.65);
+      grp.add(checkIcon);
+
+      const hitZone = this.add.zone(0, 0, btnW, btnH).setInteractive();
+      grp.add(hitZone);
+
+      this._makeBouncyButton(hitZone, 1, () => {
+        try {
+          if (this._audio) this._audio.playEffect("playSound_01", { volume: 0.8 });
+        } catch (_) {}
+        if (window.GraphicsManager) {
+          window.GraphicsManager.setQuality(key, this);
+        }
+        updateDisplay();
+      });
+
+      qualityButtons.push({ key, grp, btnBg, checkIcon });
+    });
+
+    const togglesY = 65;
+    const toggleSpacingY = 55;
+
+    const createToggleItem = (x, y, label, getVal, setVal, onChange) => {
+      const grp = this.add.container(x, y);
+      innerContainer.add(grp);
+
+      const checkTex = getVal() ? "GJ_checkOn_001.png" : "GJ_checkOff_001.png";
+      const checkImg = this.add.image(-130, 0, "GJ_GameSheet03", checkTex).setScale(0.75).setInteractive();
+      grp.add(checkImg);
+
+      const lbl = this.add.bitmapText(-90, 0, "bigFont", label, 22).setOrigin(0, 0.5);
+      grp.add(lbl);
+
+      this._makeBouncyButton(checkImg, 0.75, () => {
+        const nextVal = !getVal();
+        setVal(nextVal);
+        checkImg.setTexture("GJ_GameSheet03", nextVal ? "GJ_checkOn_001.png" : "GJ_checkOff_001.png");
+        if (onChange) onChange(nextVal);
+        try {
+          if (this._audio) this._audio.playEffect("playSound_01", { volume: 0.6 });
+        } catch (_) {}
+      });
+    };
+
+    createToggleItem(-180, togglesY, "Texture Filtering (Smooth)",
+      () => (window.GraphicsManager ? window.GraphicsManager.getFiltering() === "smooth" : true),
+      (v) => { if (window.GraphicsManager) window.GraphicsManager.setFiltering(v ? "smooth" : "pixelated"); }
+    );
+
+    createToggleItem(-180, togglesY + toggleSpacingY, "Object Glow Effects",
+      () => !!window.showGlow,
+      (v) => {
+        window.showGlow = v;
+        if (typeof localStorage !== "undefined") localStorage.setItem("webdash_user_glow", v);
+        if (this._level && this._level._updateGlowVisibility) this._level._updateGlowVisibility();
+      }
+    );
+
+    createToggleItem(190, togglesY, "Low Detail Mode (LDM)",
+      () => !!window.enableLDM,
+      (v) => {
+        window.enableLDM = v;
+        if (typeof localStorage !== "undefined") localStorage.setItem("webdash_user_ldm", v);
+      }
+    );
+
+    createToggleItem(190, togglesY + toggleSpacingY, "FPS Counter",
+      () => (this._fpsText ? this._fpsText.visible : false),
+      (v) => { if (this._fpsText) this._fpsText.setVisible(v); }
+    );
+
+    const hint = this.add.bitmapText(0, (panelHeight / 2) - 38, "bigFont", "Downscaling resolution boosts frame rates on low-end devices & Chromebooks.", 18).setOrigin(0.5);
+    innerContainer.add(hint);
+
+    updateDisplay();
+
+    this.tweens.add({
+      targets: innerContainer,
+      scale: 1,
+      duration: 500,
+      ease: "Back.Out"
+    });
+  }
+
   _buildUpdateLogPopup() {
     if (this._updateLogPopup || window.levelID) {
       return;
@@ -7105,6 +7307,9 @@ _showwippopup() {
     if (this._menuUpdateLogBtn) {
       this._menuUpdateLogBtn.setVisible(false);
     }
+    if (this._menuDownloadBtn) {
+      this._menuDownloadBtn.setVisible(false);
+    }
     if (this._menuNewgroundsBtn) {
       this._menuNewgroundsBtn.setVisible(false);
     }
@@ -7405,10 +7610,218 @@ _showwippopup() {
 
     fileInput.click();
   }
+  _downloadStandalone() {
+    try {
+      if (this._audio) this._audio.playEffect("playSound_01", { volume: 1 });
+    } catch (_) {}
+    this._showDownloadToast("Opening standalone download...");
+
+    // Attempt automatic download for desktop/non-sandboxed browsers
+    try {
+      const link = document.createElement("a");
+      link.href = "/api/download-standalone";
+      link.download = "web-dashers-standalone.zip";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      document.body.appendChild(link);
+      link.click();
+      setTimeout(() => link.remove(), 1500);
+    } catch (_) {}
+
+    // Show dedicated download dialog with direct native buttons for iPad, iOS, and sandboxed iframes
+    this._showStandaloneDownloadModal();
+  }
+  _generateAndDownloadStandalone() {
+    this._downloadStandalone();
+  }
+  _showStandaloneDownloadModal() {
+    const existing = document.getElementById("wd-download-modal");
+    if (existing) existing.remove();
+
+    const overlay = document.createElement("div");
+    overlay.id = "wd-download-modal";
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.zIndex = "999999";
+    overlay.style.display = "flex";
+    overlay.style.alignItems = "center";
+    overlay.style.justifyContent = "center";
+    overlay.style.background = "rgba(0, 0, 0, 0.78)";
+    overlay.style.backdropFilter = "blur(5px)";
+    overlay.style.webkitBackdropFilter = "blur(5px)";
+    overlay.style.fontFamily = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+    overlay.style.userSelect = "none";
+    overlay.style.webkitUserSelect = "none";
+    overlay.style.padding = "16px";
+    overlay.style.boxSizing = "border-box";
+
+    const modal = document.createElement("div");
+    modal.style.background = "linear-gradient(180deg, #1c1a32 0%, #0d0c18 100%)";
+    modal.style.border = "3px solid #ffcc00";
+    modal.style.borderRadius = "14px";
+    modal.style.boxShadow = "0 8px 32px rgba(0, 0, 0, 0.85), 0 0 20px rgba(255, 204, 0, 0.3)";
+    modal.style.width = "100%";
+    modal.style.maxWidth = "480px";
+    modal.style.padding = "24px 20px";
+    modal.style.boxSizing = "border-box";
+    modal.style.color = "#ffffff";
+    modal.style.textAlign = "center";
+    modal.style.position = "relative";
+    modal.style.maxHeight = "90vh";
+    modal.style.overflowY = "auto";
+
+    modal.innerHTML = `
+      <div style="font-size: 22px; font-weight: 900; color: #ffeb3b; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+        Standalone HTML Build
+      </div>
+      <div style="font-size: 13px; color: #b0b0d0; margin-bottom: 16px; line-height: 1.4;">
+        Play Web Dashers offline! Includes all main levels, soundtracks, level editor, and launchers.
+      </div>
+
+      <div style="background: rgba(0,0,0,0.45); border-radius: 8px; padding: 12px 14px; margin-bottom: 14px; border: 1px solid rgba(255,255,255,0.1); text-align: left; font-size: 13px; line-height: 1.5;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 3px;">
+          <span style="color: #8be9fd; font-weight: bold;">📦 Standalone Archive (.ZIP):</span>
+          <span style="color: #50fa7b; font-weight: bold;">~64 MB</span>
+        </div>
+        <div style="color: #cccccc; font-size: 12px; margin-bottom: 8px;">Complete offline folder with index.html, all audio & launchers.</div>
+        
+        <div style="display: flex; justify-content: space-between; margin-bottom: 3px;">
+          <span style="color: #ffb86c; font-weight: bold;">📄 Single-File Game (.HTML):</span>
+          <span style="color: #50fa7b; font-weight: bold;">~94 MB</span>
+        </div>
+        <div style="color: #cccccc; font-size: 12px;">100% self-contained single file with all levels, sprites & soundtracks inlined.</div>
+      </div>
+
+      <a id="wd-zip-download-btn" href="/api/download-standalone" download="web-dashers-standalone.zip" target="_blank" rel="noopener noreferrer" style="
+        display: block;
+        background: linear-gradient(180deg, #44d62c 0%, #208e12 100%);
+        border: 2px solid #a3ff70;
+        border-radius: 10px;
+        padding: 14px 18px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 800;
+        text-decoration: none;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        box-shadow: 0 4px 12px rgba(41, 158, 25, 0.4);
+        cursor: pointer;
+        margin-bottom: 12px;
+        -webkit-tap-highlight-color: transparent;
+      ">
+        ⬇️ Download Standalone Archive (.ZIP)
+      </a>
+
+      <a id="wd-html-download-btn" href="/api/download-standalone-html" download="web-dashers-standalone.html" target="_blank" rel="noopener noreferrer" style="
+        display: block;
+        background: linear-gradient(180deg, #ff9800 0%, #e65100 100%);
+        border: 2px solid #ffcc80;
+        border-radius: 10px;
+        padding: 12px 16px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 800;
+        text-decoration: none;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        box-shadow: 0 4px 12px rgba(230, 81, 0, 0.4);
+        cursor: pointer;
+        margin-bottom: 14px;
+        -webkit-tap-highlight-color: transparent;
+      ">
+        📄 Download Standalone Game (.HTML)
+      </a>
+
+      <div style="background: rgba(255, 204, 0, 0.12); border-left: 3px solid #ffcc00; padding: 10px; border-radius: 4px; font-size: 12px; color: #ffe57f; text-align: left; margin-bottom: 16px; line-height: 1.4;">
+        <strong>📱 iPad / iOS Users:</strong><br>
+        Tap either button above. When Safari asks <i>"Do you want to download...?"</i>, select <b>Download</b>. The file will save directly to your <b>Files</b> app under Downloads!
+      </div>
+
+      <button id="wd-close-modal-btn" style="
+        background: #333348;
+        border: 1px solid #555577;
+        border-radius: 8px;
+        color: #ffffff;
+        padding: 9px 24px;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+      ">
+        ✕ Close
+      </button>
+    `;
+
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+
+    const closeModal = () => {
+      try { overlay.remove(); } catch (_) {}
+    };
+
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) closeModal();
+    });
+
+    const closeBtn = modal.querySelector("#wd-close-modal-btn");
+    if (closeBtn) closeBtn.addEventListener("click", closeModal);
+
+    const zipBtn = modal.querySelector("#wd-zip-download-btn");
+    if (zipBtn) {
+      zipBtn.addEventListener("click", () => {
+        try { if (this._audio) this._audio.playEffect("playSound_01", { volume: 1 }); } catch (_) {}
+        this._showDownloadToast("Download started!");
+      });
+    }
+
+    const htmlBtn = modal.querySelector("#wd-html-download-btn");
+    if (htmlBtn) {
+      htmlBtn.addEventListener("click", () => {
+        try { if (this._audio) this._audio.playEffect("playSound_01", { volume: 1 }); } catch (_) {}
+        this._showDownloadToast("HTML download started!");
+      });
+    }
+  }
+  _showDownloadToast(msg) {
+    if (this._downloadToastContainer) {
+      try { this._downloadToastContainer.destroy(); } catch (_) {}
+    }
+    const container = this.add.container(screenWidth / 2, 70).setDepth(999).setScrollFactor(0);
+    const bg = this.add.graphics();
+    bg.fillStyle(0x000000, 0.85);
+    bg.fillRoundedRect(-180, -22, 360, 44, 8);
+    bg.lineStyle(2, 0x44ff44, 1);
+    bg.strokeRoundedRect(-180, -22, 360, 44, 8);
+    const txt = this.add.bitmapText(0, 0, "bigFont", msg, 20).setOrigin(0.5);
+    container.add([bg, txt]);
+    this._downloadToastContainer = container;
+    this.tweens.add({
+      targets: container,
+      alpha: { from: 0, to: 1 },
+      duration: 150,
+      onComplete: () => {
+        this.time.delayedCall(4000, () => {
+          if (container && container.active) {
+            this.tweens.add({
+              targets: container,
+              alpha: 0,
+              duration: 300,
+              onComplete: () => container.destroy()
+            });
+          }
+        });
+      }
+    });
+  }
   _positionMenuItems() {
     const _0x1e5db8 = screenWidth / 2;
     if (this._logo) {
       this._logo.x = _0x1e5db8;
+    }
+    if (this._menuDownloadBtn) {
+      this._menuDownloadBtn.setPosition(88, 33);
+      this._menuDownloadBtn.setVisible(true);
     }
     if (this._menuInfoBtn) {
       this._menuInfoBtn.x = screenWidth - 30 - 3;
@@ -7687,6 +8100,10 @@ _showwippopup() {
       this._macroBot?.clearPlayback();
     }
     this._level._updateGlowVisibility?.();
+    this._bg.setTint(this._colorManager.getHex(fs));
+    this._level.setGroundColor(this._colorManager.getHex(gs));
+    this._level.setGround2Color?.(this._colorManager.getHex(1009));
+    this._level.applyColorChannels(this._colorManager);
     this._updateCameraY(0, true);
   }
   _getSongOffsetForWorldX(worldX) {
@@ -7897,6 +8314,12 @@ _showwippopup() {
     this._level.resetSpawnTriggers();
     this._level.resetMoveTriggers();
     this._level.resetVisibility();
+    this._colorManager.reset();
+    this._level.fastForwardTriggers(checkpoint.x, this._colorManager);
+    this._bg.setTint(this._colorManager.getHex(fs));
+    this._level.setGroundColor(this._colorManager.getHex(gs));
+    this._level.setGround2Color?.(this._colorManager.getHex(1009));
+    this._level.applyColorChannels(this._colorManager);
     this._level.additiveContainer.x = -this._cameraX;
     this._level.additiveContainer.y = this._cameraY;
     this._level.container.x = -this._cameraX;
@@ -8734,8 +9157,8 @@ _showwippopup() {
     this._level.stepPulseTriggers(deltaTime / 1000, this._colorManager);
     this._colorManager.step(deltaTime / 1000);
     this._level.applyColorChannels(this._colorManager);
-    this._bg.setTint(this._colorManager.getHex(fs));
-    this._level.setGroundColor(this._colorManager.getHex(gs));
+    if (!this._level._bgPulsed) this._bg.setTint(this._colorManager.getHex(fs));
+    if (!this._level._groundPulsed) this._level.setGroundColor(this._colorManager.getHex(gs));
     this._level.setGround2Color?.(this._colorManager.getHex(1009));
     this._level.updateVisibility(this._cameraX);
     this._level.updateObjectDebugIds();
@@ -9923,7 +10346,7 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
     _makeSettingsBtn(_sColL, _sRow1Y, "Account",    _sBtnW2, false, null);
     _makeSettingsBtn(_sColR, _sRow1Y, "How To Play", _sBtnW2, true, () => { this._buildHowToPlayPopup(); });
     _makeSettingsBtn(_sColL, _sRow2Y, "Options",    _sBtnW2, true,  () => { this._buildSettingsPopup(); });
-    _makeSettingsBtn(_sColR, _sRow2Y, "Graphics",   _sBtnW2, false, null);
+    _makeSettingsBtn(_sColR, _sRow2Y, "Graphics",   _sBtnW2, true,  () => { this._buildGraphicsPopup(); });
     _makeSettingsBtn(_sCol3L, _sRow3Y, "Rate",      _sBtnW3, true, () => { this._redirectRate(); });
     _makeSettingsBtn(_sCol3M, _sRow3Y, "Songs",     _sBtnW3, true, () => { this._hideSettingsScreen(() => this.time.delayedCall(150, () => this._buildsongspopup())); });
     _makeSettingsBtn(_sCol3R, _sRow3Y, "Help",      _sBtnW3, true, () => { this._hideSettingsScreen(() => this.time.delayedCall(150, () => this._buildhelppopup())); });
@@ -10589,7 +11012,9 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
     const backBtn = this.add.image(45, 45, "GJ_GameSheet03", "GJ_arrow_01_001.png")
       .setScrollFactor(0).setDepth(204).setOrigin(0.5).setInteractive();
     objects.push(backBtn);
+    let _isClosed = false;
     const closeOverlay = (returnToParent = true, onComplete = null) => {
+      _isClosed = true;
       const fadeOut = this.add.graphics().setScrollFactor(0).setDepth(400).setAlpha(0);
       fadeOut.fillStyle(0x000000, 1);
       fadeOut.fillRect(0, 0, sw, sh);
@@ -10615,7 +11040,7 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
 
     return { overlay: bgGfx, objects, listLeft, listTop, panelW, panelH,
              panelCX, panelCY, addRow, clearRows, prevBtn, nextBtn,
-             pageLbl, closeOverlay, redrawStripes: _redrawStripes };
+             pageLbl, closeOverlay, isClosed: () => _isClosed, redrawStripes: _redrawStripes };
   }
 
   _fitBitmapText(textObj, maxWidth, minScale = 0.3) {
@@ -10665,7 +11090,7 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
     );
     const { objects, listLeft, listTop, panelW, panelH,
             panelCX, panelCY, addRow, clearRows,
-            prevBtn, nextBtn, pageLbl, closeOverlay, redrawStripes } = shell;
+            prevBtn, nextBtn, pageLbl, closeOverlay, isClosed, redrawStripes } = shell;
 
     this._onlineLevelsOverlay = shell.overlay;
     this._closeOnlineLevelsOverlay = closeOverlay;
@@ -11006,11 +11431,14 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
         const count  = parseInt(pageInfo[2]) || 10;
         const start  = offset + 1;
         const end    = count * (page + 1);
-        pageLbl.setText(`${start} to ${end} of ${total}`);
+        if (isClosed()) return;
+        try {
+          if (pageLbl && pageLbl.scene && pageLbl.fontData) pageLbl.setText(`${start} to ${end} of ${total}`);
+        } catch (_e) {}
         const maxPages = Math.ceil(total / count);
         _knownMaxPages = Math.max(1, maxPages);
         const hasNextPage = (page + 1) < maxPages;
-        nextBtn.setVisible(hasNextPage);
+        if (nextBtn && nextBtn.scene) nextBtn.setVisible(hasNextPage);
         scrollOffsetY = 0;
         // wip
         _lastLevelStrs = levelStrs;
@@ -11021,11 +11449,11 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
             activeCellObjs.push(...cellObjs);
             addRow();
           });
-          spinSprite.setVisible(false);
-          refreshBtn.setVisible(true);
-          pageLbl.setVisible(true);
-          prevBtn.setVisible(page > 0);
-          nextBtn.setVisible(hasNextPage);
+          if (spinSprite && spinSprite.scene) spinSprite.setVisible(false);
+          if (refreshBtn && refreshBtn.scene) refreshBtn.setVisible(true);
+          if (pageLbl && pageLbl.scene) pageLbl.setVisible(true);
+          if (prevBtn && prevBtn.scene) prevBtn.setVisible(page > 0);
+          if (nextBtn && nextBtn.scene) nextBtn.setVisible(hasNextPage);
           _loading = false;
           return;
         }
@@ -11313,7 +11741,9 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
     const backBtn = this.add.image(45, 45, "GJ_GameSheet03", "GJ_arrow_01_001.png")
       .setScrollFactor(0).setDepth(204).setOrigin(0.5).setInteractive();
     objects.push(backBtn);
+    let _isClosed = false;
     const closeOverlay = (returnToCreator = true, onComplete = null) => {
+      _isClosed = true;
       const fadeOut = this.add.graphics().setScrollFactor(0).setDepth(400).setAlpha(0);
       fadeOut.fillStyle(0x000000, 1);
       fadeOut.fillRect(0, 0, sw, sh);
@@ -11573,6 +12003,7 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
     };
 
     const _rebuildCells = () => {
+      if (_isClosed) return;
       for (const o of activeCellObjs) if (o && o.destroy) o.destroy();
       activeCellObjs = [];
       clearRows();
@@ -11587,16 +12018,19 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
       });
     };
     const _updateSavedNav = () => {
+      if (_isClosed || !pageLbl || !pageLbl.scene || !pageLbl.fontData) return;
       const totalPages = _getSavedTotalPages();
       const hasData = savedLevelData.length > 0;
-      pageBtnGroup.setVisible(hasData);
+      if (pageBtnGroup && pageBtnGroup.scene) pageBtnGroup.setVisible(hasData);
       _updateSavedPageNum(currentPage);
       const start = hasData ? currentPage * savedPerPage + 1 : 0;
       const end   = hasData ? Math.min(savedLevelData.length, (currentPage + 1) * savedPerPage) : 0;
-      pageLbl.setText(`${start} to ${end} of ${savedLevelData.length}`);
-      pageLbl.setVisible(hasData);
-      prevBtn.setVisible(hasData && currentPage > 0);
-      nextBtn.setVisible(hasData && currentPage < totalPages - 1);
+      try {
+        pageLbl.setText(`${start} to ${end} of ${savedLevelData.length}`);
+        pageLbl.setVisible(hasData);
+      } catch (_e) {}
+      if (prevBtn && prevBtn.scene) prevBtn.setVisible(hasData && currentPage > 0);
+      if (nextBtn && nextBtn.scene) nextBtn.setVisible(hasData && currentPage < totalPages - 1);
     };
 
     const _goToSavedPage = (page) => {
@@ -11646,6 +12080,7 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
       });
 
       const _doRender = () => {
+        if (_isClosed) return;
         _rebuildCells();
       };
 
@@ -11674,6 +12109,7 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
             })
             .catch(() => {});
         })).then(() => {
+          if (_isClosed) return;
           try {
             const _savedKey = "gd_saved_online_levels";
             const all = JSON.parse(localStorage.getItem(_savedKey) || "[]");

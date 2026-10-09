@@ -72,6 +72,7 @@ class BootScene extends Phaser.Scene {
 
   preload() {
     if (window.gameCache) window.gameCache.init();
+    if (window.GraphicsManager) window.GraphicsManager.applyToGame(this);
     (function (game) {
       if (game.renderer.type === Phaser.WEBGL) {
         try {
@@ -320,14 +321,25 @@ class BootScene extends Phaser.Scene {
       this.load.once("complete", () => {
         if (sliderFill) sliderFill.width = 380;
         this.time.delayedCall(200, () => {
-          const bigFontData = this.cache.text.get("bigFontFnt");
-          if (bigFontData) loadFont(this, "bigFont", bigFontData);
-          const gfd = this.cache.text.get("goldFontFnt");
-          if (gfd && !this.cache.bitmapFont.has("goldFont")) loadFont(this, "goldFont", gfd);
+          try {
+            const bigFontData = this.cache.text.get("bigFontFnt");
+            if (bigFontData) loadFont(this, "bigFont", bigFontData);
+            const gfd = this.cache.text.get("goldFontFnt");
+            if (gfd && !this.cache.bitmapFont.has("goldFont")) loadFont(this, "goldFont", gfd);
+          } catch (err) {
+            console.warn("Font loading warning:", err);
+          }
 
-          localStorage.setItem('webdash_assets_loaded', 'true');
-          localStorage.setItem('webdash_last_load_time', Date.now().toString());
-          this.scene.start("GameScene");
+          try {
+            localStorage.setItem('webdash_assets_loaded', 'true');
+            localStorage.setItem('webdash_last_load_time', Date.now().toString());
+          } catch (_) {}
+
+          try {
+            this.scene.start("GameScene");
+          } catch (err) {
+            console.error("Failed to start GameScene:", err);
+          }
         });
       });
 

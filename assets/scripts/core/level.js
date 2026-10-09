@@ -463,10 +463,48 @@ const cubePortal = "cube";
 const portalWaveType = "portal_wave";
 const portalUfoType = "portal_ufo";
 const allObjects = window.allobjects();
+const _uncolorableTypes = new Set(["portal", "speed", "pad", "ring", "coin", "trigger"]);
+const _uncolorableExplicitIds = new Set([
+  5, 15, 16, 17, 20, 21, 48, 49, 88, 89, 98,
+  116, 117, 118, 119, 120, 121, 122, 129, 130, 131,
+  135, 146, 162, 165, 193, 195, 196,
+  1889, 1890, 1891, 1892
+]);
 for (const [objId, objectDef] of Object.entries(allObjects || {})) {
   if (!objectDef || typeof objectDef !== "object") continue;
   if (objectDef.glow === true || (objectDef.glow_frame && objectDef.glow_frame !== "none")) {
     objectDef.glow = true;
+  }
+  const idNum = parseInt(objId, 10);
+  const frameStr = String(objectDef.frame || "");
+  const isPortal = objectDef.type === "portal" || frameStr.startsWith("portal_");
+  const isSpeed = objectDef.type === "speed" || frameStr.startsWith("boost_");
+  const isPad = objectDef.type === "pad" || frameStr.startsWith("bump_") || frameStr.startsWith("gravbump_") || frameStr.startsWith("spiderBump_");
+  const isRing = objectDef.type === "ring" || frameStr.startsWith("ring_") || frameStr.startsWith("gravring_") || frameStr.startsWith("dashRing_") || frameStr.startsWith("dropRing_") || frameStr.startsWith("gravJumpRing_") || frameStr.startsWith("spiderRing_") || frameStr.startsWith("teleportRing_");
+  const isCoin = objectDef.type === "coin" || frameStr.startsWith("secretCoin_");
+  const isTrigger = objectDef.type === "trigger";
+
+  if (isPortal || isSpeed || isPad || isRing || isCoin || isTrigger || _uncolorableTypes.has(objectDef.type) || _uncolorableExplicitIds.has(idNum)) {
+    objectDef.can_color = false;
+    objectDef.default_base_color_channel = 0;
+  }
+  if (isPortal) objectDef.type = "portal";
+  if (isSpeed) objectDef.type = "speed";
+  if (isPad) objectDef.type = "pad";
+  if (isRing) objectDef.type = "ring";
+  if (isCoin) objectDef.type = "coin";
+
+  if (objectDef.children && Array.isArray(objectDef.children)) {
+    for (const child of objectDef.children) {
+      if (!child) continue;
+      if (isPortal || child.portalGuide || child._portalFront || String(child.frame || "").startsWith("portal")) {
+        child.can_color = false;
+        child.Cant_Color = true;
+      } else if (child.orbGuide) {
+        child.can_color = false;
+        child.Cant_Color = true;
+      }
+    }
   }
 }
 if (!allObjects[745]) {
@@ -505,7 +543,12 @@ for (const _spId of _speedPortalIds) {
     allObjects[_spId] = Object.assign({
       gridW: 1,
       gridH: 1,
-    }, allObjects[_spId] || {}, { type: "speed" });
+      can_color: false,
+      default_base_color_channel: 0,
+    }, allObjects[_spId] || {}, { type: "speed", can_color: false, default_base_color_channel: 0 });
+  } else {
+    allObjects[_spId].can_color = false;
+    allObjects[_spId].default_base_color_channel = 0;
   }
 }
 
@@ -915,16 +958,22 @@ window.LevelObject = class LevelObject {
   }
 
   fastForwardTriggers(targetX, colorManager) {
-    const triggers = this._colorTriggers.sort((a, b) => a.x - b.x);
-
-    for (let trigger of triggers) {
-      if (trigger.touchTriggered || !this._isTriggerSaveObjectLive(trigger.uid)) continue;
+    this._colorTriggers.sort((a, b) => a.x - b.x);
+    let idx = 0;
+    for (let trigger of this._colorTriggers) {
       if (trigger.x <= targetX) {
+        idx++;
+        if (trigger.touchTriggered || trigger.spawnTriggered || !this._isTriggerSaveObjectLive(trigger.uid)) continue;
         colorManager.triggerColor(trigger.index, trigger.color, 0);
+        if (trigger.tintGround) {
+          colorManager.triggerColor(1001, trigger.color, 0);
+        }
       } else {
         break;
       }
     }
+    this._colorTriggerIdx = idx;
+    this._channelCurrentHex = {};
   }
   loadLevel(levelData) {
     let {
@@ -956,9 +1005,9 @@ window.LevelObject = class LevelObject {
     this._userCoinRunCollected.clear();
     this._userCoinCompleted = window.isEditor ? new Set() : this._loadUserCoinProgress();
     this._userCoinSlotCount = 0;
+    this._setUpSettings(settingslist);
     this._sourceLevelObjects = levelObjects;
     this._spawnLevelObjects(levelObjects);
-    this._setUpSettings(settingslist);
     window.levelObjects = levelObjects;
     window.settingslist = settingslist;
   }
@@ -1168,11 +1217,21 @@ window.LevelObject = class LevelObject {
         }
         let channelId = parseInt(colorProps[6], 10);
         if (!isNaN(channelId)) {
-          this._initialColors[channelId] = {
-            r: parseInt(colorProps[1] || "255", 10),
-            g: parseInt(colorProps[2] || "255", 10),
-            b: parseInt(colorProps[3] || "255", 10)
-          };
+          let col = null;
+          if (colorProps[4] === "1") {
+            const p1 = window.mainColor != null ? window.mainColor : 0x04FF00;
+            col = { r: (p1 >> 16) & 0xFF, g: (p1 >> 8) & 0xFF, b: p1 & 0xFF };
+          } else if (colorProps[4] === "2") {
+            const p2 = window.secondaryColor != null ? window.secondaryColor : 0x00FBFF;
+            col = { r: (p2 >> 16) & 0xFF, g: (p2 >> 8) & 0xFF, b: p2 & 0xFF };
+          } else {
+            col = {
+              r: parseInt(colorProps[1] || "255", 10),
+              g: parseInt(colorProps[2] || "255", 10),
+              b: parseInt(colorProps[3] || "255", 10)
+            };
+          }
+          this._initialColors[channelId] = col;
         }
       }
     }
@@ -1183,19 +1242,54 @@ window.LevelObject = class LevelObject {
       for (let j = 0; j + 1 < props.length; j += 2) {
         cp[parseInt(props[j], 10)] = props[j + 1];
       }
+      if (cp[4] === "1") {
+        const p1 = window.mainColor != null ? window.mainColor : 0x04FF00;
+        return { r: (p1 >> 16) & 0xFF, g: (p1 >> 8) & 0xFF, b: p1 & 0xFF };
+      }
+      if (cp[4] === "2") {
+        const p2 = window.secondaryColor != null ? window.secondaryColor : 0x00FBFF;
+        return { r: (p2 >> 16) & 0xFF, g: (p2 >> 8) & 0xFF, b: p2 & 0xFF };
+      }
       return {
         r: parseInt(cp[1] || "255", 10),
         g: parseInt(cp[2] || "255", 10),
         b: parseInt(cp[3] || "255", 10)
       };
     };
-    if (!this._initialColors[1000] && settingsMap["kS29"]) {
-      let col = parseColorEntry(settingsMap["kS29"]);
-      if (col) this._initialColors[1000] = col;
+    const colorKeyMap = {
+      kS29: [1000],
+      kS30: [1001],
+      kS31: [1002],
+      kS32: [1004],
+      kS33: [1],
+      kS34: [2],
+      kS35: [3],
+      kS36: [4],
+      kS37: [1003],
+      kS39: [1009]
+    };
+    for (let key in colorKeyMap) {
+      if (settingsMap[key]) {
+        let col = parseColorEntry(settingsMap[key]);
+        if (col) {
+          for (let chId of colorKeyMap[key]) {
+            if (!this._initialColors[chId]) {
+              this._initialColors[chId] = { ...col };
+            }
+          }
+        }
+      }
     }
-    if (!this._initialColors[1001] && settingsMap["kS30"]) {
-      let col = parseColorEntry(settingsMap["kS30"]);
-      if (col) this._initialColors[1001] = col;
+    if (this._scene && this._scene._colorManager) {
+      if (typeof this._scene._colorManager.clearInitialColors === "function") {
+        this._scene._colorManager.clearInitialColors();
+      } else {
+        this._scene._colorManager._initialColors = {};
+        this._scene._colorManager.reset();
+      }
+      for (let chId in this._initialColors) {
+        this._scene._colorManager.setInitialColor(parseInt(chId, 10), this._initialColors[chId]);
+      }
     }
   }
   _buildGround() {
@@ -1634,9 +1728,14 @@ window.LevelObject = class LevelObject {
       sprite.setScale(objectData.scale);
     }
     if (colorData) {
+      if (colorData.can_color === false) {
+        if (typeof sprite.clearTint === "function") sprite.clearTint();
+        sprite._cantColor = true;
+        sprite._canColor = false;
+      }
       const blackDefault = colorData.black === true || colorData.tint === 0;
       const isPlaceholderTint = colorData.tint === 52224 || colorData.tint === 65280 || colorData.tint === 327424 || colorData.tint === 64511;
-      if (colorData.tint !== undefined && !isPlaceholderTint) {
+      if (colorData.tint !== undefined && !isPlaceholderTint && colorData.can_color !== false) {
         sprite.setTint(colorData.tint);
       }
       if (blackDefault) {
@@ -1711,7 +1810,8 @@ window.LevelObject = class LevelObject {
       this._glowSpriteKeys.add(glowKey);
       this._applyVisualProps(scene, glowSprite, glowFrameName, objectData);
       const blackDefault = colorData?.black === true || colorData?.tint === 0;
-      if (colorData?.tint !== undefined) {
+      const isPlaceholderGlowTint = colorData?.tint === 52224 || colorData?.tint === 65280 || colorData?.tint === 327424 || colorData?.tint === 64511;
+      if (colorData?.tint !== undefined && !isPlaceholderGlowTint && colorData?.can_color !== false) {
         glowSprite.setTint(colorData.tint);
       }
       if (blackDefault) {
@@ -1984,7 +2084,7 @@ window.LevelObject = class LevelObject {
     textSprite._eeEditorLayer = parseInt(levelObj.editorLayer ?? levelObj._raw?.[20] ?? levelObj._raw?.["20"] ?? 0, 10) || 0;
     textSprite._eeEditorLayer2 = parseInt(levelObj.editorLayer2 ?? levelObj._raw?.[61] ?? levelObj._raw?.["61"] ?? 0, 10) || 0;
 
-    const colorChannel = parseInt(levelObj.color1 || objectDef?.default_base_color_channel || 0, 10) || 0;
+    const colorChannel = parseInt(levelObj.color1 > 0 ? levelObj.color1 : (objectDef?.default_base_color_channel >= 1000 ? objectDef.default_base_color_channel : 1004), 10);
     if (colorChannel > 0 && objectDef?.can_color !== false) {
       textSprite._eeColorChannel = colorChannel;
       if (!this._colorChannelSprites[colorChannel]) this._colorChannelSprites[colorChannel] = [];
@@ -2066,7 +2166,10 @@ window.LevelObject = class LevelObject {
       const backFrame = frameName.replace("_front_", "_back_");
       portalBackSprite = addImageToScene(scene, worldX, baseY, backFrame);
       if (portalBackSprite) {
-        this._applyVisualProps(scene, portalBackSprite, backFrame, exitLevelObj, exitDefSource);
+        this._applyVisualProps(scene, portalBackSprite, backFrame, exitLevelObj, { can_color: false });
+        portalBackSprite._cantColor = true;
+        portalBackSprite._canColor = false;
+        if (typeof portalBackSprite.clearTint === "function") portalBackSprite.clearTint();
         portalBackSprite._eeLayer = 1;
         portalBackSprite._eeWorldX = worldX;
         portalBackSprite._eeBaseY = baseY;
@@ -2075,7 +2178,6 @@ window.LevelObject = class LevelObject {
         portalBackSprite._eeGeneratedTeleportExit = true;
         this._addToSection(portalBackSprite);
         registerToGroups(portalBackSprite, worldX, baseY);
-        registerColor(portalBackSprite, col1);
         registerObjectSprite(portalBackSprite);
       }
     }
@@ -2083,7 +2185,10 @@ window.LevelObject = class LevelObject {
     const sprite = addImageToScene(scene, worldX, baseY, frameName);
     if (!sprite) return;
 
-    this._applyVisualProps(scene, sprite, frameName, exitLevelObj, exitDefSource);
+    this._applyVisualProps(scene, sprite, frameName, exitLevelObj, { can_color: false });
+    sprite._cantColor = true;
+    sprite._canColor = false;
+    if (typeof sprite.clearTint === "function") sprite.clearTint();
     if (portalBackSprite) {
       portalBackSprite.x = sprite.x;
       portalBackSprite.y = sprite.y;
@@ -2094,7 +2199,6 @@ window.LevelObject = class LevelObject {
     sprite._eeZDepth = objZDepth + 0.004;
     sprite._eeOrigAlpha = 1;
     sprite._eeGeneratedTeleportExit = true;
-    registerColor(sprite, col1);
     this._addToSection(sprite);
     registerToGroups(sprite, worldX, baseY);
     registerObjectSprite(sprite);
@@ -2122,21 +2226,37 @@ window.LevelObject = class LevelObject {
     if (levelObj._raw) delete levelObj._raw._eeObjectId;
     const triggerBase = this._makeTriggerBase(levelObj, linkedObjectId);
 
+    const resolveTriggerColor = (raw) => {
+      if (!raw) return { r: 255, g: 255, b: 255 };
+      const pCol = String(raw[4] ?? raw["4"] ?? "0");
+      if (pCol === "1") {
+        const p1 = window.mainColor != null ? window.mainColor : 0x04FF00;
+        return { r: (p1 >> 16) & 0xFF, g: (p1 >> 8) & 0xFF, b: p1 & 0xFF };
+      }
+      if (pCol === "2") {
+        const p2 = window.secondaryColor != null ? window.secondaryColor : 0x00FBFF;
+        return { r: (p2 >> 16) & 0xFF, g: (p2 >> 8) & 0xFF, b: p2 & 0xFF };
+      }
+      return {
+        r: parseInt(raw[7] ?? raw["7"] ?? 255, 10),
+        g: parseInt(raw[8] ?? raw["8"] ?? 255, 10),
+        b: parseInt(raw[9] ?? raw["9"] ?? 255, 10)
+      };
+    };
+
     if (levelObj.id === 29 || levelObj.id === 30) {
+      const _raw = levelObj._raw || {};
       this._colorTriggers.push({
         ...triggerBase,
         x: levelObj.x * 2,
         y: levelObj.y * 2,
         uid: linkedObjectId,
-        touchTriggered: String(levelObj._raw?.[11] ?? levelObj._raw?.["11"] ?? "0") === "1",
+        touchTriggered: String(_raw[11] ?? _raw["11"] ?? "0") === "1",
+        spawnTriggered: String(_raw[62] ?? _raw["62"] ?? "0") === "1",
         index: levelObj.id === 29 ? 1000 : 1001,
-        color: {
-          r: parseInt(levelObj._raw[7] ?? 255, 10),
-          g: parseInt(levelObj._raw[8] ?? 255, 10),
-          b: parseInt(levelObj._raw[9] ?? 255, 10)
-        },
-        duration: parseFloat(levelObj._raw[10] ?? 0),
-        tintGround: levelObj._raw[14] === "1"
+        color: resolveTriggerColor(_raw),
+        duration: parseFloat(_raw[10] ?? 0),
+        tintGround: _raw[14] === "1"
       });
     }
 
@@ -2179,22 +2299,28 @@ window.LevelObject = class LevelObject {
       });
     }
 
-    if ([105, 744, 899, 900, 915].includes(levelObj.id)) {
-      const _raw = levelObj._raw;
-      const targetChannel = parseInt(_raw[23] ?? 0, 10);
+    if ([104, 105, 744, 899, 900, 915, 916].includes(levelObj.id)) {
+      const _raw = levelObj._raw || {};
+      let targetChannel = parseInt(_raw[23] ?? 0, 10);
+      if (!targetChannel || targetChannel <= 0) {
+        if (levelObj.id === 104) targetChannel = 1002;
+        else if (levelObj.id === 105) targetChannel = 1004;
+        else if (levelObj.id === 744) targetChannel = 1003;
+        else if (levelObj.id === 899) targetChannel = 1;
+        else if (levelObj.id === 900) targetChannel = 2;
+        else if (levelObj.id === 915) targetChannel = 3;
+        else if (levelObj.id === 916) targetChannel = 4;
+      }
       if (targetChannel > 0) {
         this._colorTriggers.push({
           ...triggerBase,
           x: levelObj.x * 2,
           y: levelObj.y * 2,
           uid: linkedObjectId,
-          touchTriggered: String(_raw?.[11] ?? _raw?.["11"] ?? "0") === "1",
+          touchTriggered: String(_raw[11] ?? _raw["11"] ?? "0") === "1",
+          spawnTriggered: String(_raw[62] ?? _raw["62"] ?? "0") === "1",
           index: targetChannel,
-          color: {
-            r: parseInt(_raw[7] ?? 255, 10),
-            g: parseInt(_raw[8] ?? 255, 10),
-            b: parseInt(_raw[9] ?? 255, 10)
-          },
+          color: resolveTriggerColor(_raw),
           duration: parseFloat(_raw[10] ?? 0),
           tintGround: _raw[14] === "1",
           opacity: parseFloat(_raw[35] ?? 1)
@@ -2220,7 +2346,7 @@ window.LevelObject = class LevelObject {
     }
 
     if (levelObj.id === 1006) {
-      const _raw = levelObj._raw;
+      const _raw = levelObj._raw || {};
       const targetType = parseInt(_raw[52] ?? 0, 10);
       this._pulseTriggers.push({
         ...triggerBase,
@@ -2228,11 +2354,7 @@ window.LevelObject = class LevelObject {
         targetGroup: targetType === 1 ? parseInt(_raw[51] ?? 0, 10) : 0,
         targetChannel: targetType === 0 ? parseInt(_raw[51] ?? 0, 10) : 0,
         targetType: targetType,
-        color: {
-          r: parseInt(_raw[7] ?? 255, 10),
-          g: parseInt(_raw[8] ?? 255, 10),
-          b: parseInt(_raw[9] ?? 255, 10)
-        },
+        color: resolveTriggerColor(_raw),
         fadeIn: parseFloat(_raw[45] ?? 0),
         hold: parseFloat(_raw[46] ?? 0),
         fadeOut: parseFloat(_raw[47] ?? 0)
@@ -2350,20 +2472,54 @@ window.LevelObject = class LevelObject {
     const depthBase = { "-5": -12, "-3": -9, "-1": -6, 0: 0, 1: 3, 3: 6, 5: 9, 7: 10.5, 9: 12, 11: 13.5 };
     const objZDepth = (depthBase[zLayer] !== undefined ? depthBase[zLayer] : 0) + zOrd * 0.01;
 
-    let col1 = levelObj.color1 || (objectDef.default_base_color_channel !== undefined ? objectDef.default_base_color_channel : 0);
-    if (col1 === 0 && (objectDef.type === solidType || objectDef.type === hazardType)) col1 = 1;
+    const isCustomRing = objectDef.type === "ring" && (objectId === 1594 || (frameName && frameName.includes("ring_custom")));
 
-    const col2 = levelObj.color2 || (objectDef.default_detail_color_channel !== undefined ? objectDef.default_detail_color_channel : -1);
-    const canColor = objectDef.can_color !== false;
+    const isUncolorableType = objectDef.type === "portal" ||
+      objectDef.type === "speed" ||
+      objectDef.type === "pad" ||
+      (objectDef.type === "ring" && !isCustomRing) ||
+      objectDef.type === "coin" ||
+      objectDef.type === "trigger" ||
+      isPortalFront ||
+      (frameName && (frameName.startsWith("portal_") || frameName.startsWith("boost_") || frameName.startsWith("secretCoin_")));
+
+    const canColor = !isUncolorableType && objectDef.can_color !== false;
+
+    let col1 = 0;
+    if (canColor) {
+      if (levelObj.color1 > 0) {
+        col1 = levelObj.color1;
+      } else if (objectDef.default_base_color_channel !== undefined && objectDef.default_base_color_channel >= 1000) {
+        col1 = objectDef.default_base_color_channel;
+      } else {
+        col1 = (objectDef.type === solidType || objectDef.type === hazardType || objectDef.type === decoType || objectDef.type === "soliddeco") ? 1004 : 0;
+      }
+    }
+
+    const col2 = canColor
+      ? (levelObj.color2 > 0 ? levelObj.color2 : (objectDef.default_detail_color_channel !== undefined && objectDef.default_detail_color_channel >= 1000 ? objectDef.default_detail_color_channel : -1))
+      : -1;
 
     const registerColor = (spr, ch, forceParentColor = false) => {
       if (!spr || spr._cantColor || (spr._isBlack && !spr._canColor)) return;
-      if (ch > 0 && (canColor || spr._canColor) && spr) {
-        spr._eeColorChannel = ch;
-        if (!this._colorChannelSprites[ch]) this._colorChannelSprites[ch] = [];
-        this._colorChannelSprites[ch].push(spr);
+      if (!canColor && !spr._canColor) return;
+      if (isUncolorableType && !spr._canColor) return;
+      const targetCh = ch > 0 ? ch : (objectDef && objectDef.default_base_color_channel >= 1000 ? objectDef.default_base_color_channel : (canColor ? 1004 : 0));
+      if (targetCh > 0 && spr) {
+        spr._eeColorChannel = targetCh;
+        if (!this._colorChannelSprites[targetCh]) this._colorChannelSprites[targetCh] = [];
+        if (!this._colorChannelSprites[targetCh].includes(spr)) {
+          this._colorChannelSprites[targetCh].push(spr);
+        }
         if (forceParentColor && spr._SawColor === undefined) {
-          spr._SawColor = ch;
+          spr._SawColor = targetCh;
+        }
+        if (this._scene && this._scene._colorManager && typeof spr.setTint === "function") {
+          const initHex = this._scene._colorManager.getHex(targetCh);
+          if (initHex !== null && initHex !== undefined) {
+            spr.setTint(initHex);
+            spr._appliedHex = initHex;
+          }
         }
       }
     };
@@ -2394,7 +2550,10 @@ window.LevelObject = class LevelObject {
       const backFrame = frameName.replace("_front_", "_back_");
       portalBackSprite = addImageToScene(scene, spriteWorldX, baseY, backFrame);
       if (portalBackSprite) {
-        this._applyVisualProps(scene, portalBackSprite, backFrame, levelObj);
+        this._applyVisualProps(scene, portalBackSprite, backFrame, levelObj, { can_color: false });
+        portalBackSprite._cantColor = true;
+        portalBackSprite._canColor = false;
+        if (typeof portalBackSprite.clearTint === "function") portalBackSprite.clearTint();
         portalBackSprite._eeLayer = 1;
         portalBackSprite._eeWorldX = worldX;
         portalBackSprite._eeBaseY = baseY;
@@ -2402,7 +2561,6 @@ window.LevelObject = class LevelObject {
         portalBackSprite._eeOrigAlpha = 1;
         this._addToSection(portalBackSprite);
         registerToGroups(portalBackSprite, worldX, baseY);
-        registerColor(portalBackSprite, col1);
         registerObjectSprite(portalBackSprite);
       }
     }
@@ -2413,7 +2571,13 @@ window.LevelObject = class LevelObject {
       if (orbGlow) {
         orbGlow._eeZDepth = objZDepth - 0.003;
         orbGlow._eeOrigAlpha = orbGlow.alpha ?? 1;
-        registerColor(orbGlow, col1);
+        if (canColor && !isUncolorableType) {
+          registerColor(orbGlow, col1);
+        } else {
+          orbGlow._cantColor = true;
+          orbGlow._canColor = false;
+          if (typeof orbGlow.clearTint === "function") orbGlow.clearTint();
+        }
         registerToGroups(orbGlow, worldX, baseY);
         registerObjectSprite(orbGlow);
       }
@@ -2446,7 +2610,13 @@ window.LevelObject = class LevelObject {
         sprite._Sawoffset = 0;
         issawsprite(sprite);
       }
-      registerColor(sprite, col1, !!isSawObjectId);
+      if (canColor && !isUncolorableType) {
+        registerColor(sprite, col1, !!isSawObjectId);
+      } else {
+        sprite._cantColor = true;
+        sprite._canColor = false;
+        if (typeof sprite.clearTint === "function") sprite.clearTint();
+      }
       this._addToSection(sprite);
       registerObjectSprite(sprite);
 
@@ -2522,8 +2692,6 @@ window.LevelObject = class LevelObject {
       }
 
       if (frameName.indexOf("sawblade") >= 0) {
-        sprite.setTint(0x000000);
-        sprite._isBlack = true;
         sprite._isSaw = true;
         const isDecorativeSaw = objectDef?.type === decoType && frameName?.includes("sawblade");
         if (isFastSawObjectId || isDecorativeSaw) {
@@ -2533,10 +2701,8 @@ window.LevelObject = class LevelObject {
         issawsprite(sprite);
 
         const sawMirror = addImageToScene(scene, spriteWorldX, baseY, frameName);
-          if (sawMirror) {
+        if (sawMirror) {
           this._applyVisualProps(scene, sawMirror, frameName, levelObj, objectDef);
-          sawMirror.setTint(0x000000);
-          sawMirror._isBlack = true;
           sawMirror.rotation = sprite.rotation + Math.PI;
           sawMirror._isSaw = true;
           sawMirror._eeZDepth = sprite._eeZDepth;
@@ -2579,7 +2745,7 @@ window.LevelObject = class LevelObject {
         overlaySprite._eeOrigAlpha = 1;
 
         let oc2 = col2;
-        if (oc2 <= 0) oc2 = 2;
+        if (oc2 <= 0) oc2 = 1004;
         registerColor(overlaySprite, oc2);
 
         this._addToSection(overlaySprite);
@@ -2640,30 +2806,44 @@ window.LevelObject = class LevelObject {
           }
 
           const childObjectData = { ...levelObj, rot: childrotated };
+          const isPortalChild = isPortalFront || isUncolorableType || childDef.portalGuide || childDef._portalFront || (frameName && frameName.startsWith("portal_")) || (childDef.frame && childDef.frame.startsWith("portal"));
           const childVisualDef = {
             ...childDef,
-            can_color: childDef.can_color !== undefined
+            can_color: isPortalChild || childDef.orbGuide ? false : (childDef.can_color !== undefined
               ? childDef.can_color
-              : ((childDef.black === true || childDef.tint === 0) ? false : (objectDef.can_color !== false))
+              : ((childDef.black === true || childDef.tint === 0) ? false : (childDef.colorChannel > 0 || canColor)))
           };
           this._applyVisualProps(scene, childSprite, childDef.frame, childObjectData, childVisualDef);
-          childSprite._cantColor = childDef.Cant_Color === true;
-          if (childDef.can_color || childVisualDef.can_color) {
+          childSprite._cantColor = childDef.Cant_Color === true || isPortalChild || childDef.orbGuide;
+          if (!childSprite._cantColor && (childDef.can_color || childVisualDef.can_color)) {
             childSprite._canColor = true;
           }
           
           let childChannel = col1;
-          if (childDef.colorChannel === 2 || childDef.tint === 65280 || (childDef.frame && (childDef.frame.includes("_detail_") || childDef.frame.includes("_2_") || childDef.frame.includes("_extra_") || childDef.frame.includes("persp_block")))) {
-            childChannel = col2 > 0 ? col2 : (objectDef.default_detail_color_channel > 0 ? objectDef.default_detail_color_channel : (col1 > 0 ? col1 : 1));
-          } else if (childDef.colorChannel === 1 || childDef.tint === 52224 || (childDef.frame && (childDef.frame.includes("_color_") || childDef.frame.includes("square_c_") || childDef.frame.includes("square_d_")))) {
-            childChannel = col1 > 0 ? col1 : (objectDef.default_base_color_channel > 0 ? objectDef.default_base_color_channel : 1);
-          } else if (childDef.default_detail_color_channel > 0) {
-            childChannel = col2 > 0 ? col2 : childDef.default_detail_color_channel;
-          } else if (childDef.default_base_color_channel > 0) {
-            childChannel = col1 > 0 ? col1 : childDef.default_base_color_channel;
-          }
-          if (childDef.Cant_Color) {
+          const isSquareChecker = childDef.frame && (childDef.frame.includes("square_c_") || childDef.frame.includes("square_d_"));
+          if (isPortalChild || childDef.orbGuide) {
             childChannel = 0;
+            childSprite._cantColor = true;
+            childSprite._canColor = false;
+            if (typeof childSprite.clearTint === "function") childSprite.clearTint();
+          } else if (isSquareChecker) {
+            childChannel = col1 > 0 ? col1 : (col2 > 0 ? col2 : 1004);
+          } else if (childDef.colorChannel === 2 || childDef.tint === 65280 || (childDef.frame && (childDef.frame.includes("_detail_") || childDef.frame.includes("_2_") || childDef.frame.includes("_extra_") || childDef.frame.includes("persp_block")))) {
+            childChannel = col2 > 0 ? col2 : (objectDef.default_detail_color_channel >= 1000 ? objectDef.default_detail_color_channel : (col1 > 0 ? col1 : 1004));
+          } else if (childDef.colorChannel === 1 || childDef.tint === 52224 || (childDef.frame && childDef.frame.includes("_color_"))) {
+            childChannel = col1 > 0 ? col1 : (objectDef.default_base_color_channel >= 1000 ? objectDef.default_base_color_channel : 1004);
+          } else if (childDef.default_detail_color_channel >= 1000) {
+            childChannel = col2 > 0 ? col2 : childDef.default_detail_color_channel;
+          } else if (childDef.default_base_color_channel >= 1000) {
+            childChannel = col1 > 0 ? col1 : childDef.default_base_color_channel;
+          } else {
+            childChannel = col1 > 0 ? col1 : (canColor ? 1004 : 0);
+          }
+          if (childDef.Cant_Color || (!canColor && !childSprite._canColor)) {
+            childChannel = 0;
+            childSprite._cantColor = true;
+            childSprite._canColor = false;
+            if (typeof childSprite.clearTint === "function") childSprite.clearTint();
           }
 
           const showguide = childDef.portalGuide ? (!window.isEditor && window.enablePortalGuide !== false) : true;
@@ -2706,7 +2886,9 @@ window.LevelObject = class LevelObject {
             childSprite._Sawoffset = childSprite.rotation - (sprite.rotation || 0);
             issawsprite(childSprite);
           }
-          registerColor(childSprite, childChannel, !!isSawObjectId);
+          if (childChannel > 0 && !childSprite._cantColor) {
+            registerColor(childSprite, childChannel, !!isSawObjectId);
+          }
           this._addToSection(childSprite);
           registerToGroups(childSprite, childWorldX, childBaseY);
           registerObjectSprite(childSprite);
@@ -2725,9 +2907,12 @@ window.LevelObject = class LevelObject {
               childGlowSprite._eeBaseY = childBaseY;
               childGlowSprite._eeLayer = childSprite._eeLayer ?? 1;
               childGlowSprite._eeBehindParent = true;
-              childGlowSprite._cantColor = childDef.Cant_Color === true;
-              if (childDef.can_color || childVisualDef.can_color) {
+              childGlowSprite._cantColor = childDef.Cant_Color === true || isPortalChild || childDef.orbGuide || !canColor || isUncolorableType;
+              if (!childGlowSprite._cantColor && (childDef.can_color || childVisualDef.can_color)) {
                 childGlowSprite._canColor = true;
+              }
+              if (childGlowSprite._cantColor && typeof childGlowSprite.clearTint === "function") {
+                childGlowSprite.clearTint();
               }
               if (isSawObjectId) {
                 childGlowSprite._isSaw = true;
@@ -2744,7 +2929,9 @@ window.LevelObject = class LevelObject {
                 childGlowSprite._Sawoffset = childGlowSprite.rotation - (sprite.rotation || 0);
                 issawsprite(childGlowSprite);
               }
-              registerColor(childGlowSprite, childChannel || col1);
+              if (childChannel > 0 && !childSprite._cantColor) {
+                registerColor(childGlowSprite, childChannel || col1);
+              }
               registerToGroups(childGlowSprite, childWorldX, childBaseY);
               registerObjectSprite(childGlowSprite);
             }
@@ -2760,8 +2947,6 @@ window.LevelObject = class LevelObject {
           }
 
           if (frameName.indexOf("sawblade") >= 0) {
-            childSprite.setTint(0x000000);
-            childSprite._isBlack = true;
             childSprite._isSaw = true;
             if (sprite._Sawrotationspeed !== undefined) {
               childSprite._Sawrotationspeed = sprite._Sawrotationspeed;
@@ -2771,10 +2956,8 @@ window.LevelObject = class LevelObject {
             issawsprite(childSprite);
 
             const childMirror = addImageToScene(scene, spriteWorldX + childDx, baseY + childDy, childDef.frame);
-              if (childMirror) {
+            if (childMirror) {
               this._applyVisualProps(scene, childMirror, childDef.frame, childObjectData, childVisualDef);
-              childMirror.setTint(0x000000);
-              childMirror._isBlack = true;
               childMirror.rotation = childSprite.rotation + Math.PI;
               childMirror._isSaw = true;
               childMirror._eeZDepth = childSprite._eeZDepth;
@@ -2787,7 +2970,7 @@ window.LevelObject = class LevelObject {
               }
               childMirror._Sawoffset = childMirror.rotation - childSprite.rotation;
               
-              registerColor(childMirror, col1, true);
+              registerColor(childMirror, childChannel || col1, true);
               childMirror._eeWorldX = childWorldX;
               childMirror._eeBaseY = childBaseY;
               this._addToSection(childMirror);
@@ -3023,16 +3206,14 @@ window.LevelObject = class LevelObject {
       if ([35, 67, 140, 1332, 3005].includes(_padId) && !window.enableLDM && !window.isEditor && !scene?._editorPlaytestActive) {
         const _padW = objectDef.gridW * a;
         let _padTint = 0xffffff;
-        if (levelObj.color1 > 0 && scene._colorManager) {
-          _padTint = scene._colorManager.getHex(levelObj.color1);
-        } else if (_padId === 35) {
+        if (_padId === 35) {
           _padTint = 0xffcc00;
         } else if (_padId === 67) {
           _padTint = 0x00ffff;
         } else if (_padId === 1332) {
-          _padTint = 0xff3344;
-        } else if (_padId === 140) {
           _padTint = 0xff33aa;
+        } else if (_padId === 140) {
+          _padTint = 0xff3333;
         } else if (_padId === 3005) {
           _padTint = 0xa833ff;
         }
@@ -3079,10 +3260,6 @@ window.LevelObject = class LevelObject {
         _padEmitter.setScrollFactor(0);
         padObj._padParticleEmitter = _padEmitter;
         padObj.emitters = [_padEmitter];
-        if (levelObj.color1 > 0) {
-          if (!this._colorChannelSprites[levelObj.color1]) this._colorChannelSprites[levelObj.color1] = [];
-          this._colorChannelSprites[levelObj.color1].push(_padEmitter);
-        }
         const objGids = levelObj.groups ? String(levelObj.groups).split(".").map(Number).filter(n => n > 0) : null;
         if (objGids && objGids.length) {
           _padEmitter._eeGroups = objGids;
@@ -3369,6 +3546,7 @@ window.LevelObject = class LevelObject {
   resetColorTriggers() {
     this._colorTriggerIdx = 0;
     this._touchColorTriggerActivated = new Set();
+    this._channelCurrentHex = {};
   }
   _getSectionIndexForWorldX(worldX) {
     return Math.max(0, Math.floor((Number(worldX) || 0) / 400));
@@ -4253,13 +4431,28 @@ window.LevelObject = class LevelObject {
           const pg = Math.round(trig.color.g * intensity);
           const pb = Math.round(trig.color.b * intensity);
           const pulseHex = (pr << 16) | (pg << 8) | pb;
-          for (const spr of sprites) {
-            if (!spr || !spr.active) continue;
-            if (typeof spr.setTint === "function") {
-              if (intensity > 0.01) { spr.setTint(pulseHex); spr._eePulsed = true; }
-              else if (typeof spr.clearTint === "function") { spr.clearTint(); spr._eePulsed = false; }
+            for (const spr of sprites) {
+              if (!spr || !spr.active) continue;
+              if (typeof spr.setTint === "function") {
+                if (intensity > 0.01) {
+                  spr.setTint(pulseHex);
+                  spr._eePulsed = true;
+                } else {
+                  spr._eePulsed = false;
+                  if (spr._cantColor || (!spr._canColor && !spr._eeColorChannel && !spr._SawColor)) {
+                    if (typeof spr.clearTint === "function") spr.clearTint();
+                    delete spr._appliedHex;
+                  } else {
+                    const targetCh = spr._eeColorChannel || spr._SawColor || 1004;
+                    if (colorManager) {
+                      const restoreHex = colorManager.getHex(targetCh);
+                      if (typeof spr.setTint === "function") spr.setTint(restoreHex);
+                      spr._appliedHex = restoreHex;
+                    }
+                  }
+                }
+              }
             }
-          }
         }
       } else if (trig.targetType === 0 && trig.targetChannel > 0 && colorManager) {
         if (intensity > 0.01) {
@@ -4270,12 +4463,20 @@ window.LevelObject = class LevelObject {
             b: Math.min(255, Math.round(baseColor.b + (trig.color.b - baseColor.b) * intensity)),
           };
           const pulseHex = (pulsed.r << 16) | (pulsed.g << 8) | pulsed.b;
-          const chSprites = this._colorChannelSprites[trig.targetChannel];
-          if (chSprites) {
-            for (const spr of chSprites) {
-              if (!spr || !spr.active) continue;
-              if (typeof spr.setTint === "function") {
-                spr.setTint(pulseHex); spr._eePulsed = true;
+          if (trig.targetChannel === 1000 && this._scene && this._scene._bg) {
+            this._scene._bg.setTint(pulseHex);
+            this._bgPulsed = true;
+          } else if (trig.targetChannel === 1001) {
+            this.setGroundColor(pulseHex);
+            this._groundPulsed = true;
+          } else {
+            const chSprites = this._colorChannelSprites[trig.targetChannel];
+            if (chSprites) {
+              for (const spr of chSprites) {
+                if (!spr || !spr.active) continue;
+                if (typeof spr.setTint === "function") {
+                  spr.setTint(pulseHex); spr._eePulsed = true;
+                }
               }
             }
           }
@@ -4284,11 +4485,45 @@ window.LevelObject = class LevelObject {
       if (pulse.elapsed >= pulse.totalDuration) {
         if (trig.targetType === 1 && trig.targetGroup > 0) {
           const sprites = this._groupSprites[trig.targetGroup];
-          if (sprites) for (const spr of sprites) { if (spr && spr.active && typeof spr.clearTint === "function") { spr.clearTint(); spr._eePulsed = false; } }
+          if (sprites) {
+            for (const spr of sprites) {
+              if (spr && spr.active) {
+                spr._eePulsed = false;
+                if (spr._cantColor || (!spr._canColor && !spr._eeColorChannel && !spr._SawColor)) {
+                  if (typeof spr.clearTint === "function") spr.clearTint();
+                  delete spr._appliedHex;
+                } else {
+                  const targetCh = spr._eeColorChannel || spr._SawColor || 1004;
+                  if (colorManager) {
+                    const restoreHex = colorManager.getHex(targetCh);
+                    if (typeof spr.setTint === "function") spr.setTint(restoreHex);
+                    spr._appliedHex = restoreHex;
+                  }
+                }
+              }
+            }
+          }
         }
         if (trig.targetType === 0 && trig.targetChannel > 0) {
-          const chSprites = this._colorChannelSprites[trig.targetChannel];
-          if (chSprites) for (const spr of chSprites) { if (spr && spr.active) spr._eePulsed = false; }
+          if (trig.targetChannel === 1000 && this._scene && this._scene._bg) {
+            this._scene._bg.setTint(colorManager.getHex(1000));
+            this._bgPulsed = false;
+          } else if (trig.targetChannel === 1001) {
+            this.setGroundColor(colorManager.getHex(1001));
+            this._groundPulsed = false;
+          } else {
+            const chSprites = this._colorChannelSprites[trig.targetChannel];
+            if (chSprites) {
+              const chHex = colorManager ? colorManager.getHex(trig.targetChannel) : null;
+              for (const spr of chSprites) {
+                if (spr && spr.active) {
+                  spr._eePulsed = false;
+                  if (chHex !== null && typeof spr.setTint === "function") spr.setTint(chHex);
+                }
+              }
+            }
+          }
+          if (this._channelCurrentHex) this._channelCurrentHex[trig.targetChannel] = null;
         }
         this._activePulses.splice(i, 1);
       } else { i++; }
@@ -4297,11 +4532,12 @@ window.LevelObject = class LevelObject {
   resetPulseTriggers() {
     this._pulseTriggerIdx = 0;
     this._activePulses = [];
+    this._bgPulsed = false;
+    this._groundPulsed = false;
   }
 
   applyColorChannels(colorManager) {
-    const hasActiveActions = colorManager && colorManager._actions && Object.keys(colorManager._actions).length > 0;
-    const hasActivePulses = this._activePulses && this._activePulses.length > 0;
+    if (!colorManager) return;
     this._channelCurrentHex = this._channelCurrentHex || {};
 
     for (const chId in this._colorChannelSprites) {
@@ -4309,10 +4545,6 @@ window.LevelObject = class LevelObject {
       if (!sprites || !sprites.length) continue;
       const numId = parseInt(chId, 10);
       const hex = colorManager.getHex(numId);
-      const channelChanged = this._channelCurrentHex[chId] !== hex;
-      if (!channelChanged && !hasActivePulses && !hasActiveActions) {
-        continue;
-      }
       this._channelCurrentHex[chId] = hex;
 
       for (let si = 0; si < sprites.length; si++) {
@@ -4320,16 +4552,30 @@ window.LevelObject = class LevelObject {
         if (!spr || !spr.active) continue;
         if (spr._cantColor) continue;
         if (spr._eePulsed) continue;
-        if (spr._eeAudioScale) continue;
         if (spr._isSaw && spr._SawColor !== undefined) {
           const sawHex = colorManager.getHex(spr._SawColor);
-          spr.setTint(sawHex);
+          if (spr._appliedHex !== sawHex) {
+            if (typeof spr.setTint === "function") spr.setTint(sawHex);
+            spr._appliedHex = sawHex;
+          }
           continue;
         }
-        if (spr._isSaw) continue;
+        if (spr._isSaw) {
+          if (spr._canColor || !spr._isBlack) {
+            if (spr._appliedHex !== hex) {
+              if (typeof spr.setTint === "function") spr.setTint(hex);
+              spr._appliedHex = hex;
+            }
+          }
+          continue;
+        }
         if (spr._isBlack && !spr._canColor) continue;
         if (spr._blackDefault && typeof colorManager.hasColor === "function" && !colorManager.hasColor(chId)) continue;
-        if (typeof spr.setTint === "function") spr.setTint(hex);
+
+        if (spr._appliedHex !== hex) {
+          if (typeof spr.setTint === "function") spr.setTint(hex);
+          spr._appliedHex = hex;
+        }
       }
     }
   }
