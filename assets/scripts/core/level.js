@@ -733,6 +733,7 @@ window.LevelObject = class LevelObject {
     this._groupOffsets = {};
     this._groupOpacity = {};
     this._groupColliders = {};
+    this._padParticleEmitters = [];
     this._sections = [];
     this._sectionContainers = [];
     this._collisionSections = [];
@@ -748,6 +749,17 @@ window.LevelObject = class LevelObject {
   }
   getStartPositions() {
       return this._startPositions.slice().sort((a, b) => a.x - b.x);
+  }
+
+  _resolveDefaultChannel(defChannel, isDetail = false) {
+    if (defChannel === undefined || defChannel === null || defChannel === -1 || defChannel === 0) {
+      return isDetail ? -1 : 0;
+    }
+    const num = parseInt(defChannel, 10);
+    if (num === 1) return 1005; // Player 1 Color
+    if (num === 2) return 1006; // Player 2 Color
+    if (num > 0) return num;
+    return isDetail ? -1 : 0;
   }
 
   _breakblock(linkedObjectId) {
@@ -1199,7 +1211,7 @@ window.LevelObject = class LevelObject {
     this._groundId = null;
     if (!settingsStr) return;
     let pairs = settingsStr.split(",");
-    window.settingsMap = {};
+    const settingsMap = window.settingsMap = {};
     for (let i = 0; i + 1 < pairs.length; i += 2) {
       settingsMap[pairs[i]] = pairs[i + 1];
     }
@@ -2084,7 +2096,7 @@ window.LevelObject = class LevelObject {
     textSprite._eeEditorLayer = parseInt(levelObj.editorLayer ?? levelObj._raw?.[20] ?? levelObj._raw?.["20"] ?? 0, 10) || 0;
     textSprite._eeEditorLayer2 = parseInt(levelObj.editorLayer2 ?? levelObj._raw?.[61] ?? levelObj._raw?.["61"] ?? 0, 10) || 0;
 
-    const colorChannel = parseInt(levelObj.color1 > 0 ? levelObj.color1 : (objectDef?.default_base_color_channel >= 1000 ? objectDef.default_base_color_channel : 1004), 10);
+    const colorChannel = parseInt(levelObj.color1 > 0 ? levelObj.color1 : (this._resolveDefaultChannel(objectDef?.default_base_color_channel, false) || 1004), 10);
     if (colorChannel > 0 && objectDef?.can_color !== false) {
       textSprite._eeColorChannel = colorChannel;
       if (!this._colorChannelSprites[colorChannel]) this._colorChannelSprites[colorChannel] = [];
@@ -2489,22 +2501,28 @@ window.LevelObject = class LevelObject {
     if (canColor) {
       if (levelObj.color1 > 0) {
         col1 = levelObj.color1;
-      } else if (objectDef.default_base_color_channel !== undefined && objectDef.default_base_color_channel >= 1000) {
-        col1 = objectDef.default_base_color_channel;
+      } else if (objectDef.default_base_color_channel !== undefined) {
+        col1 = this._resolveDefaultChannel(objectDef.default_base_color_channel, false);
+        if (col1 <= 0 && (objectDef.type === solidType || objectDef.type === hazardType || objectDef.type === decoType || objectDef.type === "soliddeco")) {
+          col1 = 1004;
+        }
       } else {
         col1 = (objectDef.type === solidType || objectDef.type === hazardType || objectDef.type === decoType || objectDef.type === "soliddeco") ? 1004 : 0;
       }
     }
 
     const col2 = canColor
-      ? (levelObj.color2 > 0 ? levelObj.color2 : (objectDef.default_detail_color_channel !== undefined && objectDef.default_detail_color_channel >= 1000 ? objectDef.default_detail_color_channel : -1))
+      ? (levelObj.color2 > 0 ? levelObj.color2 : this._resolveDefaultChannel(objectDef.default_detail_color_channel, true))
       : -1;
 
     const registerColor = (spr, ch, forceParentColor = false) => {
       if (!spr || spr._cantColor || (spr._isBlack && !spr._canColor)) return;
       if (!canColor && !spr._canColor) return;
       if (isUncolorableType && !spr._canColor) return;
-      const targetCh = ch > 0 ? ch : (objectDef && objectDef.default_base_color_channel >= 1000 ? objectDef.default_base_color_channel : (canColor ? 1004 : 0));
+      let targetCh = ch > 0 ? ch : this._resolveDefaultChannel(objectDef?.default_base_color_channel, false);
+      if (!targetCh || targetCh <= 0) {
+        targetCh = canColor ? 1004 : 0;
+      }
       if (targetCh > 0 && spr) {
         spr._eeColorChannel = targetCh;
         if (!this._colorChannelSprites[targetCh]) this._colorChannelSprites[targetCh] = [];
@@ -2829,13 +2847,15 @@ window.LevelObject = class LevelObject {
           } else if (isSquareChecker) {
             childChannel = col1 > 0 ? col1 : (col2 > 0 ? col2 : 1004);
           } else if (childDef.colorChannel === 2 || childDef.tint === 65280 || (childDef.frame && (childDef.frame.includes("_detail_") || childDef.frame.includes("_2_") || childDef.frame.includes("_extra_") || childDef.frame.includes("persp_block")))) {
-            childChannel = col2 > 0 ? col2 : (objectDef.default_detail_color_channel >= 1000 ? objectDef.default_detail_color_channel : (col1 > 0 ? col1 : 1004));
+            const defDetail = this._resolveDefaultChannel(objectDef.default_detail_color_channel, true);
+            childChannel = col2 > 0 ? col2 : (defDetail > 0 ? defDetail : (col1 > 0 ? col1 : 1006));
           } else if (childDef.colorChannel === 1 || childDef.tint === 52224 || (childDef.frame && childDef.frame.includes("_color_"))) {
-            childChannel = col1 > 0 ? col1 : (objectDef.default_base_color_channel >= 1000 ? objectDef.default_base_color_channel : 1004);
-          } else if (childDef.default_detail_color_channel >= 1000) {
-            childChannel = col2 > 0 ? col2 : childDef.default_detail_color_channel;
-          } else if (childDef.default_base_color_channel >= 1000) {
-            childChannel = col1 > 0 ? col1 : childDef.default_base_color_channel;
+            const defBase = this._resolveDefaultChannel(objectDef.default_base_color_channel, false);
+            childChannel = col1 > 0 ? col1 : (defBase > 0 ? defBase : 1005);
+          } else if (childDef.default_detail_color_channel !== undefined && this._resolveDefaultChannel(childDef.default_detail_color_channel, true) > 0) {
+            childChannel = col2 > 0 ? col2 : this._resolveDefaultChannel(childDef.default_detail_color_channel, true);
+          } else if (childDef.default_base_color_channel !== undefined && this._resolveDefaultChannel(childDef.default_base_color_channel, false) > 0) {
+            childChannel = col1 > 0 ? col1 : this._resolveDefaultChannel(childDef.default_base_color_channel, false);
           } else {
             childChannel = col1 > 0 ? col1 : (canColor ? 1004 : 0);
           }
@@ -2929,7 +2949,7 @@ window.LevelObject = class LevelObject {
                 childGlowSprite._Sawoffset = childGlowSprite.rotation - (sprite.rotation || 0);
                 issawsprite(childGlowSprite);
               }
-              if (childChannel > 0 && !childSprite._cantColor) {
+              if (childChannel > 0 && !childGlowSprite._cantColor) {
                 registerColor(childGlowSprite, childChannel || col1);
               }
               registerToGroups(childGlowSprite, childWorldX, childBaseY);
@@ -3269,6 +3289,9 @@ window.LevelObject = class LevelObject {
           }
         }
         this.topContainer.add(_padEmitter);
+        _padEmitter._eeSectionIndex = this._getSectionIndexForWorldX(worldX + offsetX);
+        if (!this._padParticleEmitters) this._padParticleEmitters = [];
+        this._padParticleEmitters.push(_padEmitter);
       }
     } else if (objectDef.type === ringType) {
       const orbW = objectDef.gridW * a;
@@ -3664,6 +3687,36 @@ window.LevelObject = class LevelObject {
     if (_0x141e9c) {
       _0x141e9c.additive.visible = _0x488507;
       _0x141e9c.normal.visible = _0x488507;
+    }
+    // Throttle or resume section particle emitters
+    if (this._padParticleEmitters && this._padParticleEmitters.length > 0) {
+      for (let i = 0; i < this._padParticleEmitters.length; i++) {
+        const em = this._padParticleEmitters[i];
+        if (em && em._eeSectionIndex === _0x2b0fa1) {
+          if (_0x488507) {
+            if (typeof em.setVisible === "function") em.setVisible(true);
+            if (typeof em.start === "function" && !em.emitting) em.start();
+          } else {
+            if (typeof em.stop === "function" && em.emitting) em.stop();
+            if (typeof em.setVisible === "function") em.setVisible(false);
+          }
+        }
+      }
+    }
+    const secObjs = this._sections ? this._sections[_0x2b0fa1] : null;
+    if (secObjs && Array.isArray(secObjs)) {
+      for (let i = 0; i < secObjs.length; i++) {
+        const obj = secObjs[i];
+        if (obj && typeof obj.stop === "function" && typeof obj.start === "function") {
+          if (_0x488507) {
+            if (!obj.emitting) obj.start();
+            if (typeof obj.setVisible === "function") obj.setVisible(true);
+          } else {
+            if (obj.emitting) obj.stop();
+            if (typeof obj.setVisible === "function") obj.setVisible(false);
+          }
+        }
+      }
     }
   }
   updateVisibility(_0xa5f1e1) {
@@ -4439,7 +4492,7 @@ window.LevelObject = class LevelObject {
                   spr._eePulsed = true;
                 } else {
                   spr._eePulsed = false;
-                  if (spr._cantColor || (!spr._canColor && !spr._eeColorChannel && !spr._SawColor)) {
+                  if (spr._cantColor || spr._isPortalGuide || (!spr._canColor && !spr._eeColorChannel && !spr._SawColor)) {
                     if (typeof spr.clearTint === "function") spr.clearTint();
                     delete spr._appliedHex;
                   } else {
@@ -4821,8 +4874,14 @@ window.LevelObject = class LevelObject {
         _0x3d473e.activated = false;
       }
       if (_0x3d473e._padParticleEmitter) {
-        if (typeof _0x3d473e._padParticleEmitter.start === "function") {
-          _0x3d473e._padParticleEmitter.start();
+        const pSec = _0x3d473e._padParticleEmitter._eeSectionIndex;
+        const inSec = this._visMinSec === undefined || this._visMinSec < 0 || (pSec >= this._visMinSec && pSec <= this._visMaxSec);
+        if (inSec) {
+          if (typeof _0x3d473e._padParticleEmitter.start === "function") _0x3d473e._padParticleEmitter.start();
+          if (typeof _0x3d473e._padParticleEmitter.setVisible === "function") _0x3d473e._padParticleEmitter.setVisible(true);
+        } else {
+          if (typeof _0x3d473e._padParticleEmitter.stop === "function") _0x3d473e._padParticleEmitter.stop();
+          if (typeof _0x3d473e._padParticleEmitter.setVisible === "function") _0x3d473e._padParticleEmitter.setVisible(false);
         }
       }
     }

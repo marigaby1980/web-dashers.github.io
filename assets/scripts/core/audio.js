@@ -219,14 +219,21 @@ class AudioManager {
         
         let arrayBuf = await window.SongDB.load(songId);
         if (!arrayBuf) {
-          const workerUrl = `https://fetchsongid.lasokar.workers.dev/?id=${encodeURIComponent(songId)}`;
+          const songUrl = decodeURIComponent((ngMap["10"] || "").trim());
           let audioRes = null;
-          try {
-            audioRes = await fetch(workerUrl);
-          } catch (e) { }
+          if (typeof window.fetchGdSongAudio === "function") {
+            try {
+              audioRes = await window.fetchGdSongAudio(songId, songUrl);
+            } catch (_err) {}
+          }
+          if (!audioRes || !audioRes.ok) {
+            const songAudioUrl = `/api/gd/song-audio?id=${encodeURIComponent(songId)}`;
+            try {
+              audioRes = await fetch(songAudioUrl);
+            } catch (e) { }
+          }
 
           if (!audioRes || !audioRes.ok) {
-            const songUrl = decodeURIComponent((ngMap["10"] || "").trim());
             if (songUrl) {
               const proxiedUrl = (typeof window.getGdAudioUrl === "function")
                 ? window.getGdAudioUrl(songUrl)

@@ -1104,9 +1104,20 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
           updateBtnState();
           abortController = new AbortController();
           try {
-            const workerUrl = `https://fetchsongid.lasokar.workers.dev/?id=${encodeURIComponent(lvl.customSongID)}`;
-            const audioRes = await fetch(workerUrl, { signal: abortController.signal });
-            if (!audioRes.ok) throw new Error("Failed to download audio from worker");
+            let audioRes = null;
+            const songDownloadUrl = (typeof window.getGdSongAudioUrl === "function")
+              ? window.getGdSongAudioUrl(lvl.customSongID)
+              : `/api/gd/song-audio?id=${encodeURIComponent(lvl.customSongID)}`;
+            try {
+              audioRes = await fetch(songDownloadUrl, { signal: abortController.signal });
+            } catch (fetchErr) {
+              if (fetchErr.name === 'AbortError') throw fetchErr;
+            }
+            if (!audioRes || !audioRes.ok) {
+              const fallbackUrl = `/api/gd/song-audio?id=${encodeURIComponent(lvl.customSongID)}`;
+              audioRes = await fetch(fallbackUrl, { signal: abortController.signal });
+            }
+            if (!audioRes.ok) throw new Error("Failed to download audio");
             const arrayBuf = await audioRes.arrayBuffer();
             await window.SongDB.save(lvl.customSongID, arrayBuf, this.sound.context);
           } catch (err) {
@@ -1124,7 +1135,7 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
       }
 
       if (lvl.customSongID) {
-        const PROXY_BASE = (window._gdProxyUrl || "").replace(/\/$/, "");
+        const PROXY_BASE = (typeof window.getGdApiBase === "function" ? window.getGdApiBase() : (window._gdProxyUrl || "/api/gd")).replace(/\/$/, "");
         if (!PROXY_BASE) {
           console.warn("Play menu song author: window._gdProxyUrl is not configured");
         } else {
@@ -1185,8 +1196,8 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
     };
     this._playSelectedOnlineLevel = async (lvl) => {
       if (!lvl || !lvl.id) return false;
-      const PROXY_BASE = (window._gdProxyUrl || "").replace(/\/$/, "");
-      if (!PROXY_BASE) { console.warn("Play online level: window._gdProxyUrl is not configured"); return false; }
+      const PROXY_BASE = (typeof window.getGdApiBase === "function" ? window.getGdApiBase() : (window._gdProxyUrl || "/api/gd")).replace(/\/$/, "");
+      if (!PROXY_BASE) { console.warn("Play online level: proxy base is not configured"); return false; }
       try {
         const res = await fetch(`${PROXY_BASE}/downloadGJLevel22.php`, {
           method: "POST",
@@ -1201,7 +1212,7 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
         const m = {};
         for (let i = 0; i + 1 < lvlParts.length; i += 2) m[lvlParts[i]] = lvlParts[i + 1];
 
-        const levelString  = m["4"] || null;
+        const levelString  = m["4"] || window._onlineLevelString || null;
         const officialSong = parseInt(m["12"]) || 0;
         const customSongID = (m["35"] || "").trim();
         const isCustomSong = !!customSongID && customSongID !== "0";
@@ -1238,15 +1249,30 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
             }
             let arrayBuf = await window.SongDB.load(customSongID);
             if (!arrayBuf) {
-              const workerUrl = `https://fetchsongid.lasokar.workers.dev/?id=${encodeURIComponent(customSongID)}`;
-              let audioRes = await fetch(workerUrl);
-              if (!audioRes.ok) {
-                const songUrl = decodeURIComponent((ngMap["10"] || "").trim());
+              const songUrl = decodeURIComponent((ngMap["10"] || "").trim());
+              let audioRes = null;
+              const songDownloadUrl = (typeof window.getGdSongAudioUrl === "function")
+                ? window.getGdSongAudioUrl(customSongID, songUrl)
+                : `/api/gd/song-audio?id=${encodeURIComponent(customSongID)}`;
+              try {
+                audioRes = await fetch(songDownloadUrl);
+              } catch (_e) {}
+
+              if (!audioRes || !audioRes.ok) {
+                try {
+                  const fallbackUrl = `/api/gd/song-audio?id=${encodeURIComponent(customSongID)}`;
+                  audioRes = await fetch(fallbackUrl);
+                } catch (_e) {}
+              }
+
+              if (!audioRes || !audioRes.ok) {
                 if (songUrl) {
                   const proxiedUrl = (typeof window.getGdAudioUrl === "function")
                     ? window.getGdAudioUrl(songUrl)
                     : `/api/gd/audio-proxy?url=${encodeURIComponent(songUrl)}`;
-                  audioRes = await fetch(proxiedUrl);
+                  try {
+                    audioRes = await fetch(proxiedUrl);
+                  } catch (_e) {}
                 }
               }
               if (audioRes && audioRes.ok) {
@@ -1277,8 +1303,8 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
     };
     this._duplicateOnlineLevelToEditor = async (lvl) => {
       if (!lvl || !lvl.id) return;
-      const PROXY_BASE = (window._gdProxyUrl || "").replace(/\/$/, "");
-      if (!PROXY_BASE) { console.warn("Duplicate level: window._gdProxyUrl is not configured"); return; }
+      const PROXY_BASE = (typeof window.getGdApiBase === "function" ? window.getGdApiBase() : (window._gdProxyUrl || "/api/gd")).replace(/\/$/, "");
+      if (!PROXY_BASE) { console.warn("Duplicate level: proxy base is not configured"); return; }
       try {
         const res = await fetch(`${PROXY_BASE}/downloadGJLevel22.php`, {
           method: "POST",
@@ -2056,7 +2082,7 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
         container.add([nameBox, titleText, titleCursor, descBox, descText, descCursor, playBtn, editBtn, shareBtn, backBtn, deleteBtn, lengthIcon, lengthLabel, songIcon, songLabel, statusIcon, statusLabel, versionText, idText]);
     };
     this._startCreatedLevel = async (level, isEditor, onBeforeRestart = null) => {
-        const PROXY_BASE = (window._gdProxyUrl || "").replace(/\/$/, "");
+        const PROXY_BASE = (typeof window.getGdApiBase === "function" ? window.getGdApiBase() : (window._gdProxyUrl || "/api/gd")).replace(/\/$/, "");
         window._onlineLevelString = level.levelString;
         window._onlineLevelName = level.levelName;
         window._onlineLevelId = level.createdId;
@@ -2103,13 +2129,28 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
                       const songArtist = (ngMap["4"] || "Unknown").replace(/:$/, "").trim();
                       const songTitle = (ngMap["2"] || `Song #${songId}`).replace(/:$/, "").trim();
 
-                      if (songUrl) {
-                          const audioCtx = this.game.sound.context;
-                          if (audioCtx.state === "suspended") await audioCtx.resume();
+                      let audioRes = null;
+                      const songDownloadUrl = (typeof window.getGdSongAudioUrl === "function")
+                        ? window.getGdSongAudioUrl(songId, songUrl)
+                        : `/api/gd/song-audio?id=${encodeURIComponent(songId)}`;
+                      try {
+                        audioRes = await fetch(songDownloadUrl);
+                      } catch (_e) {}
+
+                      if (!audioRes || !audioRes.ok) {
+                        if (songUrl) {
                           const proxiedUrl = (typeof window.getGdAudioUrl === "function")
                             ? window.getGdAudioUrl(songUrl)
                             : `/api/gd/audio-proxy?url=${encodeURIComponent(songUrl)}`;
-                          const audioRes = await fetch(proxiedUrl);
+                          try {
+                            audioRes = await fetch(proxiedUrl);
+                          } catch (_e) {}
+                        }
+                      }
+
+                      if (audioRes && audioRes.ok) {
+                          const audioCtx = this.game.sound.context;
+                          if (audioCtx.state === "suspended") await audioCtx.resume();
                           const arrayBuf = await audioRes.arrayBuffer();
                           const decoded = await audioCtx.decodeAudioData(arrayBuf);
                           window._onlineSongBuffer = decoded;
@@ -2641,8 +2682,8 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
         this._openOnlineLevelsScene(searchParams);
       };
       const _doSearchInner = async (levelId) => {
-        const PROXY_BASE = (window._gdProxyUrl || "").replace(/\/$/, "");
-        if (!PROXY_BASE) { console.warn("Level search: window._gdProxyUrl is not configured"); return; }
+        const PROXY_BASE = (typeof window.getGdApiBase === "function" ? window.getGdApiBase() : (window._gdProxyUrl || "/api/gd")).replace(/\/$/, "");
+        if (!PROXY_BASE) { console.warn("Level search: proxy base is not configured"); return; }
         const formBody = `levelID=${levelId}&secret=Wmfd2893gb7`;
         const res = await fetch(`${PROXY_BASE}/downloadGJLevel22.php`, {
           method: "POST",
@@ -2728,13 +2769,12 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
           ? ("Song #" + levelData.customSongID)
           : (window.allLevels && window.allLevels[levelData.officialSong] ? window.allLevels[levelData.officialSong][1] : "Unknown");
         try {
-          const infoRes = await fetch(`https://gdbrowser.com/api/level/${levelData.id}`);
-          if (infoRes.ok) {
-            const infoData = await infoRes.json();
-            if (infoData) {
-              if (infoData.author) authorName = infoData.author;
-              if (infoData.songName) songNameForCell = infoData.songName;
-            }
+          const infoData = (typeof window.fetchGdLevelInfo === "function")
+            ? await window.fetchGdLevelInfo(levelData.id)
+            : await (await fetch(`https://gdbrowser.com/api/level/${levelData.id}`)).json();
+          if (infoData) {
+            if (infoData.author) authorName = infoData.author;
+            if (infoData.songName) songNameForCell = infoData.songName;
           }
         } catch (_e) {}
 
@@ -4102,9 +4142,17 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
     if (this.game.registry.get("autoStartGame")) {
       if (!window.settingsMap) {
         const cachedLevelText = this.cache.text.get(window.currentlevel[2]) ||
-          ((window._onlineLevelString && window.currentlevel[2] === window._onlineLevelId) ? window._onlineLevelString : null);
+          ((window._onlineLevelString && window.currentlevel[2] === window._onlineLevelId) ? window._onlineLevelString : null) ||
+          window._onlineLevelString ||
+          this.cache.text.get("level_1");
         if (cachedLevelText) {
-          this._level.loadLevel(cachedLevelText);
+          try {
+            this._level.loadLevel(cachedLevelText);
+          } catch (loadErr) {
+            console.warn("Failed to load cached level text, falling back:", loadErr);
+            const fallbackText = this.cache.text.get("level_1");
+            if (fallbackText) this._level.loadLevel(fallbackText);
+          }
         }
       }
       if (window.settingsMap) {
@@ -11375,21 +11423,32 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
       try {
         let response = cache[page];
         if (!response) {
-          const PROXY_BASE = (window._gdProxyUrl || "").replace(/\/$/, "");
-          if (!PROXY_BASE) throw new Error("no proxy configured");
+          const PROXY_BASE = (typeof window.getGdApiBase === "function" ? window.getGdApiBase() : (window._gdProxyUrl || "/api/gd")).replace(/\/$/, "");
           const body = Object.entries({ secret: "Wmfd2893gb7", page, ...params })
             .map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join("&");
           let retryCount = 0;
           const maxRetries = 3;
           let res;
+
+          const originBase = (typeof window !== "undefined" && window.location && window.location.origin) ? window.location.origin : "";
+          const targetUrls = [
+            `${PROXY_BASE}/getGJLevels21.php`,
+            originBase ? `${originBase}/api/gd/getGJLevels21.php` : null
+          ].filter((u, idx, arr) => u && !u.startsWith("undefined") && arr.indexOf(u) === idx);
+
           while (retryCount < maxRetries) {
-            res = await fetch(`${PROXY_BASE}/getGJLevels21.php`, {
-              method: "POST",
-              headers: { "Content-Type": "application/x-www-form-urlencoded" },
-              body
-            });
+            for (const targetUrl of targetUrls) {
+              try {
+                res = await fetch(targetUrl, {
+                  method: "POST",
+                  headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                  body
+                });
+                if (res.ok) break;
+              } catch (_err) {}
+            }
             
-            if (res.status === 429) {
+            if (res && res.status === 429) {
               retryCount++;
               if (retryCount >= maxRetries) {
                 throw new Error(`rate limited after ${maxRetries} retries`);
@@ -11399,7 +11458,7 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
             }
             break;
           }
-          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          if (!res || !res.ok) throw new Error(`HTTP ${res ? res.status : 'network error'}`);
           response = await res.text();
           if (!response || response === "-1") throw new Error("no results");
           cache[page] = response;
@@ -11502,8 +11561,10 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
         const _officialEntries = _lastLevelData.filter(ld => !ld.customSongID && ld.id);
         if (_officialEntries.length > 0) {
           await Promise.all(_officialEntries.map(ld => {
-            return fetch(`https://gdbrowser.com/api/level/${ld.id}`)
-              .then(r => r.ok ? r.json() : null)
+            const fetchPromise = (typeof window.fetchGdLevelInfo === "function")
+              ? window.fetchGdLevelInfo(ld.id)
+              : fetch(`https://gdbrowser.com/api/level/${ld.id}`).then(r => r.ok ? r.json() : null).catch(() => null);
+            return fetchPromise
               .then(data => { if (data && data.songName) ld.songName = data.songName; })
               .catch(() => {});
           }));
@@ -12089,8 +12150,10 @@ window.open("https://github.com/web-dashers/web-dashers.github.io", "_blank"); }
       } else {
         Promise.all(_needsFetch.map(levelData => {
           const numericId = String(levelData.id || "").replace(/^online_/, "");
-          return fetch(`https://gdbrowser.com/api/level/${numericId}`)
-            .then(r => r.ok ? r.json() : null)
+          const fetchPromise = (typeof window.fetchGdLevelInfo === "function")
+            ? window.fetchGdLevelInfo(numericId)
+            : fetch(`https://gdbrowser.com/api/level/${numericId}`).then(r => r.ok ? r.json() : null).catch(() => null);
+          return fetchPromise
             .then(data => {
               if (data) {
                 if (data.author)   levelData.author   = data.author;

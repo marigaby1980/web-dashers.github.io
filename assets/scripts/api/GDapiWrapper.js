@@ -7,14 +7,30 @@ window.ApiWrapper = class ApiWrapper {
 		return this.proxyurl;
 	}
 	static async downloadSong(id) {
-		let data = `songID=${id}&secret=Wmfd2893gb7`
-		let response = await window.fetchGdApi("/getGJSongInfo.php", {
-			method: "POST",
-			body: data
-		});
-		let text = await response.text();
-		let url = decodeURIComponent(text?.split("~|~10~|~")[1]?.split("~|~")[0]);
-		let audioresponse = await window.fetchGdAudio(url);
+		let songUrl = null;
+		try {
+			let data = `songID=${id}&secret=Wmfd2893gb7`;
+			let response = await window.fetchGdApi("/getGJSongInfo.php", {
+				method: "POST",
+				body: data
+			});
+			let text = await response.text();
+			songUrl = decodeURIComponent(text?.split("~|~10~|~")[1]?.split("~|~")[0] || "");
+		} catch (_e) {}
+
+		let audioresponse = null;
+		if (typeof window.fetchGdSongAudio === "function") {
+			try {
+				audioresponse = await window.fetchGdSongAudio(id, songUrl);
+			} catch (_e) {}
+		}
+		if (!audioresponse || !audioresponse.ok) {
+			if (songUrl) {
+				audioresponse = await window.fetchGdAudio(songUrl);
+			} else {
+				audioresponse = await fetch(`/api/gd/song-audio?id=${encodeURIComponent(id)}`);
+			}
+		}
 		let blob = await audioresponse.blob();
 		return window.URL.createObjectURL(blob);
 	}

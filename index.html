@@ -34,78 +34,14 @@
     <script src="assets/scripts/api/GDapiWrapper.js"></script>
     <script src="assets/scripts/utils/api-config.js"></script>
     <script src="assets/scripts/api/account-api.js?v=2.2.0"></script>
-    <!-- Resilient Multi-Host GD Proxy Router (CORS & Firewall Resistant) -->
+    <!-- Resilient Same-Origin GD API Router (No Cloudflare Workers, Pure HTTPS) -->
     <script>
         (function () {
             var localOrigin = (typeof window !== "undefined" && window.location && window.location.origin && !window.location.origin.startsWith("file:"))
                 ? window.location.origin + "/api/gd"
-                : null;
-            var GD_PROXY_HOSTS = [
-                "https://webdashers.webdashersdevelopement.workers.dev",
-                "https://gd-proxy.webdashers.workers.dev",
-                "https://fallbackgdproxy.webdashers.workers.dev",
-                "https://fallback2.webdashers.workers.dev"
-            ];
-            if (localOrigin) {
-                GD_PROXY_HOSTS.unshift(localOrigin);
-            }
-            window._gdProxyUrl = GD_PROXY_HOSTS[0];
-            window._gdProxyHosts = GD_PROXY_HOSTS;
-            var activeIndex = 0;
-            var nativeFetch = window.fetch.bind(window);
-
-            function matchingHost(url) {
-                for (var i = 0; i < GD_PROXY_HOSTS.length; i++) {
-                    if (url.indexOf(GD_PROXY_HOSTS[i]) === 0) return GD_PROXY_HOSTS[i];
-                }
-                return null;
-            }
-
-            function withHost(url, oldHost, newHost) {
-                return newHost + url.slice(oldHost.length);
-            }
-
-            window.fetch = function (input, init) {
-                var isRequestObj = (typeof Request !== "undefined") && (input instanceof Request);
-                var url = isRequestObj ? input.url : input;
-                if (typeof url !== "string") {
-                    return nativeFetch(input, init);
-                }
-                var oldHost = matchingHost(url);
-                if (!oldHost) {
-                    return nativeFetch(input, init);
-                }
-                var attempts = 0;
-                var maxAttempts = GD_PROXY_HOSTS.length;
-                var lastError = null;
-
-                function tryHost(hostIndex) {
-                    var host = GD_PROXY_HOSTS[hostIndex];
-                    var attemptUrl = withHost(url, oldHost, host);
-                    var attemptInput = isRequestObj ? new Request(attemptUrl, input) : attemptUrl;
-
-                    return nativeFetch(attemptInput, init).then(function (res) {
-                        var isBlockedOrError = (res.status === 403 || res.status === 429 || res.status === 500 || res.status === 502 || res.status === 503 || res.status === 520);
-                        if (isBlockedOrError && attempts < maxAttempts - 1) {
-                            attempts++;
-                            var nextIndex = (hostIndex + 1) % GD_PROXY_HOSTS.length;
-                            return tryHost(nextIndex);
-                        }
-                        activeIndex = hostIndex;
-                        window._gdProxyUrl = host;
-                        return res;
-                    }, function (err) {
-                        lastError = err;
-                        if (attempts < maxAttempts - 1) {
-                            attempts++;
-                            var nextIndex = (hostIndex + 1) % GD_PROXY_HOSTS.length;
-                            return tryHost(nextIndex);
-                        }
-                        throw lastError;
-                    });
-                }
-                return tryHost(activeIndex);
-            };
+                : "/api/gd";
+            window._gdProxyUrl = localOrigin;
+            window._gdProxyHosts = [localOrigin];
         })();
     </script>
     <script defer src="assets/scripts/utils/config.js"></script>

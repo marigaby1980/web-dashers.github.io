@@ -14,50 +14,85 @@ window.currentSpider = localStorage.getItem("iconCurrentSpider") || "spider_01";
 window.currentBird   = localStorage.getItem("iconCurrentBird")   || "bird_01";
 const storedUseDirectInternet = localStorage.getItem("gd_useDirectInternet");
 window.useDirectInternet = storedUseDirectInternet === "true";
-const DEFAULT_GD_PROXY = "https://webdashers.webdashersdevelopement.workers.dev";
-if (!window._gdProxyUrl) {
-  window._gdProxyUrl = DEFAULT_GD_PROXY;
-}
+
+const getLocalGdProxy = () => {
+  if (typeof window !== "undefined" && window.location && window.location.origin && !window.location.origin.startsWith("file:")) {
+    return `${window.location.origin}/api/gd`;
+  }
+  return "/api/gd";
+};
+
+const DEFAULT_GD_PROXY = getLocalGdProxy();
+window._gdProxyUrl = DEFAULT_GD_PROXY;
+
 window.getGdApiBase = function () {
-  if (window.useDirectInternet) return "https://www.boomlings.com/database";
   return (window._gdProxyUrl || DEFAULT_GD_PROXY).replace(/\/$/, "");
 };
+
 window.getGdApiUrl = function (path) {
   const base = window.getGdApiBase();
   if (!base) return null;
   return `${base}${path.startsWith("/") ? "" : "/"}${path}`;
 };
+
 window.fetchGdApi = async function (path, options = {}) {
-  const proxyBase = (window._gdProxyUrl || DEFAULT_GD_PROXY).replace(/\/$/, "");
-  const directBase = "https://www.boomlings.com/database";
+  const localBase = getLocalGdProxy();
   const cleanPath = path.startsWith("/") ? path : `/${path}`;
-  const urls = [];
-  if (window.useDirectInternet) {
-    urls.push(`${directBase}${cleanPath}`);
-    if (proxyBase) urls.push(`${proxyBase}${cleanPath}`);
-  } else {
-    if (proxyBase) urls.push(`${proxyBase}${cleanPath}`);
-    urls.push(`${directBase}${cleanPath}`);
-  }
-  let lastError = null;
-  for (const url of urls) {
-    try {
-      const response = await fetch(url, options);
-      if (response.ok) return response;
-      lastError = new Error(`HTTP ${response.status}`);
-    } catch (error) {
-      lastError = error;
-    }
-  }
-  throw lastError || new Error("No GD API endpoint available");
+  const url = `${localBase}${cleanPath}`;
+  return fetch(url, options);
 };
+
 window.getGdAudioUrl = function (songUrl) {
   if (!songUrl) return null;
   const localProxy = (typeof window !== "undefined" && window.location && window.location.origin && !window.location.origin.startsWith("file:"))
     ? `${window.location.origin}/api/gd/audio-proxy?url=${encodeURIComponent(songUrl)}`
-    : null;
-  return localProxy || `https://corsproxy.io/?url=${encodeURIComponent(songUrl)}`;
+    : `/api/gd/audio-proxy?url=${encodeURIComponent(songUrl)}`;
+  return localProxy;
 };
+
+window.getGdSongAudioUrl = function (songId, songUrl) {
+  if (!songId && !songUrl) return null;
+  const origin = (typeof window !== "undefined" && window.location && window.location.origin && !window.location.origin.startsWith("file:"))
+    ? window.location.origin
+    : "";
+  const params = new URLSearchParams();
+  if (songId) params.append("id", songId);
+  if (songUrl) params.append("url", songUrl);
+  return `${origin}/api/gd/song-audio?${params.toString()}`;
+};
+
+window.fetchGdSongAudio = async function (songId, songUrl, options = {}) {
+  const primaryUrl = window.getGdSongAudioUrl(songId, songUrl);
+  if (!primaryUrl) throw new Error("No audio endpoint available");
+  return fetch(primaryUrl, options);
+};
+
+window.getGdLevelInfoUrl = function (levelId) {
+  if (!levelId) return null;
+  const origin = (typeof window !== "undefined" && window.location && window.location.origin && !window.location.origin.startsWith("file:"))
+    ? window.location.origin
+    : "";
+  if (origin) {
+    return `${origin}/api/gd/level-info/${encodeURIComponent(levelId)}`;
+  }
+  return `https://gdbrowser.com/api/level/${encodeURIComponent(levelId)}`;
+};
+
+window.fetchGdLevelInfo = async function (levelId) {
+  const urls = [
+    window.getGdLevelInfoUrl(levelId),
+    `https://gdbrowser.com/api/level/${encodeURIComponent(levelId)}`
+  ].filter(Boolean);
+
+  for (const url of urls) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) return await res.json();
+    } catch (_e) {}
+  }
+  return null;
+};
+
 window.fetchGdAudio = async function (songUrl, options = {}) {
   if (!songUrl) throw new Error("No song URL provided");
   const urls = [];

@@ -115,8 +115,21 @@ class ColorManager {
       const c = window.secondaryColor != null ? window.secondaryColor : 0x00FBFF;
       return { r: (c >> 16) & 0xFF, g: (c >> 8) & 0xFF, b: c & 0xFF };
     }
+    if (num === 1007) { // Light BG
+      const bg = (this._colors && this._colors[1000]) || { r: 0, g: 102, b: 255 };
+      return {
+        r: Math.min(255, Math.round(bg.r * 0.65 + 255 * 0.35)),
+        g: Math.min(255, Math.round(bg.g * 0.65 + 255 * 0.35)),
+        b: Math.min(255, Math.round(bg.b * 0.65 + 255 * 0.35))
+      };
+    }
     if (num === 1010) return { r: 0, g: 0, b: 0 }; // Black
-    if (num === 1) return this.getColor(1004); // Default Channel 1 inherits Object Color
+    if (num === 1011) return { r: 255, g: 255, b: 255 }; // White / Detail
+    if (num === 1012) { // Detail Channel (DL)
+      return (this._colors && this._colors[1004]) || { r: 255, g: 255, b: 255 };
+    }
+    if (num === 1004) return { r: 255, g: 255, b: 255 }; // Object Color
+    if (num === 1002 || num === 1003) return { r: 255, g: 255, b: 255 }; // Line, 3DL
     return { r: 255, g: 255, b: 255 }; // Default White
   }
   setInitialColor(channelId, color) {
@@ -129,8 +142,14 @@ class ColorManager {
   reset() {
     const p1Col = window.mainColor != null ? window.mainColor : 0x04FF00;
     const p2Col = window.secondaryColor != null ? window.secondaryColor : 0x00FBFF;
+    const bgCol = { r: 0, g: 102, b: 255 };
+    const lbgCol = {
+      r: Math.min(255, Math.round(bgCol.r * 0.65 + 255 * 0.35)),
+      g: Math.min(255, Math.round(bgCol.g * 0.65 + 255 * 0.35)),
+      b: Math.min(255, Math.round(bgCol.b * 0.65 + 255 * 0.35))
+    };
     this._colors = {
-      1000: { r: 0, g: 102, b: 255 }, // BG
+      1000: bgCol, // BG
       1001: { r: 0, g: 68, b: 170 },   // Ground 1
       1002: { r: 255, g: 255, b: 255 }, // Line
       1003: { r: 255, g: 255, b: 255 }, // 3DL
@@ -141,11 +160,12 @@ class ColorManager {
       4: { r: 255, g: 255, b: 255 },
       1005: { r: (p1Col >> 16) & 0xFF, g: (p1Col >> 8) & 0xFF, b: p1Col & 0xFF }, // Player Color 1
       1006: { r: (p2Col >> 16) & 0xFF, g: (p2Col >> 8) & 0xFF, b: p2Col & 0xFF }, // Player Color 2
-      1007: { r: 255, g: 255, b: 255 }, // Light BG
+      1007: lbgCol, // Light BG
       1008: { r: 255, g: 255, b: 255 },
       1009: { r: 0, g: 68, b: 170 },   // Ground 2
       1010: { r: 0, g: 0, b: 0 },       // Black
-      1011: { r: 255, g: 255, b: 255 }  // White
+      1011: { r: 255, g: 255, b: 255 }, // White
+      1012: { r: 255, g: 255, b: 255 }  // Detail
     };
     this._coloredChannels = new Set();
     for (let chId in this._initialColors) {
@@ -180,6 +200,23 @@ class ColorManager {
     }
   }
   getColor(index) {
+    const num = parseInt(index, 10);
+    if (num === 1007 && (!this._coloredChannels || !this._coloredChannels.has("1007")) && (!this._initialColors || !this._initialColors[1007])) {
+      const bg = this.getColor(1000);
+      return {
+        r: Math.min(255, Math.round(bg.r * 0.65 + 255 * 0.35)),
+        g: Math.min(255, Math.round(bg.g * 0.65 + 255 * 0.35)),
+        b: Math.min(255, Math.round(bg.b * 0.65 + 255 * 0.35))
+      };
+    }
+    if (num === 1005 && (!this._coloredChannels || !this._coloredChannels.has("1005")) && (!this._initialColors || !this._initialColors[1005])) {
+      const c = window.mainColor != null ? window.mainColor : 0x04FF00;
+      return { r: (c >> 16) & 0xFF, g: (c >> 8) & 0xFF, b: c & 0xFF };
+    }
+    if (num === 1006 && (!this._coloredChannels || !this._coloredChannels.has("1006")) && (!this._initialColors || !this._initialColors[1006])) {
+      const c = window.secondaryColor != null ? window.secondaryColor : 0x00FBFF;
+      return { r: (c >> 16) & 0xFF, g: (c >> 8) & 0xFF, b: c & 0xFF };
+    }
     return this._colors[index] || this._getDefaultChannelColor(index);
   }
   hasColor(index) {
